@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcaron" format="2">
+  <advance width="244.25"/>
+  <unicode hex="013E"/>
+  <anchor x="118.5" y="0.0" name="bottom"/>
+  <anchor x="118.5" y="393.0" name="center"/>
+  <anchor x="165.25" y="0.0" name="ogonek"/>
+  <anchor x="118.5" y="740.0" name="top"/>
+  <anchor x="215.25" y="740.0" name="topright"/>
+  <outline>
+    <component base="l"/>
+    <component base="caroncomb.alt" xOffset="178.25"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>l</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>caroncomb.alt</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

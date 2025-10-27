@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="j" format="2">
+  <advance width="247.7"/>
+  <unicode hex="006A"/>
+  <anchor x="33.4" y="-233.0" name="bottom"/>
+  <anchor x="47.400000000000006" y="-233.0" name="ogonek"/>
+  <anchor x="123.875" y="497.125" name="top"/>
+  <outline>
+    <component base="jdotless"/>
+    <component base="tittle"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>jdotless</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>tittle</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="AE" format="2">
+  <advance width="998.0"/>
+  <unicode hex="00C6"/>
+  <anchor x="574.5" y="0.0" name="bottom"/>
+  <anchor x="871.0" y="0.0" name="ogonek"/>
+  <anchor x="574.5" y="700.0" name="top"/>
+  <anchor x="563.75" y="700.0" name="top_ring"/>
+  <outline>
+    <contour>
+      <point x="12.5" y="0.0" type="line"/>
+      <point x="129.0" y="0.0" type="line"/>
+      <point x="241.25" y="174.25" type="line"/>
+      <point x="260.5" y="207.75" type="line"/>
+      <point x="441.5" y="486.25" type="line" smooth="yes"/>
+      <point x="479.5" y="543.5"/>
+      <point x="504.75" y="583.5"/>
+      <point x="522.0" y="623.25" type="curve"/>
+      <point x="497.75" y="610.0" type="line"/>
+      <point x="594.0" y="610.0" type="line"/>
+      <point x="573.0" y="700.0" type="line"/>
+      <point x="479.5" y="700.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="179.25" y="150.25" type="line"/>
+      <point x="586.5" y="150.25" type="line"/>
+      <point x="586.5" y="241.0" type="line"/>
+      <point x="214.5" y="241.0" type="line"/>
+    </contour>
+    <component base="E" xOffset="445.25"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>11</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <string>up</string>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

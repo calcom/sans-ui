@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="baht.tf" format="2">
+  <advance width="596.0"/>
+  <anchor x="306.675" y="30.0" name="bottom"/>
+  <anchor x="302.675" y="670.92" name="top"/>
+  <outline>
+    <component base="baht" xOffset="-20.125"/>
+  </outline>
+</glyph>

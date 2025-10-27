@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="x" format="2">
+  <advance width="575"/>
+  <unicode hex="0078"/>
+  <anchor x="288" y="0" name="bottom"/>
+  <anchor x="288" y="505" name="top"/>
+  <outline>
+    <contour>
+      <point x="20" y="0" type="line"/>
+      <point x="181" y="0" type="line"/>
+      <point x="286" y="163" type="line"/>
+      <point x="290" y="163" type="line"/>
+      <point x="391" y="0" type="line"/>
+      <point x="555" y="0" type="line"/>
+      <point x="370" y="254" type="line"/>
+      <point x="545" y="505" type="line"/>
+      <point x="387" y="505" type="line"/>
+      <point x="289" y="349" type="line"/>
+      <point x="285" y="349" type="line"/>
+      <point x="191" y="505" type="line"/>
+      <point x="30" y="505" type="line"/>
+      <point x="205" y="256" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <string>up</string>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>11</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <string>down</string>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

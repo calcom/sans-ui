@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="naira" format="2">
+  <advance width="725"/>
+  <unicode hex="20A6"/>
+  <anchor x="369.2495" y="30.0" name="bottom"/>
+  <anchor x="635.8342" y="30.0" name="ogonek"/>
+  <anchor x="360.7112" y="669.94" name="top"/>
+  <outline>
+    <contour>
+      <point x="0" y="324" type="line"/>
+      <point x="725" y="324" type="line"/>
+      <point x="725" y="396" type="line"/>
+      <point x="0" y="396" type="line"/>
+    </contour>
+    <component base="N" xScale="0.9487" yScale="0.9142" xOffset="4" yOffset="30"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

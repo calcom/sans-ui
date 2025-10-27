@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven.dnom" format="2">
+  <advance width="295.225"/>
+  <outline>
+    <component base="seven.numr" yOffset="-313.95000000000005"/>
+  </outline>
+</glyph>

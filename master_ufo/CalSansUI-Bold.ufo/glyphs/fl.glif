@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fl" format="2">
+  <advance width="635"/>
+  <unicode hex="FB02"/>
+  <anchor x="180" y="0" name="bottom_1"/>
+  <anchor x="279" y="740" name="top_1"/>
+  <anchor x="498" y="0" name="bottom_2"/>
+  <anchor x="498" y="393" name="center_2"/>
+  <anchor x="565" y="0" name="ogonek_2"/>
+  <anchor x="498" y="740" name="top_2"/>
+  <anchor x="615" y="740" name="topright_2"/>
+  <anchor x="392" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="21" y="385" type="line"/>
+      <point x="555" y="385" type="line"/>
+      <point x="565" y="505" type="line"/>
+      <point x="21" y="505" type="line"/>
+    </contour>
+    <component base="f"/>
+    <component base="l" xOffset="360"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>l</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCP</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>2</integer>
+            <integer>2</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>2</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

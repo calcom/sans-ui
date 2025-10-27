@@ -1,0 +1,69 @@
+<rules>
+  <rule name="UI Mode">
+    <conditionset>
+      <condition name="UI or Text Mode" minimum="0" maximum="0.5"/>
+    </conditionset>
+    <sub name="G" with="G.ss02"/>
+    <sub name="Gcommaaccent" with="Gcommaaccent.ss02"/>
+    <sub name="Gdotaccent" with="Gdotaccent.ss02"/>
+    <sub name="Gmacron" with="Gmacron.ss02"/>
+    <sub name="guarani" with="guarani.ss02"/>
+    <sub name="guarani.tf" with="guarani.tf.ss02"/>
+    <sub name="Gcommaaccent" with="Gcommaaccent.ss04"/>
+    <sub name="Kcommaaccent" with="Kcommaaccent.ss04"/>
+    <sub name="Lcommaaccent" with="Lcommaaccent.ss04"/>
+    <sub name="Ncommaaccent" with="Ncommaaccent.ss04"/>
+    <sub name="Rcommaaccent" with="Rcommaaccent.ss04"/>
+    <sub name="Scommaaccent" with="Scommaaccent.ss04"/>
+    <sub name="Tcommaaccent" with="Tcommaaccent.ss04"/>
+    <sub name="Gcommaaccent.ss02" with="Gcommaaccent.ss02.ss04"/>
+    <sub name="gcommaaccent" with="gcommaaccent.ss04"/>
+    <sub name="kcommaaccent" with="kcommaaccent.ss04"/>
+    <sub name="lcommaaccent" with="lcommaaccent.ss04"/>
+    <sub name="ncommaaccent" with="ncommaaccent.ss04"/>
+    <sub name="scommaaccent" with="scommaaccent.ss04"/>
+    <sub name="tcommaaccent" with="tcommaaccent.ss04"/>
+    <sub name="comma" with="comma.ss04"/>
+    <sub name="semicolon" with="semicolon.ss04"/>
+    <sub name="quotesinglbase" with="quotesinglbase.ss04"/>
+    <sub name="quotedblbase" with="quotedblbase.ss04"/>
+    <sub name="quotedblleft" with="quotedblleft.ss04"/>
+    <sub name="quotedblright" with="quotedblright.ss04"/>
+    <sub name="quoteleft" with="quoteleft.ss04"/>
+    <sub name="quoteright" with="quoteright.ss04"/>
+    <sub name="quotedbl" with="quotedbl.ss04"/>
+    <sub name="quotesingle" with="quotesingle.ss04"/>
+    <sub name="commaaccentcomb" with="commaaccentcomb.ss04"/>
+  </rule>
+  <rule name="Text Mode">
+    <conditionset>
+      <condition name="UI or Text Mode" minimum="0.5" maximum="1"/>
+    </conditionset>
+    <sub name="a" with="a.ss01"/>
+    <sub name="aacute" with="aacute.ss01"/>
+    <sub name="abreve" with="abreve.ss01"/>
+    <sub name="abreveacute" with="abreveacute.ss01"/>
+    <sub name="abrevedotbelow" with="abrevedotbelow.ss01"/>
+    <sub name="abrevegrave" with="abrevegrave.ss01"/>
+    <sub name="abrevehookabove" with="abrevehookabove.ss01"/>
+    <sub name="abrevetilde" with="abrevetilde.ss01"/>
+    <sub name="acircumflex" with="acircumflex.ss01"/>
+    <sub name="acircumflexacute" with="acircumflexacute.ss01"/>
+    <sub name="acircumflexdotbelow" with="acircumflexdotbelow.ss01"/>
+    <sub name="acircumflexgrave" with="acircumflexgrave.ss01"/>
+    <sub name="acircumflexhookabove" with="acircumflexhookabove.ss01"/>
+    <sub name="acircumflextilde" with="acircumflextilde.ss01"/>
+    <sub name="adieresis" with="adieresis.ss01"/>
+    <sub name="adotbelow" with="adotbelow.ss01"/>
+    <sub name="agrave" with="agrave.ss01"/>
+    <sub name="ahookabove" with="ahookabove.ss01"/>
+    <sub name="ainvertedbreve" with="ainvertedbreve.ss01"/>
+    <sub name="amacron" with="amacron.ss01"/>
+    <sub name="aogonek" with="aogonek.ss01"/>
+    <sub name="aring" with="aring.ss01"/>
+    <sub name="atilde" with="atilde.ss01"/>
+    <sub name="ae" with="ae.ss01"/>
+    <sub name="aemacron" with="aemacron.ss01"/>
+    <sub name="ordfeminine" with="ordfeminine.ss01"/>
+  </rule>
+</rules>

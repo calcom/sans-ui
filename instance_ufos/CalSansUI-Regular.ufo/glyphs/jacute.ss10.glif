@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="jacute.ss10" format="2">
+  <advance width="236.75"/>
+  <anchor x="117.0" y="-220.0" name="bottom"/>
+  <anchor x="131.0" y="-220.0" name="ogonek"/>
+  <anchor x="118.75" y="630.0" name="top"/>
+  <outline>
+    <component base="jdotless.ss10"/>
+    <component base="acutecomb" xOffset="118.5"/>
+  </outline>
+</glyph>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tildecomb.case" format="2">
+  <anchor x="0.0" y="700.0" name="_top"/>
+  <anchor x="0.0" y="820.875" name="top"/>
+  <outline>
+    <contour>
+      <point x="59.95" y="734.65" type="curve" smooth="yes"/>
+      <point x="114.65" y="734.65"/>
+      <point x="156.725" y="777.05"/>
+      <point x="156.725" y="832.425" type="curve"/>
+      <point x="91.2" y="832.425" type="line"/>
+      <point x="91.2" y="818.125"/>
+      <point x="81.225" y="804.4749999999999"/>
+      <point x="60.925000000000004" y="804.4749999999999" type="curve" smooth="yes"/>
+      <point x="16.275" y="804.4749999999999"/>
+      <point x="14.05" y="839.075"/>
+      <point x="-61.25" y="839.075" type="curve" smooth="yes"/>
+      <point x="-115.625" y="839.075"/>
+      <point x="-157.7" y="796.675"/>
+      <point x="-157.7" y="741.3" type="curve"/>
+      <point x="-92.825" y="741.3" type="line"/>
+      <point x="-92.825" y="755.6"/>
+      <point x="-82.525" y="769.25"/>
+      <point x="-61.575" y="769.25" type="curve" smooth="yes"/>
+      <point x="-17.25" y="769.25"/>
+      <point x="-15.35" y="734.65"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>300</integer>
+    </dict>
+  </lib>
+</glyph>

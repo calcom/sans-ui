@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="whiteStar" format="2">
+  <advance width="809.0"/>
+  <unicode hex="2606"/>
+  <outline>
+    <contour>
+      <point x="157.0" y="-13.0" type="line"/>
+      <point x="404.0" y="167.0" type="line"/>
+      <point x="651.0" y="-13.0" type="line"/>
+      <point x="557.0" y="277.0" type="line"/>
+      <point x="804.0" y="457.0" type="line"/>
+      <point x="499.0" y="457.0" type="line"/>
+      <point x="404.0" y="747.0" type="line"/>
+      <point x="310.0" y="457.0" type="line"/>
+      <point x="5.0" y="457.0" type="line"/>
+      <point x="252.0" y="277.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="252.47500000000002" y="114.975" type="line"/>
+      <point x="323.625" y="299.1" type="line"/>
+      <point x="153.425" y="407.07500000000005" type="line"/>
+      <point x="355.85" y="398.07500000000005" type="line"/>
+      <point x="404.0" y="579.55" type="line"/>
+      <point x="453.825" y="398.07500000000005" type="line"/>
+      <point x="655.575" y="407.07500000000005" type="line"/>
+      <point x="485.375" y="299.1" type="line"/>
+      <point x="555.875" y="114.975" type="line"/>
+      <point x="404.0" y="240.975" type="line"/>
+    </contour>
+  </outline>
+</glyph>

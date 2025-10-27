@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="germandbls.ss10" format="2">
+  <advance width="656"/>
+  <outline>
+    <contour>
+      <point x="17" y="418" type="line"/>
+      <point x="162" y="418" type="line"/>
+      <point x="162" y="490" type="line"/>
+      <point x="17" y="490" type="line"/>
+    </contour>
+    <component base="germandbls" xOffset="44"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

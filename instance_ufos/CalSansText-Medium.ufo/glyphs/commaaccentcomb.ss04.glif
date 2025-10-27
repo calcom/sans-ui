@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaaccentcomb.ss04" format="2">
+  <anchor x="0.0" y="0.0" name="_bottom"/>
+  <anchor x="0.0" y="-252.0" name="bottom"/>
+  <outline>
+    <component base="comma.ss04" yScale="0.8" xOffset="-125.625" yOffset="-163.97500000000002"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>212</integer>
+    </dict>
+  </lib>
+</glyph>

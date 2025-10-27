@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kip" format="2">
+  <advance width="612.0"/>
+  <unicode hex="20AD"/>
+  <anchor x="301.25" y="29.5" name="bottom"/>
+  <anchor x="468.75" y="29.5" name="ogonek"/>
+  <anchor x="291.25" y="672.5448250000001" name="top"/>
+  <outline>
+    <contour>
+      <point x="0.0" y="322.25" type="line"/>
+      <point x="602.0" y="322.25" type="line"/>
+      <point x="602.0" y="397.5" type="line"/>
+      <point x="0.0" y="397.5" type="line"/>
+    </contour>
+    <component base="K" yScale="0.917325" yOffset="29.5"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

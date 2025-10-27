@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hookabovecombviet.case" format="2">
+  <advance width="300.0"/>
+  <anchor x="0.0" y="700.0" name="_top"/>
+  <anchor x="0.0" y="864.225" name="top"/>
+  <outline>
+    <contour>
+      <point x="0.0" y="721.45" type="line"/>
+      <point x="36.5" y="742.3499999999999"/>
+      <point x="57.125" y="767.825"/>
+      <point x="57.125" y="801.675" type="curve" smooth="yes"/>
+      <point x="57.125" y="845.625"/>
+      <point x="19.275" y="892.375"/>
+      <point x="-52.75" y="892.375" type="curve" smooth="yes"/>
+      <point x="-83.225" y="892.375"/>
+      <point x="-110.875" y="883.05"/>
+      <point x="-133.825" y="868.575" type="curve"/>
+      <point x="-99.80000000000001" y="807.175" type="line"/>
+      <point x="-86.375" y="815.65"/>
+      <point x="-67.95" y="821.125"/>
+      <point x="-51.0" y="821.125" type="curve" smooth="yes"/>
+      <point x="-26.725" y="821.125"/>
+      <point x="-10.575" y="807.6500000000001"/>
+      <point x="-10.575" y="791.025" type="curve" smooth="yes"/>
+      <point x="-10.575" y="778.4"/>
+      <point x="-19.625" y="767.875"/>
+      <point x="-37.425" y="760.4" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

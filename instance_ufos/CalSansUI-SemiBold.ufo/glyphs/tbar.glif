@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tbar" format="2">
+  <advance width="404.525"/>
+  <unicode hex="0167"/>
+  <anchor x="198.55" y="305.35" name="bar"/>
+  <anchor x="250.70000000000002" y="0.0" name="bottom"/>
+  <anchor x="179.05" y="276.0" name="center"/>
+  <anchor x="179.05" y="629.85" name="top"/>
+  <anchor x="307.72499999999997" y="740.0" name="topright"/>
+  <outline>
+    <component base="t"/>
+    <component base="strokeshortcomb" xScale="1.072" xOffset="202.075" yOffset="-45.650000000000006"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>strokeshortcomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

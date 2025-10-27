@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="onehalf.ss10" format="2">
+  <advance width="723.75"/>
+  <outline>
+    <component base="one.ss10.numr" xOffset="20.5"/>
+    <component base="fraction" xOffset="25.75"/>
+    <component base="two.dnom" xOffset="392.25"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>one.ss10.numr</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

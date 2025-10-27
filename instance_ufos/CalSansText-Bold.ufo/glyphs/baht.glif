@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="baht" format="2">
+  <advance width="638.0"/>
+  <unicode hex="0E3F"/>
+  <anchor x="332.0" y="30.0" name="bottom"/>
+  <anchor x="328.0" y="670.92" name="top"/>
+  <outline>
+    <component base="B" yScale="0.9156" yOffset="30.0"/>
+    <component base="verticalTopCurrencycomb" xOffset="301.0"/>
+    <component base="verticalBottomCurrencycomb" xOffset="301.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>B</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>2</integer>
+          <key>name</key>
+          <string>verticalBottomCurrencycomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

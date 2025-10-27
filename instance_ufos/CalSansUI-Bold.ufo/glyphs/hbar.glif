@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hbar" format="2">
+  <advance width="605"/>
+  <unicode hex="0127"/>
+  <anchor x="138" y="591" name="bar"/>
+  <anchor x="305" y="0" name="bottom"/>
+  <anchor x="405" y="0" name="ogonek"/>
+  <anchor x="138" y="740" name="top"/>
+  <outline>
+    <component base="h"/>
+    <component base="strokeshortcomb" xOffset="138" yOffset="270"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>strokeshortcomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

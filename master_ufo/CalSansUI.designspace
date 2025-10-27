@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
+      <map input="300" output="300"/>
+      <map input="400" output="400"/>
+      <map input="500" output="490"/>
+      <map input="600" output="570"/>
+      <map input="700" output="700"/>
+    </axis>
+    <axis tag="MODE" name="UI Mode or Text Mode" minimum="0" maximum="0" default="0"/>
+  </axes>
+  <sources>
+    <source filename="CalSansUI-Light.ufo" name="Cal Sans UI Light" familyname="Cal Sans UI" stylename="Light">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="CalSansUI-Bold.ufo" name="Cal Sans UI Bold" familyname="Cal Sans UI" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+    </source>
+  </sources>
+  <variable-fonts>
+    <variable-font name="Regular" filename="CalSansUI-VariableFont_wght_MODE">
+      <axis-subsets>
+        <axis-subset name="Weight"/>
+        <axis-subset name="UI Mode or Text Mode"/>
+      </axis-subsets>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameter.GSInstance.fileName</key>
+          <string>CalSansUI-VariableFont_wght_MODE</string>
+          <key>public.fontInfo</key>
+          <dict>
+            <key>openTypeNamePreferredFamilyName</key>
+            <string>Cal Sans UI</string>
+            <key>postscriptFontName</key>
+            <string>CalSansUI</string>
+            <key>postscriptFullName</key>
+            <string>Cal Sans UI</string>
+          </dict>
+        </dict>
+      </lib>
+    </variable-font>
+  </variable-fonts>
+  <instances>
+    <instance name="Cal Sans UI Light" familyname="Cal Sans UI" stylename="Light" filename="../instance_ufo/CalSansUI-Light.ufo" stylemapfamilyname="Cal Sans UI Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>styleNames</string>
+              <string>Light</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Regular" familyname="Cal Sans UI" stylename="Regular" filename="../instance_ufo/CalSansUI-Regular.ufo" stylemapfamilyname="Cal Sans UI" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>styleNames</string>
+              <string>Regular</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Regular</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Medium" familyname="Cal Sans UI" stylename="Medium" filename="../instance_ufo/CalSansUI-Medium.ufo" stylemapfamilyname="Cal Sans UI Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="490"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>styleNames</string>
+              <string>Medium</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI SemiBold" familyname="Cal Sans UI" stylename="SemiBold" filename="../instance_ufo/CalSansUI-SemiBold.ufo" stylemapfamilyname="Cal Sans UI SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="570"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>styleNames</string>
+              <string>SemiBold</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Bold" familyname="Cal Sans UI" stylename="Bold" filename="../instance_ufo/CalSansUI-Bold.ufo" stylemapfamilyname="Cal Sans UI" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>styleNames</string>
+              <string>Bold</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>1CEBC45A-AEC2-4D64-BDF1-47EEC89AD7B0</key>
+        <dict>
+          <key>HH</key>
+          <string>76</string>
+          <key>HV</key>
+          <string>84</string>
+          <key>OH</key>
+          <string>77</string>
+          <key>OV</key>
+          <string>87</string>
+          <key>nV</key>
+          <string>80</string>
+          <key>nd</key>
+          <string>47</string>
+          <key>oH</key>
+          <string>74</string>
+          <key>oV</key>
+          <string>80</string>
+        </dict>
+        <key>610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101</key>
+        <dict>
+          <key>HH</key>
+          <string>76</string>
+          <key>HV</key>
+          <string>82</string>
+          <key>OH</key>
+          <string>76</string>
+          <key>OV</key>
+          <string>84</string>
+          <key>nV</key>
+          <string>80</string>
+          <key>nd</key>
+          <string>40</string>
+          <key>oH</key>
+          <string>74</string>
+          <key>oV</key>
+          <string>80</string>
+          <key>tH</key>
+          <string>72</string>
+        </dict>
+        <key>m004</key>
+        <dict>
+          <key>nV</key>
+          <string>52</string>
+          <key>tH</key>
+          <string>43</string>
+        </dict>
+        <key>m005</key>
+        <dict>
+          <key>HH</key>
+          <string>50</string>
+          <key>HV</key>
+          <string>56</string>
+          <key>OH</key>
+          <string>51</string>
+          <key>OV</key>
+          <string>58</string>
+          <key>nV</key>
+          <string>52</string>
+          <key>nd</key>
+          <string>25</string>
+          <key>oH</key>
+          <string>50</string>
+          <key>oV</key>
+          <string>52</string>
+          <key>tH</key>
+          <string>43</string>
+        </dict>
+        <key>m006</key>
+        <dict>
+          <key>HH</key>
+          <string>135</string>
+          <key>HV</key>
+          <string>140</string>
+          <key>OH</key>
+          <string>138</string>
+          <key>OV</key>
+          <string>143</string>
+          <key>nV</key>
+          <string>135</string>
+          <key>nd</key>
+          <string>74</string>
+          <key>oH</key>
+          <string>123</string>
+          <key>oV</key>
+          <string>135</string>
+          <key>tH</key>
+          <string>120</string>
+        </dict>
+        <key>m007</key>
+        <dict>
+          <key>HH</key>
+          <string>50</string>
+          <key>HV</key>
+          <string>56</string>
+          <key>OH</key>
+          <string>51</string>
+          <key>OV</key>
+          <string>58</string>
+          <key>nV</key>
+          <string>52</string>
+          <key>nd</key>
+          <string>36</string>
+          <key>oH</key>
+          <string>50</string>
+          <key>oV</key>
+          <string>52</string>
+          <key>tH</key>
+          <string>43</string>
+        </dict>
+        <key>m008</key>
+        <dict>
+          <key>HH</key>
+          <string>126</string>
+          <key>HV</key>
+          <string>140</string>
+          <key>OH</key>
+          <string>130</string>
+          <key>OV</key>
+          <string>145</string>
+          <key>nV</key>
+          <string>135</string>
+          <key>nd</key>
+          <string>83</string>
+          <key>oH</key>
+          <string>123</string>
+          <key>oV</key>
+          <string>134</string>
+          <key>tH</key>
+          <string>115</string>
+        </dict>
+        <key>m01</key>
+        <dict>
+          <key>HH</key>
+          <string>50</string>
+          <key>HV</key>
+          <string>56</string>
+          <key>OH</key>
+          <string>51</string>
+          <key>OV</key>
+          <string>58</string>
+          <key>nV</key>
+          <string>52</string>
+          <key>tH</key>
+          <string>43</string>
+        </dict>
+      </dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>acutecomb</string>
+        <string>acutecomb.case</string>
+        <string>acutecomb_macroncomb</string>
+        <string>acutecomb_macroncomb.case</string>
+        <string>ast</string>
+        <string>brevebelowcomb</string>
+        <string>brevecomb</string>
+        <string>brevecomb.case</string>
+        <string>brevecomb_acutecomb</string>
+        <string>brevecomb_acutecomb.case</string>
+        <string>brevecomb_gravecomb</string>
+        <string>brevecomb_gravecomb.case</string>
+        <string>brevecomb_hookabovecomb</string>
+        <string>brevecomb_hookabovecomb.case</string>
+        <string>brevecomb_tildecomb</string>
+        <string>brevecomb_tildecomb.case</string>
+        <string>breveinvertedcomb</string>
+        <string>breveinvertedcomb.case</string>
+        <string>caroncomb</string>
+        <string>caroncomb.alt</string>
+        <string>caroncomb.case</string>
+        <string>cedillacomb</string>
+        <string>circumflexcomb</string>
+        <string>circumflexcomb.001</string>
+        <string>circumflexcomb.case</string>
+        <string>circumflexcomb_acutecomb</string>
+        <string>circumflexcomb_acutecomb.case</string>
+        <string>circumflexcomb_gravecomb</string>
+        <string>circumflexcomb_gravecomb.case</string>
+        <string>circumflexcomb_hookabovecomb</string>
+        <string>circumflexcomb_hookabovecomb.case</string>
+        <string>circumflexcomb_tildecomb</string>
+        <string>circumflexcomb_tildecomb.case</string>
+        <string>commaaccentcomb.loclMAH.ss04</string>
+        <string>commaturnedabovecomb</string>
+        <string>commaturnedabovecomb.ss04</string>
+        <string>dblgravecomb</string>
+        <string>dieresisbelowcomb</string>
+        <string>dieresiscomb</string>
+        <string>dieresiscomb.case</string>
+        <string>dotaccentcomb</string>
+        <string>dotaccentcomb.case</string>
+        <string>dotbelowcomb</string>
+        <string>germandbls.ss10</string>
+        <string>gravecomb</string>
+        <string>gravecomb.case</string>
+        <string>gravecomb_macroncomb</string>
+        <string>gravecomb_macroncomb.case</string>
+        <string>hookabovecomb</string>
+        <string>hookabovecomb.case</string>
+        <string>hookabovecombviet</string>
+        <string>hookabovecombviet.case</string>
+        <string>horn.alt</string>
+        <string>horn.alt_case</string>
+        <string>horncomb</string>
+        <string>horncomb.case</string>
+        <string>hungarumlautcomb</string>
+        <string>hungarumlautcomb.case</string>
+        <string>macronbelowcomb</string>
+        <string>macroncomb</string>
+        <string>macroncomb_acutecomb</string>
+        <string>macroncomb_acutecomb.case</string>
+        <string>macroncomb_gravecomb</string>
+        <string>macroncomb_gravecomb.case</string>
+        <string>ogonekcomb</string>
+        <string>ringcomb</string>
+        <string>slashlongcomb</string>
+        <string>slashlongcomb.case</string>
+        <string>strokeshortcomb</string>
+        <string>tildecomb</string>
+        <string>tildecomb.case</string>
+        <string>tittle</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>

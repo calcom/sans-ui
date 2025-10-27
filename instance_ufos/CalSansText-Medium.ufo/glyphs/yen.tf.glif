@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yen.tf" format="2">
+  <advance width="596.0"/>
+  <anchor x="300.0" y="30.0" name="bottom"/>
+  <anchor x="300.525" y="669.2574999999999" name="top"/>
+  <anchor x="23.8" y="669.2574999999999" name="topleft"/>
+  <outline>
+    <component base="yen" xOffset="-6.199999999999998"/>
+  </outline>
+</glyph>

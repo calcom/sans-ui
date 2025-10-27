@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="mcommaaccentcomb.loclMAH" format="2">
+  <advance width="913.0999999999999"/>
+  <anchor x="521.3499999999999" y="-206.675" name="bottom"/>
+  <anchor x="730.325" y="0.0" name="ogonek"/>
+  <anchor x="465.92499999999995" y="500.125" name="top"/>
+  <outline>
+    <component base="m"/>
+    <component base="cedillacomb" xOffset="464.4" yOffset="-1.9499999999999997"/>
+  </outline>
+</glyph>

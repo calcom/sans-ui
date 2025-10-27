@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ballotX" format="2">
+  <advance width="600.0"/>
+  <unicode hex="2717"/>
+  <outline>
+    <contour>
+      <point x="438.35" y="150.825" type="line"/>
+      <point x="499.6" y="211.64999999999998" type="line"/>
+      <point x="162.6" y="549.175" type="line"/>
+      <point x="101.35" y="487.875" type="line"/>
+    </contour>
+    <contour>
+      <point x="162.125" y="149.875" type="line"/>
+      <point x="498.65" y="487.875" type="line"/>
+      <point x="438.35" y="549.65" type="line"/>
+      <point x="101.825" y="211.64999999999998" type="line"/>
+    </contour>
+  </outline>
+</glyph>

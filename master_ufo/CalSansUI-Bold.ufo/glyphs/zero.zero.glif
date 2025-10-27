@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zero.zero" format="2">
+  <advance width="674"/>
+  <outline>
+    <contour>
+      <point x="153" y="143" type="line"/>
+      <point x="252" y="63" type="line"/>
+      <point x="520" y="563" type="line"/>
+      <point x="410" y="629" type="line"/>
+    </contour>
+    <component base="zero"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

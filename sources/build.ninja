@@ -1,0 +1,319 @@
+# buildVariable: Build a variable font from a source file
+rule buildVariable
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o variable $
+      $fontmake_type $in $args $stamp
+  description = buildVariable
+
+# fix: Run gftools-fix
+rule fix
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
+  description = fix
+
+# buildStat: Build a STAT table from one or more source files
+rule buildSTAT-operation
+  command = gftools-gen-stat --out $tempdir $args -- $in && mv $finalfile $
+      $out $stamp
+rule buildSTAT-postprocess
+  command = gftools-gen-stat --inplace $args -- $in $stamp
+
+# compress: Compress to webfont
+rule compress
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $in $
+      $stamp
+  description = compress
+
+# instantiateUfo: Create instance UFOs from a Glyphs or designspace file
+rule instantiateUfo
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
+      $fontmake_type $in $args $stamp
+  description = instantiateUfo
+
+# buildTTF: Build a TTF from a source file
+rule buildTTF
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o ttf $
+      $fontmake_type $in $args $stamp
+  description = buildTTF
+
+# autohint: Run gftools-autohint
+rule autohint
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
+  description = autohint
+
+# buildOTF: Build a OTF from a source file
+rule buildOTF
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner fontmake --output-path $out -o otf $
+      $fontmake_type $in $args $stamp
+  description = buildOTF
+
+# copy: Copy a file
+rule copy
+  command = $
+      /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13 -m $
+      gftools.builder.jobrunner cp $in $out $stamp
+  description = copy
+
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjakl3my8
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjakl3my8: $
+    buildVariable ../master_ufo/CalSansUI.designspace
+  operation = buildVariable
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter --no-check-compatibility
+  fontmake_type = -m
+  fontmake_args =  --verbose WARNING 
+# Generating ../master_ufo/instance_ufos/CalSansUI-Light.ufo.json
+build ../master_ufo/instance_ufos/CalSansUI-Light.ufo.json: instantiateUfo $
+    ../master_ufo/CalSansUI.designspace
+  operation = instantiateUfo
+  instance_name = Cal Sans UI Light
+  fontmake_type = -m
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
+# Generating ../master_ufo/instance_ufos/CalSansUI-Regular.ufo.json
+build ../master_ufo/instance_ufos/CalSansUI-Regular.ufo.json: $
+    instantiateUfo ../master_ufo/CalSansUI.designspace
+  operation = instantiateUfo
+  instance_name = Cal Sans UI Regular
+  fontmake_type = -m
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
+# Generating ../master_ufo/instance_ufos/CalSansUI-Medium.ufo.json
+build ../master_ufo/instance_ufos/CalSansUI-Medium.ufo.json: instantiateUfo $
+    ../master_ufo/CalSansUI.designspace
+  operation = instantiateUfo
+  instance_name = Cal Sans UI Medium
+  fontmake_type = -m
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
+# Generating ../master_ufo/instance_ufos/CalSansUI-SemiBold.ufo.json
+build ../master_ufo/instance_ufos/CalSansUI-SemiBold.ufo.json: $
+    instantiateUfo ../master_ufo/CalSansUI.designspace
+  operation = instantiateUfo
+  instance_name = Cal Sans UI SemiBold
+  fontmake_type = -m
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
+# Generating ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json
+build ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json: instantiateUfo $
+    ../master_ufo/CalSansUI.designspace
+  operation = instantiateUfo
+  instance_name = Cal Sans UI Bold
+  fontmake_type = -m
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
+# Postprocessing  with BuildSTAT
+build $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp45m0lhzy.buildStatstamp: $
+    buildSTAT-postprocess ../fonts/variable/CalSansUI[MODE,wght].ttf | $
+    ../fonts/variable/CalSansUI[MODE,wght].ttf
+  stamp =  && touch $
+      /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp45m0lhzy.buildStatstamp
+  postprocess = buildStat
+  args = --src /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpcmlgsq7_
+# Generating ../fonts/webfonts/CalSansUI[MODE,wght].woff2
+build ../fonts/webfonts/CalSansUI[MODE,wght].woff2: compress $
+    ../fonts/variable/CalSansUI[MODE,wght].ttf
+  operation = compress
+# Generating ../fonts/webfonts/CalSansUI-Light.woff2
+build ../fonts/webfonts/CalSansUI-Light.woff2: compress $
+    ../fonts/ttf/CalSansUI-Light.ttf
+  operation = compress
+# Generating ../fonts/webfonts/CalSansUI-Regular.woff2
+build ../fonts/webfonts/CalSansUI-Regular.woff2: compress $
+    ../fonts/ttf/CalSansUI-Regular.ttf
+  operation = compress
+# Generating ../fonts/webfonts/CalSansUI-Medium.woff2
+build ../fonts/webfonts/CalSansUI-Medium.woff2: compress $
+    ../fonts/ttf/CalSansUI-Medium.ttf
+  operation = compress
+# Generating ../fonts/webfonts/CalSansUI-SemiBold.woff2
+build ../fonts/webfonts/CalSansUI-SemiBold.woff2: compress $
+    ../fonts/ttf/CalSansUI-SemiBold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/CalSansUI-Bold.woff2
+build ../fonts/webfonts/CalSansUI-Bold.woff2: compress $
+    ../fonts/ttf/CalSansUI-Bold.ttf
+  operation = compress
+# Generating ../fonts/variable/CalSansUI[MODE,wght].ttf
+build ../fonts/variable/CalSansUI[MODE,wght].ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjakl3my8
+  operation = fix
+  args = 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmplmtmh9uk
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmplmtmh9uk: $
+    buildTTF ../master_ufo/instance_ufos/CalSansUI-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjx_q9zt5
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjx_q9zt5: $
+    buildOTF ../master_ufo/instance_ufos/CalSansUI-Light.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpklhd0kjg
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpklhd0kjg: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmplmtmh9uk
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/CalSansUI-Light.ttf
+build ../fonts/ttf/CalSansUI-Light.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpklhd0kjg
+  operation = fix
+  args = 
+# Generating ../fonts/otf/CalSansUI-Light.otf
+build ../fonts/otf/CalSansUI-Light.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjx_q9zt5
+  operation = fix
+  args = 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpgur75ntb
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpgur75ntb: $
+    buildTTF ../master_ufo/instance_ufos/CalSansUI-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpx1dx__y2
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpx1dx__y2: $
+    buildOTF ../master_ufo/instance_ufos/CalSansUI-Regular.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpg2gs9k1q
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpg2gs9k1q: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpgur75ntb
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/CalSansUI-Regular.ttf
+build ../fonts/ttf/CalSansUI-Regular.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpg2gs9k1q
+  operation = fix
+  args = 
+# Generating ../fonts/otf/CalSansUI-Regular.otf
+build ../fonts/otf/CalSansUI-Regular.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpx1dx__y2
+  operation = fix
+  args = 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1sr8fwku
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1sr8fwku: $
+    buildTTF ../master_ufo/instance_ufos/CalSansUI-Medium.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp0aazclmw
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp0aazclmw: $
+    buildOTF ../master_ufo/instance_ufos/CalSansUI-Medium.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4r0fp1b3
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4r0fp1b3: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1sr8fwku
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/CalSansUI-Medium.ttf
+build ../fonts/ttf/CalSansUI-Medium.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4r0fp1b3
+  operation = fix
+  args = 
+# Generating ../fonts/otf/CalSansUI-Medium.otf
+build ../fonts/otf/CalSansUI-Medium.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp0aazclmw
+  operation = fix
+  args = 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpeww3m3_i
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpeww3m3_i: $
+    buildTTF ../master_ufo/instance_ufos/CalSansUI-SemiBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpw43qs5lz
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpw43qs5lz: $
+    buildOTF ../master_ufo/instance_ufos/CalSansUI-SemiBold.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmptlaw1e40
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmptlaw1e40: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpeww3m3_i
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/CalSansUI-SemiBold.ttf
+build ../fonts/ttf/CalSansUI-SemiBold.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmptlaw1e40
+  operation = fix
+  args = 
+# Generating ../fonts/otf/CalSansUI-SemiBold.otf
+build ../fonts/otf/CalSansUI-SemiBold.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpw43qs5lz
+  operation = fix
+  args = 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpr34_lyh6
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpr34_lyh6: $
+    buildTTF ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpc0ebo728
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpc0ebo728: $
+    buildOTF ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json
+  operation = buildOTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp37r_qyc7
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp37r_qyc7: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpr34_lyh6
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/CalSansUI-Bold.ttf
+build ../fonts/ttf/CalSansUI-Bold.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp37r_qyc7
+  operation = fix
+  args = 
+# Generating ../fonts/otf/CalSansUI-Bold.otf
+build ../fonts/otf/CalSansUI-Bold.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpc0ebo728
+  operation = fix
+  args = 
+default $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp45m0lhzy.buildStatstamp $
+    ../fonts/webfonts/CalSansUI[MODE,wght].woff2 $
+    ../fonts/webfonts/CalSansUI-Light.woff2 $
+    ../fonts/webfonts/CalSansUI-Regular.woff2 $
+    ../fonts/webfonts/CalSansUI-Medium.woff2 $
+    ../fonts/webfonts/CalSansUI-SemiBold.woff2 $
+    ../fonts/webfonts/CalSansUI-Bold.woff2 ../fonts/otf/CalSansUI-Light.otf $
+    ../fonts/otf/CalSansUI-Regular.otf ../fonts/otf/CalSansUI-Medium.otf $
+    ../fonts/otf/CalSansUI-SemiBold.otf ../fonts/otf/CalSansUI-Bold.otf

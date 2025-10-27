@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Rdotbelowmacron" format="2">
+  <advance width="613.775"/>
+  <unicode hex="1E5C"/>
+  <anchor x="321.65" y="-196.75" name="bottom"/>
+  <anchor x="444.925" y="0.0" name="ogonek"/>
+  <anchor x="295.65" y="814.175" name="top"/>
+  <outline>
+    <component base="R"/>
+    <component base="dotbelowcomb" xOffset="321.65"/>
+    <component base="macroncomb.case" xOffset="295.65"/>
+  </outline>
+</glyph>

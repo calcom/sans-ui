@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="interrobang" format="2">
+  <advance width="525.825"/>
+  <unicode hex="203D"/>
+  <outline>
+    <contour>
+      <point x="214.05" y="176.25" type="line"/>
+      <point x="291.475" y="176.25" type="line"/>
+      <point x="298.525" y="338.125" type="line"/>
+      <point x="271.2" y="277.725" type="line"/>
+      <point x="332.125" y="332.54999999999995" type="line"/>
+      <point x="297.425" y="377.9" type="line"/>
+      <point x="300.95" y="388.9"/>
+      <point x="302.95000000000005" y="395.9"/>
+      <point x="302.95000000000005" y="407.9" type="curve" smooth="yes"/>
+      <point x="308.0" y="557.15" type="line"/>
+      <point x="197.575" y="557.15" type="line"/>
+    </contour>
+    <contour>
+      <point x="256.6" y="300.1" type="line"/>
+      <point x="394.79999999999995" y="300.1"/>
+      <point x="484.775" y="387.0"/>
+      <point x="484.775" y="506.0" type="curve" smooth="yes"/>
+      <point x="484.775" y="624.0"/>
+      <point x="394.79999999999995" y="713.0"/>
+      <point x="259.8" y="713.0" type="curve" smooth="yes"/>
+      <point x="128.8" y="713.0"/>
+      <point x="32.425" y="632.0"/>
+      <point x="32.425" y="500.0" type="curve"/>
+      <point x="138.475" y="500.0" type="line"/>
+      <point x="138.475" y="575.45"/>
+      <point x="185.77499999999998" y="622.225"/>
+      <point x="260.275" y="622.225" type="curve" smooth="yes"/>
+      <point x="333.04999999999995" y="622.225"/>
+      <point x="378.725" y="571.925"/>
+      <point x="378.725" y="491.9" type="curve" smooth="yes"/>
+      <point x="378.725" y="420.92499999999995"/>
+      <point x="331.475" y="376.1"/>
+      <point x="256.6" y="376.1" type="curve"/>
+    </contour>
+    <component base="period" xOffset="128.825"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>period</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPP</string>
+    </dict>
+  </lib>
+</glyph>

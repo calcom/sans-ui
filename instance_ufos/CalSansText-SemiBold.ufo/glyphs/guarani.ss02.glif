@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="guarani.ss02" format="2">
+  <advance width="665.7750000000001"/>
+  <anchor x="378.0" y="653.0" name="_TopCurrency"/>
+  <outline>
+    <contour>
+      <point x="374.75" y="24.925" type="curve" smooth="yes"/>
+      <point x="486.15" y="24.925"/>
+      <point x="576.9" y="67.65"/>
+      <point x="632.1" y="126.925" type="curve"/>
+      <point x="632.1" y="391.925" type="line"/>
+      <point x="336.675" y="391.925" type="line"/>
+      <point x="336.675" y="288.15" type="line"/>
+      <point x="568.15" y="288.15" type="line"/>
+      <point x="518.3" y="307.1" type="line"/>
+      <point x="518.3" y="134.875" type="line"/>
+      <point x="550.425" y="201.575" type="line"/>
+      <point x="506.6" y="157.35000000000002"/>
+      <point x="443.175" y="135.05"/>
+      <point x="377.1" y="135.05" type="curve" smooth="yes"/>
+      <point x="256.3" y="135.05"/>
+      <point x="164.05" y="221.875"/>
+      <point x="164.05" y="350.625" type="curve" smooth="yes"/>
+      <point x="164.05" y="483.07500000000005"/>
+      <point x="252.25" y="567.525"/>
+      <point x="377.775" y="567.525" type="curve" smooth="yes"/>
+      <point x="447.0" y="567.525"/>
+      <point x="498.75" y="540.275"/>
+      <point x="537.125" y="499.625" type="curve"/>
+      <point x="620.1" y="574.625" type="line"/>
+      <point x="558.075" y="645.6500000000001"/>
+      <point x="472.70000000000005" y="677.65"/>
+      <point x="374.75" y="677.65" type="curve" smooth="yes"/>
+      <point x="194.4" y="677.65"/>
+      <point x="44.925" y="535.9"/>
+      <point x="44.925" y="350.625" type="curve" smooth="yes"/>
+      <point x="44.925" y="158.925"/>
+      <point x="188.95" y="24.925"/>
+    </contour>
+    <component base="verticalTopCurrencycomb" xOffset="378.0"/>
+    <component base="verticalBottomCurrencycomb" xOffset="378.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>verticalBottomCurrencycomb</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCC</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>31</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>6</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>26</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>28</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

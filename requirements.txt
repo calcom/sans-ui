@@ -1,0 +1,5 @@
+fontmake
+gftools
+fonttools[ufo,lxml,woff]
+ufo2ft
+fontbakery

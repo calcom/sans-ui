@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="X" format="2">
+  <advance width="655.925"/>
+  <unicode hex="0058"/>
+  <anchor x="328.225" y="0.0" name="bottom"/>
+  <anchor x="328.225" y="700.0" name="top"/>
+  <outline>
+    <contour>
+      <point x="21.05" y="0.0" type="line"/>
+      <point x="153.975" y="0.0" type="line"/>
+      <point x="328.225" y="260.725" type="line"/>
+      <point x="332.225" y="260.725" type="line"/>
+      <point x="502.475" y="0.0" type="line"/>
+      <point x="637.875" y="0.0" type="line"/>
+      <point x="398.425" y="348.0" type="line"/>
+      <point x="626.875" y="700.0" type="line"/>
+      <point x="497.475" y="700.0" type="line"/>
+      <point x="332.225" y="438.75" type="line"/>
+      <point x="328.225" y="438.75" type="line"/>
+      <point x="165.975" y="700.0" type="line"/>
+      <point x="32.05" y="700.0" type="line"/>
+      <point x="261.55" y="351.0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

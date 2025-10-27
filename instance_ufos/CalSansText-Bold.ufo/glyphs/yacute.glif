@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yacute" format="2">
+  <advance width="591.0"/>
+  <unicode hex="00FD"/>
+  <anchor x="444.0" y="0.0" name="bottom"/>
+  <anchor x="178.0" y="-213.0" name="ogonek"/>
+  <anchor x="298.0" y="660.0" name="top"/>
+  <anchor x="298.0" y="444.0" name="top_hook"/>
+  <outline>
+    <component base="y"/>
+    <component base="acutecomb" xOffset="297.0"/>
+  </outline>
+</glyph>
