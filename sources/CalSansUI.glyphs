@@ -1063,27 +1063,9 @@ customParameters = (
 {
 name = "Variable Font Origin";
 value = "610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101";
-},
-{
-disabled = 1;
-name = "Virtual Master";
-value = (
-{
-Axis = "Optical size";
-Location = 10;
-},
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = "a Design";
-Location = -100;
 }
 );
-}
-);
-date = "2025-06-29 05:03:23 +0000";
+date = "2025-10-28 03:49:59 +0000";
 familyName = "Cal Sans UI";
 featurePrefixes = (
 {
@@ -79634,6 +79616,10 @@ language = dflt;
 value = "Cal.com verified quirky jazz sessions for Monday.";
 }
 );
+},
+{
+key = versionString;
+value = "1.001";
 }
 );
 stems = (
@@ -79739,5 +79725,5 @@ tH = "43";
 };
 };
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 1;
 }
