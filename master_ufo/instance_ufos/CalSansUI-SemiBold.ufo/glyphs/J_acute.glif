@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Jacute" format="2">
+  <advance width="467.42500000000007"/>
+  <anchor x="187.8" y="0.0" name="bottom"/>
+  <anchor x="250.8" y="0.0" name="ogonek"/>
+  <anchor x="330.875" y="820.0" name="top"/>
+  <outline>
+    <component base="J"/>
+    <component base="acutecomb.case" xOffset="330.875"/>
+  </outline>
+</glyph>

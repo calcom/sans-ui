@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_f_i.ss11" format="2">
+  <advance width="921.625"/>
+  <anchor x="810.75" y="0.0" name="bottom_1"/>
+  <anchor x="780.825" y="0.0" name="ogonek_1"/>
+  <anchor x="810.75" y="497.125" name="top_1"/>
+  <anchor x="379.92499999999995" y="0.0" name="caret_1"/>
+  <anchor x="701.625" y="0.0" name="caret_2"/>
+  <outline>
+    <contour>
+      <point x="115.1" y="0.0" type="line"/>
+      <point x="221.22500000000002" y="0.0" type="line"/>
+      <point x="221.22500000000002" y="546.475" type="line" smooth="yes"/>
+      <point x="221.22500000000002" y="613.75"/>
+      <point x="258.7" y="655.725"/>
+      <point x="330.2" y="655.725" type="curve" smooth="yes"/>
+      <point x="397.65" y="655.725"/>
+      <point x="436.275" y="615.175"/>
+      <point x="436.275" y="549.8" type="curve" smooth="yes"/>
+      <point x="436.275" y="0.0" type="line"/>
+      <point x="542.4" y="0.0" type="line"/>
+      <point x="542.4" y="546.475" type="line" smooth="yes"/>
+      <point x="542.4" y="613.75"/>
+      <point x="579.875" y="655.725"/>
+      <point x="651.375" y="655.725" type="curve" smooth="yes"/>
+      <point x="718.825" y="655.725"/>
+      <point x="757.45" y="615.175"/>
+      <point x="757.45" y="549.8" type="curve"/>
+      <point x="863.575" y="549.8" type="line"/>
+      <point x="863.575" y="666.95"/>
+      <point x="776.875" y="753.0"/>
+      <point x="651.375" y="753.0" type="curve" smooth="yes"/>
+      <point x="585.65" y="753.0"/>
+      <point x="520.75" y="720.8"/>
+      <point x="492.525" y="665.0250000000001" type="curve"/>
+      <point x="486.525" y="665.0250000000001" type="line"/>
+      <point x="457.775" y="721.8"/>
+      <point x="393.35" y="753.0"/>
+      <point x="330.2" y="753.0" type="curve" smooth="yes"/>
+      <point x="201.60000000000002" y="753.0"/>
+      <point x="115.1" y="666.95"/>
+      <point x="115.1" y="551.9" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="18.425" y="402.32500000000005" type="line"/>
+      <point x="694.0" y="402.32500000000005" type="line"/>
+      <point x="694.0" y="497.125" type="line"/>
+      <point x="18.425" y="497.125" type="line"/>
+    </contour>
+    <component base="idotless" xOffset="686.4"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upBlackSmallTriangle" format="2">
+  <advance width="339.25"/>
+  <unicode hex="25B4"/>
+  <outline>
+    <contour>
+      <point x="45.0" y="262.075" type="line"/>
+      <point x="294.25" y="262.075" type="line"/>
+      <point x="169.125" y="478.20000000000005" type="line"/>
+    </contour>
+  </outline>
+</glyph>

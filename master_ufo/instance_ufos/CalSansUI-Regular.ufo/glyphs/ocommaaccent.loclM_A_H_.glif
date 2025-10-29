@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ocommaaccent.loclMAH" format="2">
+  <advance width="580.25"/>
+  <anchor x="347.5" y="-206.25" name="bottom"/>
+  <anchor x="289.75" y="248.0" name="center"/>
+  <anchor x="311.25" y="-1.25" name="ogonek"/>
+  <anchor x="289.75" y="493.75" name="top"/>
+  <anchor x="456.25" y="493.75" name="topright"/>
+  <outline>
+    <component base="o"/>
+    <component base="cedillacomb" xOffset="288.0" yOffset="-4.5"/>
+  </outline>
+</glyph>

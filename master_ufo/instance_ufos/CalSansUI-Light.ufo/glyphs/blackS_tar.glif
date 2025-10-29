@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="blackStar" format="2">
+  <advance width="809"/>
+  <unicode hex="2605"/>
+  <outline>
+    <contour>
+      <point x="157" y="-13" type="line"/>
+      <point x="404" y="167" type="line"/>
+      <point x="651" y="-13" type="line"/>
+      <point x="557" y="277" type="line"/>
+      <point x="804" y="457" type="line"/>
+      <point x="499" y="457" type="line"/>
+      <point x="404" y="747" type="line"/>
+      <point x="310" y="457" type="line"/>
+      <point x="5" y="457" type="line"/>
+      <point x="252" y="277" type="line"/>
+    </contour>
+  </outline>
+</glyph>

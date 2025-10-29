@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="cacute.ss10" format="2">
+  <advance width="435.0"/>
+  <anchor x="281.75" y="0.0" name="bottom"/>
+  <anchor x="378.75" y="0.0" name="ogonek"/>
+  <anchor x="282.0" y="630.0" name="top"/>
+  <outline>
+    <component base="c.ss10"/>
+    <component base="acutecomb" xOffset="281.75"/>
+  </outline>
+</glyph>

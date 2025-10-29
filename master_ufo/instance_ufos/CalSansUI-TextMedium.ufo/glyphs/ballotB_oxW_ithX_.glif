@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ballotBoxWithX" format="2">
+  <advance width="890.0"/>
+  <unicode hex="2612"/>
+  <outline>
+    <component base="whiteSquare"/>
+    <component base="multiply" xOffset="150.85" yOffset="69.525"/>
+  </outline>
+</glyph>

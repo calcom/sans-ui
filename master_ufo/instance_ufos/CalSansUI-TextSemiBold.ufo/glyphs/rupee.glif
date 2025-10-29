@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="rupee" format="2">
+  <advance width="966.4"/>
+  <unicode hex="20A8"/>
+  <anchor x="743.5033700000001" y="29.0" name="bottom"/>
+  <anchor x="816.901655" y="29.0" name="ogonek"/>
+  <anchor x="749.2464050000001" y="485.563325" name="top"/>
+  <outline>
+    <component base="R" xScale="0.9127350000000001" yScale="0.9118424999999999" xOffset="7.325" yOffset="29.674999999999997"/>
+    <component base="s" xScale="0.9127350000000001" yScale="0.912855" xOffset="518.45" yOffset="29.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>R</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>s</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

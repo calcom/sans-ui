@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="exclam" format="2">
+  <advance width="262.2"/>
+  <unicode hex="0021"/>
+  <outline>
+    <contour>
+      <point x="89.775" y="190.25" type="line"/>
+      <point x="175.47500000000002" y="190.25" type="line"/>
+      <point x="194.5" y="560.75" type="line"/>
+      <point x="194.5" y="700.0" type="line"/>
+      <point x="70.75" y="700.0" type="line"/>
+      <point x="70.75" y="560.75" type="line"/>
+    </contour>
+    <component base="period"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

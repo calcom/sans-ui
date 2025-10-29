@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tcedilla.ss10" format="2">
+  <advance width="393"/>
+  <anchor x="197" y="293" name="bar"/>
+  <anchor x="246" y="-207" name="bottom"/>
+  <anchor x="198" y="276" name="center"/>
+  <anchor x="196" y="610" name="top"/>
+  <anchor x="315" y="740" name="topright"/>
+  <outline>
+    <component base="t.ss10"/>
+    <component base="cedillacomb" xOffset="191"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>cedillacomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

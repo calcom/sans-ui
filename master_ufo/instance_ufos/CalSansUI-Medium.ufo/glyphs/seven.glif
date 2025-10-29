@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven" format="2">
+  <advance width="528.975"/>
+  <unicode hex="0037"/>
+  <outline>
+    <contour>
+      <point x="120.4" y="0.0" type="line"/>
+      <point x="238.375" y="0.0" type="line"/>
+      <point x="516.125" y="685.0" type="line"/>
+      <point x="516.125" y="700.0" type="line"/>
+      <point x="30.5" y="700.0" type="line"/>
+      <point x="30.5" y="603.775" type="line"/>
+      <point x="364.175" y="603.775" type="line"/>
+      <point x="364.175" y="600.775" type="line"/>
+      <point x="355.65" y="591.7750000000001"/>
+      <point x="349.65" y="581.7750000000001"/>
+      <point x="345.65" y="570.775" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>0</integer>
+            <integer>21</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <string>up</string>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>700</integer>
+            <integer>72</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

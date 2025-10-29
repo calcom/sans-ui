@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gravecomb_macroncomb.case" format="2">
+  <anchor x="0.0" y="700.0" name="_top"/>
+  <anchor x="-10.0" y="974.0" name="top"/>
+  <outline>
+    <component base="gravecomb.case"/>
+    <component base="macroncomb.case" xOffset="-10.0" yOffset="140.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>macroncomb.case</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>300</integer>
+    </dict>
+  </lib>
+</glyph>

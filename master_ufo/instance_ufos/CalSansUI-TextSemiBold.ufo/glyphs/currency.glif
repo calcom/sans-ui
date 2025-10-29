@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="currency" format="2">
+  <advance width="584.2"/>
+  <unicode hex="00A4"/>
+  <anchor x="163.255071" y="461.573967" name="_TopCurrency"/>
+  <outline>
+    <contour>
+      <point x="290.95" y="107.0" type="curve" smooth="yes"/>
+      <point x="418.0" y="107.0"/>
+      <point x="509.7" y="200.70000000000002"/>
+      <point x="509.7" y="322.0" type="curve" smooth="yes"/>
+      <point x="509.7" y="443.3"/>
+      <point x="418.0" y="538.0"/>
+      <point x="290.95" y="538.0" type="curve" smooth="yes"/>
+      <point x="163.89999999999998" y="538.0"/>
+      <point x="72.2" y="443.3"/>
+      <point x="72.2" y="322.0" type="curve" smooth="yes"/>
+      <point x="72.2" y="200.70000000000002"/>
+      <point x="163.89999999999998" y="107.0"/>
+    </contour>
+    <contour>
+      <point x="290.95" y="205.725" type="curve" smooth="yes"/>
+      <point x="225.10000000000002" y="205.725"/>
+      <point x="178.6" y="253.625"/>
+      <point x="178.6" y="322.0" type="curve" smooth="yes"/>
+      <point x="178.6" y="390.375"/>
+      <point x="225.10000000000002" y="439.27500000000003"/>
+      <point x="290.95" y="439.27500000000003" type="curve" smooth="yes"/>
+      <point x="356.8" y="439.27500000000003"/>
+      <point x="403.30000000000007" y="390.375"/>
+      <point x="403.30000000000007" y="322.0" type="curve" smooth="yes"/>
+      <point x="403.30000000000007" y="253.625"/>
+      <point x="356.8" y="205.725"/>
+    </contour>
+    <component base="verticalTopCurrencycomb" xScale="0.7313537016191705" xyScale="0.6819983600624985" yxScale="-0.6819983600624985" yScale="0.7313537016191705" xOffset="608.6" yOffset="-16.0"/>
+    <component base="verticalTopCurrencycomb" xScale="0.7313537016191705" xyScale="-0.6819983600624985" yxScale="0.6819983600624985" yScale="0.7313537016191705" xOffset="-25.400000000000002" yOffset="-16.0"/>
+    <component base="verticalTopCurrencycomb" xScale="-0.7313537016191705" xyScale="-0.6819983600624986" yxScale="0.6819983600624986" yScale="-0.7313537016191705" xOffset="-24.4" yOffset="663.0"/>
+    <component base="verticalTopCurrencycomb" xScale="-0.7313537016191705" xyScale="0.6819983600624986" yxScale="-0.6819983600624986" yScale="-0.7313537016191705" xOffset="609.6" yOffset="663.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPCCCC</string>
+    </dict>
+  </lib>
+</glyph>

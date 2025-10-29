@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="sheqel" format="2">
+  <advance width="594.4749999999999"/>
+  <unicode hex="20AA"/>
+  <outline>
+    <contour>
+      <point x="237.32500000000002" y="30.0" type="line"/>
+      <point x="371.425" y="30.0" type="line" smooth="yes"/>
+      <point x="516.425" y="30.0"/>
+      <point x="553.475" y="103.0"/>
+      <point x="553.475" y="230.0" type="curve" smooth="yes"/>
+      <point x="553.475" y="469.125" type="line"/>
+      <point x="473.35" y="469.125" type="line"/>
+      <point x="473.35" y="239.775" type="line" smooth="yes"/>
+      <point x="473.35" y="184.82500000000002"/>
+      <point x="443.7" y="142.45"/>
+      <point x="356.275" y="142.45" type="curve" smooth="yes"/>
+      <point x="237.32500000000002" y="142.45" type="line"/>
+    </contour>
+    <contour>
+      <point x="42.0" y="30.0" type="line"/>
+      <point x="122.125" y="30.0" type="line"/>
+      <point x="122.125" y="470.125" type="line"/>
+      <point x="42.0" y="470.125" type="line"/>
+    </contour>
+    <contour>
+      <point x="186.325" y="30.0" type="line"/>
+      <point x="266.45" y="30.0" type="line"/>
+      <point x="266.45" y="303.475" type="line"/>
+      <point x="186.325" y="303.475" type="line"/>
+    </contour>
+    <contour>
+      <point x="328.70000000000005" y="195.65" type="line"/>
+      <point x="409.15" y="195.65" type="line"/>
+      <point x="409.15" y="270.125" type="line" smooth="yes"/>
+      <point x="409.15" y="397.125"/>
+      <point x="376.325" y="470.125"/>
+      <point x="231.325" y="470.125" type="curve" smooth="yes"/>
+      <point x="93.0" y="470.125" type="line"/>
+      <point x="93.0" y="357.675" type="line"/>
+      <point x="216.5" y="357.675" type="line" smooth="yes"/>
+      <point x="302.975" y="357.675"/>
+      <point x="328.70000000000005" y="319.35"/>
+      <point x="328.70000000000005" y="261.025" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

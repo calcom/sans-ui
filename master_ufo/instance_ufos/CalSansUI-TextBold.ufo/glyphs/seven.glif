@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven" format="2">
+  <advance width="540.0"/>
+  <unicode hex="0037"/>
+  <outline>
+    <contour>
+      <point x="91.0" y="0.0" type="line"/>
+      <point x="241.0" y="0.0" type="line"/>
+      <point x="524.0" y="685.0" type="line"/>
+      <point x="524.0" y="700.0" type="line"/>
+      <point x="20.0" y="700.0" type="line"/>
+      <point x="20.0" y="577.0" type="line"/>
+      <point x="329.0" y="577.0" type="line"/>
+      <point x="329.0" y="574.0" type="line"/>
+      <point x="321.0" y="565.0"/>
+      <point x="315.0" y="555.0"/>
+      <point x="311.0" y="544.0" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>0</integer>
+            <integer>21</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <string>up</string>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>700</integer>
+            <integer>123</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

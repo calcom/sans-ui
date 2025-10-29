@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ellipsis" format="2">
+  <advance width="794"/>
+  <unicode hex="2026"/>
+  <outline>
+    <component base="period" xScale="0.97" xOffset="2"/>
+    <component base="period" xScale="0.97" xOffset="259"/>
+    <component base="period" xScale="0.98" xOffset="516"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>period</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>
