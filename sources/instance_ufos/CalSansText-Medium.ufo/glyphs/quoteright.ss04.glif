@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="quoteright.ss04" format="2">
-  <advance width="239.55"/>
-  <outline>
-    <component base="comma.ss04" xOffset="-5.275" yOffset="580.45"/>
-  </outline>
-</glyph>

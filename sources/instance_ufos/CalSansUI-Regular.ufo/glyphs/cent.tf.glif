@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="cent.tf" format="2">
-  <advance width="596.0"/>
-  <anchor x="287.0" y="493.5" name="_TopCurrency"/>
-  <outline>
-    <component base="cent" xOffset="18.0"/>
-  </outline>
-</glyph>

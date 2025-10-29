@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="zeroinferior.ss10" format="2">
-  <advance width="352.5"/>
-  <outline>
-    <component base="zero.ss10.numr" yOffset="-398.75"/>
-  </outline>
-</glyph>

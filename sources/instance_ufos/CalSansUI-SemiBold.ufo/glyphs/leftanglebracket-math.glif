@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="leftanglebracket-math" format="2">
-  <advance width="347.375"/>
-  <unicode hex="27E8"/>
-  <outline>
-    <component base="rightanglebracket-math" xScale="-1.0" xOffset="347.375"/>
-  </outline>
-</glyph>

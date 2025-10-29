@@ -5,6 +5,7 @@ checkCompatibility: False
 buildOTF: True
 buildWebfont: True
 buildTTF: True
+
 axisOrder:
     - wght
     - MODE
@@ -13,23 +14,23 @@ stat:
     - name: Weight
       tag: wght
       values:
-      - name: Light
-        value: 300
-      - name: Regular
-        value: 400
-        linkedValue: 700
-        flags: 2
-      - name: Medium
-        value: 500
-      - name: SemiBold
-        value: 600
-      - name: Bold
-        value: 700
+       - name: Light
+         value: 300
+       - name: Regular
+         value: 400
+         linkedValue: 700
+         flags: 2
+       - name: Medium
+         value: 500
+       - name: SemiBold
+         value: 600
+       - name: Bold
+         value: 700
     - name: UI or Text Mode
       tag: MODE
       values:
-      - name: UI Mode
-        value: 0
-        flags: 2
-      - name: Text Mode
-        value: 1
+       - name: UI Mode
+         value: 0
+         flags: 2
+       - name: Text Mode
+         value: 1

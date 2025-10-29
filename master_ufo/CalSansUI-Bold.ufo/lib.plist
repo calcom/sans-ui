@@ -1003,8 +1003,6 @@
       <string>Nmacron</string>
       <string>ijacute</string>
       <string>nmacron</string>
-      <string>verticalBottomCurrencycomb</string>
-      <string>verticalTopCurrencycomb</string>
       <string>Mcommaaccent.loclMAH</string>
       <string>Ocommaaccent.loclMAH</string>
       <string>ijacute.ss10</string>
@@ -1013,6 +1011,8 @@
       <string>ast</string>
       <string>hookabovecombviet</string>
       <string>tittle</string>
+      <string>verticalBottomCurrencycomb</string>
+      <string>verticalTopCurrencycomb</string>
       <string>hookabovecombviet.case</string>
       <string>horn.alt</string>
       <string>horn.alt_case</string>
@@ -3189,6 +3189,8 @@
       <string>tildecomb</string>
       <string>tildecomb.case</string>
       <string>tittle</string>
+      <string>verticalBottomCurrencycomb</string>
+      <string>verticalTopCurrencycomb</string>
     </array>
   </dict>
 </plist>

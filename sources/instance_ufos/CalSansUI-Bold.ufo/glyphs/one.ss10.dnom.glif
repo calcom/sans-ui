@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="one.ss10.dnom" format="2">
-  <advance width="197"/>
-  <outline>
-    <component base="one.ss10.numr" yOffset="-315"/>
-  </outline>
-</glyph>

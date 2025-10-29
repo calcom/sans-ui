@@ -1003,7 +1003,7 @@ name = Weight;
 tag = wght;
 },
 {
-name = "UI Mode or Text Mode";
+name = "UI or Text Mode";
 tag = MODE;
 }
 );
@@ -73244,6 +73244,15 @@ instanceInterpolations = {
 name = Light;
 properties = (
 {
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans UI";
+}
+);
+},
+{
 key = styleNames;
 values = (
 {
@@ -73276,6 +73285,15 @@ m006 = 0.25;
 name = Regular;
 properties = (
 {
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans UI";
+}
+);
+},
+{
 key = styleNames;
 values = (
 {
@@ -73306,6 +73324,15 @@ m006 = 0.475;
 };
 name = Medium;
 properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans UI";
+}
+);
+},
 {
 key = styleNames;
 values = (
@@ -73339,6 +73366,15 @@ m006 = 0.675;
 name = SemiBold;
 properties = (
 {
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans UI";
+}
+);
+},
+{
 key = styleNames;
 values = (
 {
@@ -73371,6 +73407,264 @@ isBold = 1;
 linkStyle = Regular;
 name = Bold;
 properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans UI";
+}
+);
+},
+{
+key = styleNames;
+values = (
+{
+language = dflt;
+value = Bold;
+}
+);
+},
+{
+key = variableStyleNames;
+values = (
+{
+language = dflt;
+value = Bold;
+}
+);
+}
+);
+weightClass = 700;
+},
+{
+axesValues = (
+300,
+1
+);
+instanceInterpolations = {
+"610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101" = 1;
+};
+name = Light;
+properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans Text";
+}
+);
+},
+{
+key = preferredSubfamilyNames;
+values = (
+{
+language = dflt;
+value = Light;
+}
+);
+},
+{
+key = styleNames;
+values = (
+{
+language = dflt;
+value = Light;
+}
+);
+},
+{
+key = variableStyleNames;
+values = (
+{
+language = dflt;
+value = Light;
+}
+);
+}
+);
+weightClass = 300;
+},
+{
+axesValues = (
+400,
+1
+);
+instanceInterpolations = {
+"610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101" = 0.75;
+m006 = 0.25;
+};
+name = Regular;
+properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans Text";
+}
+);
+},
+{
+key = preferredSubfamilyNames;
+values = (
+{
+language = dflt;
+value = Regular;
+}
+);
+},
+{
+key = styleNames;
+values = (
+{
+language = dflt;
+value = Regular;
+}
+);
+},
+{
+key = variableStyleNames;
+values = (
+{
+language = dflt;
+value = Regular;
+}
+);
+}
+);
+},
+{
+axesValues = (
+490,
+1
+);
+instanceInterpolations = {
+"610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101" = 0.525;
+m006 = 0.475;
+};
+name = Medium;
+properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans Text";
+}
+);
+},
+{
+key = preferredSubfamilyNames;
+values = (
+{
+language = dflt;
+value = Medium;
+}
+);
+},
+{
+key = styleNames;
+values = (
+{
+language = dflt;
+value = Medium;
+}
+);
+},
+{
+key = variableStyleNames;
+values = (
+{
+language = dflt;
+value = Medium;
+}
+);
+}
+);
+weightClass = 500;
+},
+{
+axesValues = (
+570,
+1
+);
+instanceInterpolations = {
+"610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101" = 0.325;
+m006 = 0.675;
+};
+name = SemiBold;
+properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans Text";
+}
+);
+},
+{
+key = preferredSubfamilyNames;
+values = (
+{
+language = dflt;
+value = SemiBold;
+}
+);
+},
+{
+key = styleNames;
+values = (
+{
+language = dflt;
+value = SemiBold;
+}
+);
+},
+{
+key = variableStyleNames;
+values = (
+{
+language = dflt;
+value = SemiBold;
+}
+);
+}
+);
+weightClass = 600;
+},
+{
+axesValues = (
+700,
+1
+);
+instanceInterpolations = {
+m006 = 1;
+};
+isBold = 1;
+linkStyle = "Text Regular";
+name = Bold;
+properties = (
+{
+key = preferredFamilyNames;
+values = (
+{
+language = dflt;
+value = "Cal Sans Text";
+}
+);
+},
+{
+key = preferredSubfamilyNames;
+values = (
+{
+language = dflt;
+value = Bold;
+}
+);
+},
 {
 key = styleNames;
 values = (

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="bitcoin.tf" format="2">
-  <advance width="596.0"/>
-  <anchor x="305.05" y="30.0" name="bottom"/>
-  <anchor x="301.05" y="670.7835" name="top"/>
-  <outline>
-    <component base="bitcoin" xOffset="-21.75"/>
-  </outline>
-</glyph>

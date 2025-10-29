@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="leftArrow" format="2">
-  <advance width="600.0"/>
-  <unicode hex="2190"/>
-  <outline>
-    <component base="upArrow" xScale="0.0" xyScale="1.0" yxScale="-1.0" yScale="0.0" xOffset="654.0" yOffset="56.0"/>
-  </outline>
-</glyph>

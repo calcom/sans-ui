@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="oneeighth.ss10" format="2">
-  <advance width="748.75"/>
-  <outline>
-    <component base="one.ss10.numr" xOffset="33.0"/>
-    <component base="fraction" xOffset="44.75"/>
-    <component base="eight.dnom" xOffset="416.5"/>
-  </outline>
-</glyph>

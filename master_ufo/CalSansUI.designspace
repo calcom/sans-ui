@@ -8,9 +8,78 @@
       <map input="600" output="570"/>
       <map input="700" output="700"/>
     </axis>
-    <axis tag="MODE" name="UI Mode or Text Mode" minimum="0" maximum="0" default="0"/>
+    <axis tag="MODE" name="UI or Text Mode" minimum="0" maximum="1" default="0"/>
   </axes>
-  <sources>
+  <rules>
+    <rule name="UI Mode">
+      <conditionset>
+        <condition name="UI or Text Mode" minimum="0" maximum="0.5"/>
+      </conditionset>
+      <sub name="G" with="G.ss02"/>
+      <sub name="Gcommaaccent" with="Gcommaaccent.ss02"/>
+      <sub name="Gdotaccent" with="Gdotaccent.ss02"/>
+      <sub name="Gmacron" with="Gmacron.ss02"/>
+      <sub name="guarani" with="guarani.ss02"/>
+      <sub name="guarani.tf" with="guarani.tf.ss02"/>
+      <sub name="Gcommaaccent" with="Gcommaaccent.ss04"/>
+      <sub name="Kcommaaccent" with="Kcommaaccent.ss04"/>
+      <sub name="Lcommaaccent" with="Lcommaaccent.ss04"/>
+      <sub name="Ncommaaccent" with="Ncommaaccent.ss04"/>
+      <sub name="Rcommaaccent" with="Rcommaaccent.ss04"/>
+      <sub name="Scommaaccent" with="Scommaaccent.ss04"/>
+      <sub name="Tcommaaccent" with="Tcommaaccent.ss04"/>
+      <sub name="Gcommaaccent.ss02" with="Gcommaaccent.ss02.ss04"/>
+      <sub name="gcommaaccent" with="gcommaaccent.ss04"/>
+      <sub name="kcommaaccent" with="kcommaaccent.ss04"/>
+      <sub name="lcommaaccent" with="lcommaaccent.ss04"/>
+      <sub name="ncommaaccent" with="ncommaaccent.ss04"/>
+      <sub name="scommaaccent" with="scommaaccent.ss04"/>
+      <sub name="tcommaaccent" with="tcommaaccent.ss04"/>
+      <sub name="comma" with="comma.ss04"/>
+      <sub name="semicolon" with="semicolon.ss04"/>
+      <sub name="quotesinglbase" with="quotesinglbase.ss04"/>
+      <sub name="quotedblbase" with="quotedblbase.ss04"/>
+      <sub name="quotedblleft" with="quotedblleft.ss04"/>
+      <sub name="quotedblright" with="quotedblright.ss04"/>
+      <sub name="quoteleft" with="quoteleft.ss04"/>
+      <sub name="quoteright" with="quoteright.ss04"/>
+      <sub name="quotedbl" with="quotedbl.ss04"/>
+      <sub name="quotesingle" with="quotesingle.ss04"/>
+      <sub name="commaaccentcomb" with="commaaccentcomb.ss04"/>
+    </rule>
+    <rule name="Text Mode">
+      <conditionset>
+        <condition name="UI or Text Mode" minimum="0.5" maximum="1"/>
+      </conditionset>
+      <sub name="a" with="a.ss01"/>
+      <sub name="aacute" with="aacute.ss01"/>
+      <sub name="abreve" with="abreve.ss01"/>
+      <sub name="abreveacute" with="abreveacute.ss01"/>
+      <sub name="abrevedotbelow" with="abrevedotbelow.ss01"/>
+      <sub name="abrevegrave" with="abrevegrave.ss01"/>
+      <sub name="abrevehookabove" with="abrevehookabove.ss01"/>
+      <sub name="abrevetilde" with="abrevetilde.ss01"/>
+      <sub name="acircumflex" with="acircumflex.ss01"/>
+      <sub name="acircumflexacute" with="acircumflexacute.ss01"/>
+      <sub name="acircumflexdotbelow" with="acircumflexdotbelow.ss01"/>
+      <sub name="acircumflexgrave" with="acircumflexgrave.ss01"/>
+      <sub name="acircumflexhookabove" with="acircumflexhookabove.ss01"/>
+      <sub name="acircumflextilde" with="acircumflextilde.ss01"/>
+      <sub name="adieresis" with="adieresis.ss01"/>
+      <sub name="adotbelow" with="adotbelow.ss01"/>
+      <sub name="agrave" with="agrave.ss01"/>
+      <sub name="ahookabove" with="ahookabove.ss01"/>
+      <sub name="ainvertedbreve" with="ainvertedbreve.ss01"/>
+      <sub name="amacron" with="amacron.ss01"/>
+      <sub name="aogonek" with="aogonek.ss01"/>
+      <sub name="aring" with="aring.ss01"/>
+      <sub name="atilde" with="atilde.ss01"/>
+      <sub name="ae" with="ae.ss01"/>
+      <sub name="aemacron" with="aemacron.ss01"/>
+      <sub name="ordfeminine" with="ordfeminine.ss01"/>
+    </rule>
+  </rules>
+   <sources>
     <source filename="CalSansUI-Light.ufo" name="Cal Sans UI Light" familyname="Cal Sans UI" stylename="Light">
       <lib copy="1"/>
       <groups copy="1"/>
@@ -18,13 +87,13 @@
       <info copy="1"/>
       <location>
         <dimension name="Weight" xvalue="300"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
     </source>
     <source filename="CalSansUI-Bold.ufo" name="Cal Sans UI Bold" familyname="Cal Sans UI" stylename="Bold">
       <location>
         <dimension name="Weight" xvalue="700"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
     </source>
   </sources>
@@ -32,7 +101,7 @@
     <variable-font name="Regular" filename="CalSansUI-VariableFont_wght_MODE">
       <axis-subsets>
         <axis-subset name="Weight"/>
-        <axis-subset name="UI Mode or Text Mode"/>
+        <axis-subset name="UI or Text Mode"/>
       </axis-subsets>
       <lib>
         <dict>
@@ -55,7 +124,7 @@
     <instance name="Cal Sans UI Light" familyname="Cal Sans UI" stylename="Light" filename="../instance_ufo/CalSansUI-Light.ufo" stylemapfamilyname="Cal Sans UI Light" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="300"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
       <lib>
         <dict>
@@ -76,7 +145,7 @@
     <instance name="Cal Sans UI Regular" familyname="Cal Sans UI" stylename="Regular" filename="../instance_ufo/CalSansUI-Regular.ufo" stylemapfamilyname="Cal Sans UI" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="400"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
       <lib>
         <dict>
@@ -97,7 +166,7 @@
     <instance name="Cal Sans UI Medium" familyname="Cal Sans UI" stylename="Medium" filename="../instance_ufo/CalSansUI-Medium.ufo" stylemapfamilyname="Cal Sans UI Medium" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="490"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
       <lib>
         <dict>
@@ -118,7 +187,7 @@
     <instance name="Cal Sans UI SemiBold" familyname="Cal Sans UI" stylename="SemiBold" filename="../instance_ufo/CalSansUI-SemiBold.ufo" stylemapfamilyname="Cal Sans UI SemiBold" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="570"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
       <lib>
         <dict>
@@ -139,12 +208,157 @@
     <instance name="Cal Sans UI Bold" familyname="Cal Sans UI" stylename="Bold" filename="../instance_ufo/CalSansUI-Bold.ufo" stylemapfamilyname="Cal Sans UI" stylemapstylename="bold">
       <location>
         <dimension name="Weight" xvalue="700"/>
-        <dimension name="UI Mode or Text Mode" xvalue="0"/>
+        <dimension name="UI or Text Mode" xvalue="0"/>
       </location>
       <lib>
         <dict>
           <key>com.schriftgestaltung.properties</key>
           <array>
+            <array>
+              <string>styleNames</string>
+              <string>Bold</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Text Light" familyname="Cal Sans UI" stylename="Text Light" filename="../instance_ufo/CalSansUI-TextLight.ufo" stylemapfamilyname="Cal Sans UI Text Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="UI or Text Mode" xvalue="1"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans Text</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyNames</string>
+              <string>Light</string>
+            </array>
+            <array>
+              <string>styleNames</string>
+              <string>Light</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Text Regular" familyname="Cal Sans UI" stylename="Text Regular" filename="../instance_ufo/CalSansUI-TextRegular.ufo" stylemapfamilyname="Cal Sans UI Text" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="UI or Text Mode" xvalue="1"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans Text</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyNames</string>
+              <string>Regular</string>
+            </array>
+            <array>
+              <string>styleNames</string>
+              <string>Regular</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Regular</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Text Medium" familyname="Cal Sans UI" stylename="Text Medium" filename="../instance_ufo/CalSansUI-TextMedium.ufo" stylemapfamilyname="Cal Sans UI Text Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="490"/>
+        <dimension name="UI or Text Mode" xvalue="1"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans Text</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyNames</string>
+              <string>Medium</string>
+            </array>
+            <array>
+              <string>styleNames</string>
+              <string>Medium</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Text SemiBold" familyname="Cal Sans UI" stylename="Text SemiBold" filename="../instance_ufo/CalSansUI-TextSemiBold.ufo" stylemapfamilyname="Cal Sans UI Text SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="570"/>
+        <dimension name="UI or Text Mode" xvalue="1"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans Text</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyNames</string>
+              <string>SemiBold</string>
+            </array>
+            <array>
+              <string>styleNames</string>
+              <string>SemiBold</string>
+            </array>
+            <array>
+              <string>variableStyleNames</string>
+              <string>SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Cal Sans UI Text Bold" familyname="Cal Sans UI" stylename="Text Bold" filename="../instance_ufo/CalSansUI-TextBold.ufo" stylemapfamilyname="Cal Sans UI Text Regular" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="UI or Text Mode" xvalue="1"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.properties</key>
+          <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans Text</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyNames</string>
+              <string>Bold</string>
+            </array>
             <array>
               <string>styleNames</string>
               <string>Bold</string>
@@ -383,6 +597,8 @@
         <string>tildecomb</string>
         <string>tildecomb.case</string>
         <string>tittle</string>
+        <string>verticalBottomCurrencycomb</string>
+        <string>verticalTopCurrencycomb</string>
       </array>
     </dict>
   </lib>

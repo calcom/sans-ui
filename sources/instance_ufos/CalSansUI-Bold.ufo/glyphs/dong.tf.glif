@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="dong.tf" format="2">
-  <advance width="596"/>
-  <anchor x="280.0" y="48.9292" name="_bar"/>
-  <outline>
-    <component base="dong" xOffset="-12"/>
-  </outline>
-</glyph>

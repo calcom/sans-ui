@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="dblverticalbar" format="2">
-  <advance width="402.225"/>
-  <unicode hex="2016"/>
-  <outline>
-    <component base="bar" yScale="1.0046075" yOffset="-3.8"/>
-    <component base="bar" yScale="1.0046075" xOffset="142.575" yOffset="-3.8"/>
-  </outline>
-</glyph>

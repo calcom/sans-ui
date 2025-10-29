@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="APLcirclestar" format="2">
-  <advance width="786"/>
-  <unicode hex="235F"/>
-  <outline>
-    <component base="whiteCircle"/>
-    <component base="blackSmallStar" xOffset="160" yOffset="-22"/>
-  </outline>
-</glyph>
