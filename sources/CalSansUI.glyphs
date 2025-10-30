@@ -1073,7 +1073,7 @@ name = "Variable Font Origin";
 value = "610C2E7D-EDB4-4EC2-BEB5-F0DB9FB0A101";
 }
 );
-date = "2025-10-28 03:49:59 +0000";
+date = "2025-10-30 10:45:16 +0000";
 familyName = "Cal Sans UI";
 featurePrefixes = (
 {
@@ -80154,7 +80154,7 @@ key = sampleTexts;
 values = (
 {
 language = dflt;
-value = "Cal.com verified quirky jazz sessions for Monday.";
+value = "";
 }
 );
 },
