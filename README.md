@@ -6,10 +6,10 @@ Introducing two new families, **Cal Sans UI** and **Cal Sans Text** designed by 
 
 ## Variable axes
 
-| Axes            | Tag  | Range      | Default | Description                                                                       |
-| :-------------- | :--- | :--------- | :------ | :-------------------------------------------------------------------------------- |
-| UI to Text Mode | MODE | 0 - 1      | 0       | Change **a**, **G**, and “”‘’,;'" characters for UI or Branding/Text Applications | 
-| Weight          | wght | 300 to 700 | 400     | Light to Bold                                                                     |
+| Axes            | Tag  | Range   | Default | Description                                                                       |
+| :-------------- | :--- | :------ | :------ | :-------------------------------------------------------------------------------- |
+| UI to Text Mode | MODE | 0–1     | 0       | Change **a**, **G**, and “”‘’,;'" characters for UI or Branding/Text Applications | 
+| Weight          | wght | 300–700 | 400     | Light to Bold                                                                     |
 
 ###Why are there two families?
 There were many use cases and applications of a small-size version of the un-changed headline font, and the opportunity was too enticing to have a future [fully responsive single font with an optical size axis](https://www.reddit.com/r/typography/comments/1lhs7j5/cal_sans_but_with_a_size_axisopen_source_and/). So! We simply kept both and for this release all can use whatever works best. Also we anticipate future integration [with the Google Fonts API that does not allow stylistic sets](https://x.com/MarkFonts/status/1968066680762012039) and it is Mark’s personally held belief that designers understood better how to use alternative letters when they had to rub them down manually themselves like [Letraset](https://www.eyemagazine.com/feature/article/rub-down-revolution) sheets or catalogues, not stare down optionless webfont testing pages or even premium fonts that happen to have alternatives by surprise.
