@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="edotbelow" format="2">
-  <advance width="579"/>
+  <advance width="587"/>
   <unicode hex="1EB9"/>
   <anchor x="311" y="-213" name="bottom"/>
   <anchor x="355" y="26" name="ogonek"/>

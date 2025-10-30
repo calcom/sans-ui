@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="riyalSaudi.tf" format="2">
+  <advance width="596.0"/>
+  <outline>
+    <component base="riyalSaudi" xOffset="-1.35"/>
+  </outline>
+</glyph>

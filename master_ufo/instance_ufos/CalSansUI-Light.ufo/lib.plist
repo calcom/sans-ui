@@ -822,6 +822,7 @@
       <string>manat</string>
       <string>naira</string>
       <string>peso</string>
+      <string>riyalSaudi</string>
       <string>ruble</string>
       <string>rupee</string>
       <string>rupeeIndian</string>
@@ -848,6 +849,7 @@
       <string>liraTurkish.tf</string>
       <string>naira.tf</string>
       <string>peso.tf</string>
+      <string>riyalSaudi.tf</string>
       <string>ruble.tf</string>
       <string>rupee.tf</string>
       <string>rupeeIndian.tf</string>

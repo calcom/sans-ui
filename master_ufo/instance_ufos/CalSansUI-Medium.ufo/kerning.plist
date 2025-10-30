@@ -2895,8 +2895,6 @@
       <integer>-25</integer>
       <key>public.kern2.minute</key>
       <integer>-60</integer>
-      <key>public.kern2.o</key>
-      <integer>-7</integer>
       <key>public.kern2.one</key>
       <integer>-30</integer>
       <key>public.kern2.period</key>
@@ -4338,7 +4336,7 @@
       <key>public.kern2.minute</key>
       <integer>10</integer>
       <key>public.kern2.o</key>
-      <integer>-25</integer>
+      <integer>-15</integer>
       <key>public.kern2.one</key>
       <integer>-20</integer>
       <key>public.kern2.period</key>
