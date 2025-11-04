@@ -1,5 +1,5 @@
-Copyright (c) 2021, Mark Davis <mark@designermarkdavis.com> <https://www.designermarkdavis.com>, 
-with Font "Cal Sans". Commissioned by Peer Richelsen for Cal.com <https://www.cal.com>.
+Copyright (c) 2025, Mark Davis <mark@designermarkdavis.com> <https://www.designermarkdavis.com>, 
+with Font "Cal Sans UI" and “Cal Sans Text”. Commissioned by Peer Richelsen for Cal.com <https://refer.cal.com/davis>.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
