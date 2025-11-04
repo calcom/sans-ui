@@ -1,14 +1,26 @@
-# Cal Sans UI Variable Font, and Cal Sans UI and Cal Sans Text Families
+# Cal Sans UI V1.0.1 Variable Font, and Cal Sans UI and Cal Sans Text Families
 
-Introducing two new families, **Cal Sans UI** and **Cal Sans Text** designed by Mark Davis for [Cal.com](https://refer.cal.com/davis). Every detail is reconsidered for readers, product designers, and developers at the same time. **Cal Sans UI** is also a variable font, built with stylistic variations to both approach through a `MODE` (UI or Text Mode) axis, and a traditional weight axis with a MVP range of Light ↔ Bold. Even since advising Peer Richelsen in 2021 on what typography is necessary from the beginning of his Cal.com engagement, the Open Source font landscape for UI had not changed. This is why it felt like an excellent opportunity to add more to the conversation and a new tool to choose from.
+
+Copyright (c) 2025, Mark Davis mark@designermarkdavis.com, with typefaces “Cal Sans UI” and “Cal Sans Text.” Commissioned by Peer Richelsen for Cal.com. This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://openfontlicense.org
+
+<!-- markdownlint-disable MD033 MD036 MD041 -->
+
+![install size](https://img.shields.io/badge/install%20size-71%20kB-success)
+![publish size](https://img.shields.io/badge/publish%20size-71%20kB-success)
+
+Geometric sans-serif typeface to populate the interfaces of Cal.com
+
+---
+
+Introducing two new families, **Cal Sans UI** and **Cal Sans Text** designed by Mark Davis for [Cal.com](https://refer.cal.com/davis). Every detail is reconsidered for readers, product designers, and developers at the same time. **Cal Sans UI** is also a variable font, built with stylistic variations to both approach through a `MODE` (UI or Text Mode) axis, and a traditional weight axis with a MVP range of Light ↔ Bold. Even since advising Peer Richelsen in 2021 on what typography is necessary from the beginning of his Cal.com engagement, the Open Source font landscape for UI had not changed. This is why it felt like an excellent opportunity to add more to the conversation and a new tool to choose from. Cal Sans UI and Cal Sans Text works perfectly at all point-sizes, but it has been optimized at the pixel-level for between 14–15px UI interfaces with high-DPI screen target. It can also be deployed skilfully and successfiully at larger or smaller sizes, but if going much bigger with shorter texts or single words, consider Cal Sans instead. 
 ![OpenGraph Image](documentation/images/1_opengraph.png)
 
 ## Variable axes
 
-| Axes            | Tag  | Range   | Default | Description                                                                       |
-| :-------------- | :--- | :------ | :------ | :-------------------------------------------------------------------------------- |
-| UI to Text Mode | MODE | 0–1     | 0       | Change **a**, **G**, and **“ ” ‘ ’ , ; ' "** characters for UI or Branding/Text Applications | 
-| Weight          | wght | 300–700 | 400     | Light to Bold                                                                     |
+| Axes            | Tag        | Range      | Default    | Description                                                                                  |
+| :-------------- | :--------- | :--------- | :--------- | :------------------------------------------------------------------------------------------- |
+| UI to Text Mode | MODE       | 0 – 1      | 0          | Change **a**, **G**, and **“ ” ‘ ’ , ; ' "** characters for UI or Branding/Text Applications | 
+| Weight          | wght       | 300 – 700  | 400        | Light – Bold                                                                                 |
 
 ![Specimen](documentation/images/1_specimen2.png)
 ### Why are there two families?
