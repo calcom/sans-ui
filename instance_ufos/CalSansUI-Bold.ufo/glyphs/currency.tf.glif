@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="currency.tf" format="2">
+  <advance width="596"/>
+  <anchor x="128.655071" y="461.573967" name="_TopCurrency"/>
+  <outline>
+    <component base="currency" xOffset="-32"/>
+  </outline>
+</glyph>

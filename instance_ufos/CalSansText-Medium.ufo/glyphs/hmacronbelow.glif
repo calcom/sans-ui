@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hmacronbelow" format="2">
+  <advance width="580.85"/>
+  <unicode hex="1E96"/>
+  <anchor x="124.35" y="586.95" name="bar"/>
+  <anchor x="297.125" y="0.0" name="bottom"/>
+  <anchor x="408.675" y="0.0" name="ogonek"/>
+  <anchor x="124.35" y="700.0" name="top"/>
+  <outline>
+    <component base="h"/>
+    <component base="macronbelowcomb" xOffset="297.125"/>
+  </outline>
+</glyph>

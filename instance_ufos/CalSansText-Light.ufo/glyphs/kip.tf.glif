@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kip.tf" format="2">
+  <advance width="596.0"/>
+  <anchor x="268.0" y="30.0" name="bottom"/>
+  <anchor x="445.0" y="30.0" name="ogonek"/>
+  <anchor x="258.0" y="671.9057" name="top"/>
+  <outline>
+    <component base="kip" xOffset="-26.0"/>
+  </outline>
+</glyph>

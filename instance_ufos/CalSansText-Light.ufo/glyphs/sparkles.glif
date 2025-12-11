@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="sparkles" format="2">
+  <advance width="724.0"/>
+  <unicode hex="2728"/>
+  <outline>
+    <contour>
+      <point x="139.0" y="289.0" type="curve"/>
+      <point x="147.0" y="452.0"/>
+      <point x="157.0" y="460.0"/>
+      <point x="272.0" y="463.0" type="curve"/>
+      <point x="157.0" y="469.0"/>
+      <point x="147.0" y="477.0"/>
+      <point x="139.0" y="637.0" type="curve"/>
+      <point x="131.0" y="477.0"/>
+      <point x="121.0" y="469.0"/>
+      <point x="6.0" y="463.0" type="curve"/>
+      <point x="121.0" y="460.0"/>
+      <point x="131.0" y="452.0"/>
+    </contour>
+    <contour>
+      <point x="272.0" y="-19.0" type="curve"/>
+      <point x="280.0" y="144.0"/>
+      <point x="290.0" y="152.0"/>
+      <point x="405.0" y="155.0" type="curve"/>
+      <point x="290.0" y="161.0"/>
+      <point x="280.0" y="169.0"/>
+      <point x="272.0" y="329.0" type="curve"/>
+      <point x="264.0" y="169.0"/>
+      <point x="254.0" y="161.0"/>
+      <point x="139.0" y="155.0" type="curve"/>
+      <point x="254.0" y="152.0"/>
+      <point x="264.0" y="144.0"/>
+    </contour>
+    <contour>
+      <point x="473.0" y="68.0" type="curve"/>
+      <point x="495.0" y="351.0"/>
+      <point x="523.0" y="374.0"/>
+      <point x="718.0" y="384.0" type="curve"/>
+      <point x="523.0" y="399.0"/>
+      <point x="495.0" y="420.0"/>
+      <point x="473.0" y="700.0" type="curve"/>
+      <point x="451.0" y="420.0"/>
+      <point x="423.0" y="399.0"/>
+      <point x="228.0" y="384.0" type="curve"/>
+      <point x="423.0" y="374.0"/>
+      <point x="451.0" y="351.0"/>
+    </contour>
+  </outline>
+</glyph>

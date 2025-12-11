@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="riyalSaudi" format="2">
+  <advance width="600.0"/>
+  <unicode hex="20C1"/>
+  <outline>
+    <contour>
+      <point x="18.0" y="76.475" type="line"/>
+      <point x="131.625" y="106.15" type="line" smooth="yes"/>
+      <point x="210.875" y="127.22500000000001"/>
+      <point x="268.725" y="208.325"/>
+      <point x="268.725" y="290.9" type="curve" smooth="yes"/>
+      <point x="268.725" y="760.25" type="line"/>
+      <point x="185.225" y="718.5" type="line"/>
+      <point x="184.25" y="222.70000000000002" type="line"/>
+      <point x="36.025" y="186.72500000000002" type="line"/>
+    </contour>
+    <contour>
+      <point x="339.65" y="26.95" type="line"/>
+      <point x="564.6500000000001" y="74.6" type="line"/>
+      <point x="583.0" y="184.20000000000002" type="line"/>
+      <point x="358.975" y="137.55" type="line"/>
+    </contour>
+    <contour>
+      <point x="18.0" y="274.775" type="line"/>
+      <point x="564.0" y="396.77500000000003" type="line"/>
+      <point x="583.0" y="507.35" type="line"/>
+      <point x="36.025" y="385.35" type="line"/>
+    </contour>
+    <contour>
+      <point x="332.9" y="188.85" type="line"/>
+      <point x="564.0" y="235.2" type="line"/>
+      <point x="583.0" y="345.775" type="line"/>
+      <point x="362.0" y="297.8" type="line"/>
+    </contour>
+    <contour>
+      <point x="332.9" y="188.85" type="line"/>
+      <point x="416.40000000000003" y="211.925" type="line"/>
+      <point x="416.40000000000003" y="713.0" type="line"/>
+      <point x="332.9" y="672.9250000000001" type="line"/>
+    </contour>
+  </outline>
+</glyph>

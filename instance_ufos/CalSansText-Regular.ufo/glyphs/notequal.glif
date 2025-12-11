@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="notequal" format="2">
+  <advance width="596.0"/>
+  <unicode hex="2260"/>
+  <outline>
+    <contour>
+      <point x="184.5" y="216.0" type="line"/>
+      <point x="278.5" y="216.0" type="line"/>
+      <point x="426.5" y="443.0" type="line"/>
+      <point x="332.5" y="443.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="95.5" y="70.0" type="line"/>
+      <point x="193.5" y="70.0" type="line"/>
+      <point x="283.5" y="216.0" type="line"/>
+      <point x="186.5" y="216.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="327.5" y="443.0" type="line"/>
+      <point x="424.5" y="443.0" type="line"/>
+      <point x="497.5" y="561.0" type="line"/>
+      <point x="400.5" y="561.0" type="line"/>
+    </contour>
+    <component base="equal"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPPP</string>
+    </dict>
+  </lib>
+</glyph>

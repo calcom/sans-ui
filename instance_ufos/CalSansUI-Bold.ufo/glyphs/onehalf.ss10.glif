@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="onehalf.ss10" format="2">
+  <advance width="810"/>
+  <outline>
+    <component base="one.ss10.numr" xOffset="82"/>
+    <component base="fraction" xOffset="82"/>
+    <component base="two.dnom" xOffset="459"/>
+  </outline>
+</glyph>

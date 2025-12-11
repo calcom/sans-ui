@@ -532,6 +532,7 @@
       <string>jacute</string>
       <string>jcircumflex</string>
       <string>eng</string>
+      <string>ij.ss10</string>
       <string>j.ss10</string>
       <string>jdotless.ss10</string>
       <string>jacute.ss10</string>
@@ -568,6 +569,7 @@
       <string>fl</string>
       <string>f_f_l.ss11</string>
       <string>f_l.ss11</string>
+      <string>fl.ss11</string>
       <string>one</string>
       <string>one.lf</string>
       <string>one.lf.ss10</string>
@@ -794,6 +796,7 @@
       <string>tdotbelow</string>
       <string>tmacronbelow</string>
       <string>tcommaaccent.ss04</string>
+      <string>f_t</string>
       <string>pi</string>
     </array>
     <key>public.kern1.t.ss01</key>
@@ -810,6 +813,7 @@
       <string>tdotbelow.ss10</string>
       <string>tmacronbelow.ss10</string>
       <string>tcommaaccent.ss04.ss10</string>
+      <string>f_t.ss11</string>
     </array>
     <key>public.kern1.three.dnom</key>
     <array>
@@ -1362,12 +1366,15 @@
       <string>germandbls.ss10</string>
       <string>f_f_i</string>
       <string>f_f_l</string>
+      <string>f_t</string>
       <string>fi</string>
       <string>fl</string>
       <string>f_f_i.ss11</string>
       <string>f_f_l.ss11</string>
       <string>f_i.ss11</string>
       <string>f_l.ss11</string>
+      <string>f_t.ss11</string>
+      <string>fl.ss11</string>
     </array>
     <key>public.kern2.five.dnom</key>
     <array>

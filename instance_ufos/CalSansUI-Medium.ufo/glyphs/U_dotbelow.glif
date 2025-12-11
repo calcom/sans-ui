@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Udotbelow" format="2">
+  <advance width="701.275"/>
+  <unicode hex="1EE4"/>
+  <anchor x="351.375" y="-186.75" name="bottom"/>
+  <anchor x="358.29999999999995" y="0.0" name="ogonek"/>
+  <anchor x="350.375" y="684.0" name="top"/>
+  <anchor x="350.375" y="647.0" name="top_ring"/>
+  <anchor x="641.375" y="700.0" name="topright"/>
+  <outline>
+    <component base="U"/>
+    <component base="dotbelowcomb" xOffset="351.375"/>
+  </outline>
+</glyph>

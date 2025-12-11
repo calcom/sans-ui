@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fl" format="2">
+  <advance width="621.3499999999999"/>
+  <unicode hex="FB02"/>
+  <anchor x="171.875" y="0.0" name="bottom_1"/>
+  <anchor x="266.975" y="700.0" name="top_1"/>
+  <anchor x="492.475" y="0.0" name="bottom_2"/>
+  <anchor x="492.475" y="393.0" name="center_2"/>
+  <anchor x="550.7" y="0.0" name="ogonek_2"/>
+  <anchor x="493.15000000000003" y="700.0" name="top_2"/>
+  <anchor x="601.375" y="700.0" name="topright_2"/>
+  <anchor x="392.0" y="0.0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="19.7" y="395.725" type="line"/>
+      <point x="540.7" y="395.725" type="line"/>
+      <point x="550.7" y="500.125" type="line"/>
+      <point x="19.7" y="500.125" type="line"/>
+    </contour>
+    <component base="f"/>
+    <component base="l" xOffset="362.925"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>l</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCP</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>2</integer>
+            <integer>2</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>2</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Lslash" format="2">
+  <advance width="529"/>
+  <unicode hex="0141"/>
+  <anchor x="283" y="0" name="bottom"/>
+  <anchor x="308" y="370" name="center"/>
+  <anchor x="471" y="0" name="ogonek"/>
+  <anchor x="132" y="700" name="top"/>
+  <anchor x="298" y="700" name="topright"/>
+  <outline>
+    <contour>
+      <point x="16" y="235" type="line"/>
+      <point x="128" y="313" type="line"/>
+      <point x="138" y="313" type="line"/>
+      <point x="309" y="425" type="line"/>
+      <point x="309" y="514" type="line"/>
+      <point x="140" y="395" type="line"/>
+      <point x="128" y="395" type="line"/>
+      <point x="16" y="317" type="line"/>
+    </contour>
+    <component base="L" xOffset="10"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

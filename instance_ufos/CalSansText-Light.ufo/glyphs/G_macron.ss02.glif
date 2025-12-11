@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gmacron.ss02" format="2">
+  <advance width="732.0"/>
+  <anchor x="396.0" y="0.0" name="bottom"/>
+  <anchor x="523.0" y="9.0" name="ogonek"/>
+  <anchor x="396.0" y="850.0" name="top"/>
+  <outline>
+    <component base="G.ss02"/>
+    <component base="macroncomb" xOffset="396.0" yOffset="210.0"/>
+  </outline>
+</glyph>

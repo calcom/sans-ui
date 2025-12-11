@@ -66,8 +66,8 @@ rule copy
       gftools.builder.jobrunner cp $in $out $stamp
   description = copy
 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpdhvh4h41
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpdhvh4h41: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp783e_zkr
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp783e_zkr: $
     buildVariable ../master_ufo/CalSansUI.designspace
   operation = buildVariable
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -114,55 +114,55 @@ build ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json: instantiateUfo $
   fontmake_type = -m
   fontmake_args =  --verbose WARNING 
   args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
-# Generating ../master_ufo/instance_ufos/CalSansUI-TextLight.ufo.json
-build ../master_ufo/instance_ufos/CalSansUI-TextLight.ufo.json: $
+# Generating ../master_ufo/instance_ufos/CalSansText-Light.ufo.json
+build ../master_ufo/instance_ufos/CalSansText-Light.ufo.json: $
     instantiateUfo ../master_ufo/CalSansUI.designspace
   operation = instantiateUfo
-  instance_name = Cal Sans UI Text Light
+  instance_name = Cal Sans Texy Light
   fontmake_type = -m
   fontmake_args =  --verbose WARNING 
   args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
-# Generating ../master_ufo/instance_ufos/CalSansUI-TextRegular.ufo.json
-build ../master_ufo/instance_ufos/CalSansUI-TextRegular.ufo.json: $
+# Generating ../master_ufo/instance_ufos/CalSansText-Regular.ufo.json
+build ../master_ufo/instance_ufos/CalSansText-Regular.ufo.json: $
     instantiateUfo ../master_ufo/CalSansUI.designspace
   operation = instantiateUfo
-  instance_name = Cal Sans UI Text Regular
+  instance_name = Cal Sans Text Regular
   fontmake_type = -m
   fontmake_args =  --verbose WARNING 
   args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
-# Generating ../master_ufo/instance_ufos/CalSansUI-TextMedium.ufo.json
-build ../master_ufo/instance_ufos/CalSansUI-TextMedium.ufo.json: $
+# Generating ../master_ufo/instance_ufos/CalSansText-Medium.ufo.json
+build ../master_ufo/instance_ufos/CalSansText-Medium.ufo.json: $
     instantiateUfo ../master_ufo/CalSansUI.designspace
   operation = instantiateUfo
-  instance_name = Cal Sans UI Text Medium
+  instance_name = Cal Sans Text Medium
   fontmake_type = -m
   fontmake_args =  --verbose WARNING 
   args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
-# Generating ../master_ufo/instance_ufos/CalSansUI-TextSemiBold.ufo.json
-build ../master_ufo/instance_ufos/CalSansUI-TextSemiBold.ufo.json: $
+# Generating ../master_ufo/instance_ufos/CalSansText-SemiBold.ufo.json
+build ../master_ufo/instance_ufos/CalSansText-SemiBold.ufo.json: $
     instantiateUfo ../master_ufo/CalSansUI.designspace
   operation = instantiateUfo
-  instance_name = Cal Sans UI Text SemiBold
+  instance_name = Cal Sans Text SemiBold
   fontmake_type = -m
   fontmake_args =  --verbose WARNING 
   args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
-# Generating ../master_ufo/instance_ufos/CalSansUI-TextBold.ufo.json
-build ../master_ufo/instance_ufos/CalSansUI-TextBold.ufo.json: $
-    instantiateUfo ../master_ufo/CalSansUI.designspace
+# Generating ../master_ufo/instance_ufos/CalSansText-Bold.ufo.json
+build ../master_ufo/instance_ufos/CalSansText-Bold.ufo.json: instantiateUfo $
+    ../master_ufo/CalSansUI.designspace
   operation = instantiateUfo
-  instance_name = Cal Sans UI Text Bold
+  instance_name = Cal Sans Text Bold
   fontmake_type = -m
   fontmake_args =  --verbose WARNING 
   args =  --ufo-structure=json --output-dir ../master_ufo/instance_ufos
 # Postprocessing  with BuildSTAT
 build $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpwqrrtpxc.buildStatstamp: $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpybfl6jq2.buildStatstamp: $
     buildSTAT-postprocess ../fonts/variable/CalSansUI[MODE,wght].ttf | $
     ../fonts/variable/CalSansUI[MODE,wght].ttf
   stamp =  && touch $
-      /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpwqrrtpxc.buildStatstamp
+      /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpybfl6jq2.buildStatstamp
   postprocess = buildStat
-  args = --src /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpe9fdmzn3
+  args = --src /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpismjdqca
 # Generating ../fonts/webfonts/CalSansUI[MODE,wght].woff2
 build ../fonts/webfonts/CalSansUI[MODE,wght].woff2: compress $
     ../fonts/variable/CalSansUI[MODE,wght].ttf
@@ -187,358 +187,357 @@ build ../fonts/webfonts/CalSansUI-SemiBold.woff2: compress $
 build ../fonts/webfonts/CalSansUI-Bold.woff2: compress $
     ../fonts/ttf/CalSansUI-Bold.ttf
   operation = compress
-# Generating ../fonts/webfonts/CalSansUI-TextLight.woff2
-build ../fonts/webfonts/CalSansUI-TextLight.woff2: compress $
-    ../fonts/ttf/CalSansUI-TextLight.ttf
+# Generating ../fonts/webfonts/CalSansText-Light.woff2
+build ../fonts/webfonts/CalSansText-Light.woff2: compress $
+    ../fonts/ttf/CalSansText-Light.ttf
   operation = compress
-# Generating ../fonts/webfonts/CalSansUI-TextRegular.woff2
-build ../fonts/webfonts/CalSansUI-TextRegular.woff2: compress $
-    ../fonts/ttf/CalSansUI-TextRegular.ttf
+# Generating ../fonts/webfonts/CalSansText-Regular.woff2
+build ../fonts/webfonts/CalSansText-Regular.woff2: compress $
+    ../fonts/ttf/CalSansText-Regular.ttf
   operation = compress
-# Generating ../fonts/webfonts/CalSansUI-TextMedium.woff2
-build ../fonts/webfonts/CalSansUI-TextMedium.woff2: compress $
-    ../fonts/ttf/CalSansUI-TextMedium.ttf
+# Generating ../fonts/webfonts/CalSansText-Medium.woff2
+build ../fonts/webfonts/CalSansText-Medium.woff2: compress $
+    ../fonts/ttf/CalSansText-Medium.ttf
   operation = compress
-# Generating ../fonts/webfonts/CalSansUI-TextSemiBold.woff2
-build ../fonts/webfonts/CalSansUI-TextSemiBold.woff2: compress $
-    ../fonts/ttf/CalSansUI-TextSemiBold.ttf
+# Generating ../fonts/webfonts/CalSansText-SemiBold.woff2
+build ../fonts/webfonts/CalSansText-SemiBold.woff2: compress $
+    ../fonts/ttf/CalSansText-SemiBold.ttf
   operation = compress
-# Generating ../fonts/webfonts/CalSansUI-TextBold.woff2
-build ../fonts/webfonts/CalSansUI-TextBold.woff2: compress $
-    ../fonts/ttf/CalSansUI-TextBold.ttf
+# Generating ../fonts/webfonts/CalSansText-Bold.woff2
+build ../fonts/webfonts/CalSansText-Bold.woff2: compress $
+    ../fonts/ttf/CalSansText-Bold.ttf
   operation = compress
 # Generating ../fonts/variable/CalSansUI[MODE,wght].ttf
 build ../fonts/variable/CalSansUI[MODE,wght].ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpdhvh4h41
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp783e_zkr
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp_a4uokyh
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp_a4uokyh: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp2z6usoeg
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp2z6usoeg: $
     buildTTF ../master_ufo/instance_ufos/CalSansUI-Light.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmf4e84x5
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmf4e84x5: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpn7360rcg
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpn7360rcg: $
     buildOTF ../master_ufo/instance_ufos/CalSansUI-Light.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpy86uzxwv
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpy86uzxwv: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp_a4uokyh
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpm94_lg95
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpm94_lg95: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp2z6usoeg
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CalSansUI-Light.ttf
 build ../fonts/ttf/CalSansUI-Light.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpy86uzxwv
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpm94_lg95
   operation = fix
   args = 
 # Generating ../fonts/otf/CalSansUI-Light.otf
 build ../fonts/otf/CalSansUI-Light.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmf4e84x5
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpn7360rcg
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmj9b7ike
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmj9b7ike: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmppkegxiao
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmppkegxiao: $
     buildTTF ../master_ufo/instance_ufos/CalSansUI-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpusuu1gdf
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpusuu1gdf: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1s3cz4f4
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1s3cz4f4: $
     buildOTF ../master_ufo/instance_ufos/CalSansUI-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpx24gu616
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpx24gu616: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmj9b7ike
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpm32jet99
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpm32jet99: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmppkegxiao
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CalSansUI-Regular.ttf
 build ../fonts/ttf/CalSansUI-Regular.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpx24gu616
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpm32jet99
   operation = fix
   args = 
 # Generating ../fonts/otf/CalSansUI-Regular.otf
 build ../fonts/otf/CalSansUI-Regular.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpusuu1gdf
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1s3cz4f4
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4anct4ua
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4anct4ua: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp25jd2r2r
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp25jd2r2r: $
     buildTTF ../master_ufo/instance_ufos/CalSansUI-Medium.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6ddiqjoa
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6ddiqjoa: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp7e9p3ik6
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp7e9p3ik6: $
     buildOTF ../master_ufo/instance_ufos/CalSansUI-Medium.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpziy5vctg
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpziy5vctg: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4anct4ua
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprrlp2pj8
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprrlp2pj8: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp25jd2r2r
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CalSansUI-Medium.ttf
 build ../fonts/ttf/CalSansUI-Medium.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpziy5vctg
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprrlp2pj8
   operation = fix
   args = 
 # Generating ../fonts/otf/CalSansUI-Medium.otf
 build ../fonts/otf/CalSansUI-Medium.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6ddiqjoa
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp7e9p3ik6
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp03unkj6a
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp03unkj6a: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpp18dry0t
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpp18dry0t: $
     buildTTF ../master_ufo/instance_ufos/CalSansUI-SemiBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6q36yc_z
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6q36yc_z: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4red7yhx
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4red7yhx: $
     buildOTF ../master_ufo/instance_ufos/CalSansUI-SemiBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpycdx8sco
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpycdx8sco: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp03unkj6a
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1xaijbxa
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1xaijbxa: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpp18dry0t
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CalSansUI-SemiBold.ttf
 build ../fonts/ttf/CalSansUI-SemiBold.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpycdx8sco
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1xaijbxa
   operation = fix
   args = 
 # Generating ../fonts/otf/CalSansUI-SemiBold.otf
 build ../fonts/otf/CalSansUI-SemiBold.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6q36yc_z
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp4red7yhx
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp15t38fjh
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp15t38fjh: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmps68dic66
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmps68dic66: $
     buildTTF ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmepm1vms
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmepm1vms: $
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpd6t0kfx0
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpd6t0kfx0: $
     buildOTF ../master_ufo/instance_ufos/CalSansUI-Bold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpoyw6u1wc
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpoyw6u1wc: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp15t38fjh
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpeqfy1rkl
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpeqfy1rkl: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmps68dic66
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CalSansUI-Bold.ttf
 build ../fonts/ttf/CalSansUI-Bold.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpoyw6u1wc
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpeqfy1rkl
   operation = fix
   args = 
 # Generating ../fonts/otf/CalSansUI-Bold.otf
 build ../fonts/otf/CalSansUI-Bold.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpmepm1vms
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpd6t0kfx0
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpq5znxgqn
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpq5znxgqn: $
-    buildTTF ../master_ufo/instance_ufos/CalSansUI-TextLight.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprj5hnxfs
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprj5hnxfs: $
+    buildTTF ../master_ufo/instance_ufos/CalSansText-Light.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpk8rd7sqf
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpk8rd7sqf: $
-    buildOTF ../master_ufo/instance_ufos/CalSansUI-TextLight.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpqixd5j2j
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpqixd5j2j: $
+    buildOTF ../master_ufo/instance_ufos/CalSansText-Light.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpijf0_yk8
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpijf0_yk8: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpq5znxgqn
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpt42giuwu
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpt42giuwu: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprj5hnxfs
   operation = autohint
   args = --fail-ok 
-# Generating ../fonts/ttf/CalSansUI-TextLight.ttf
-build ../fonts/ttf/CalSansUI-TextLight.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpijf0_yk8
+# Generating ../fonts/ttf/CalSansText-Light.ttf
+build ../fonts/ttf/CalSansText-Light.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpt42giuwu
   operation = fix
   args = 
-# Generating ../fonts/otf/CalSansUI-TextLight.otf
-build ../fonts/otf/CalSansUI-TextLight.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpk8rd7sqf
+# Generating ../fonts/otf/CalSansText-Light.otf
+build ../fonts/otf/CalSansText-Light.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpqixd5j2j
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprb2h6mgs
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprb2h6mgs: $
-    buildTTF ../master_ufo/instance_ufos/CalSansUI-TextRegular.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmptv9b_e0p
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmptv9b_e0p: $
+    buildTTF ../master_ufo/instance_ufos/CalSansText-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp91207m2t
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp91207m2t: $
-    buildOTF ../master_ufo/instance_ufos/CalSansUI-TextRegular.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpi7dephm9
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpi7dephm9: $
+    buildOTF ../master_ufo/instance_ufos/CalSansText-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp3tbqn_lu
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp3tbqn_lu: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprb2h6mgs
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpk_uv6nm0
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpk_uv6nm0: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmptv9b_e0p
   operation = autohint
   args = --fail-ok 
-# Generating ../fonts/ttf/CalSansUI-TextRegular.ttf
-build ../fonts/ttf/CalSansUI-TextRegular.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp3tbqn_lu
+# Generating ../fonts/ttf/CalSansText-Regular.ttf
+build ../fonts/ttf/CalSansText-Regular.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpk_uv6nm0
   operation = fix
   args = 
-# Generating ../fonts/otf/CalSansUI-TextRegular.otf
-build ../fonts/otf/CalSansUI-TextRegular.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp91207m2t
+# Generating ../fonts/otf/CalSansText-Regular.otf
+build ../fonts/otf/CalSansText-Regular.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpi7dephm9
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmphkkl2mbn
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmphkkl2mbn: $
-    buildTTF ../master_ufo/instance_ufos/CalSansUI-TextMedium.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpn93gjxec
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpn93gjxec: $
+    buildTTF ../master_ufo/instance_ufos/CalSansText-Medium.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp0uscvdl0
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp0uscvdl0: $
-    buildOTF ../master_ufo/instance_ufos/CalSansUI-TextMedium.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp3hsm0zq2
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp3hsm0zq2: $
+    buildOTF ../master_ufo/instance_ufos/CalSansText-Medium.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6pj8hu52
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6pj8hu52: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmphkkl2mbn
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp8nfb1n3a
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp8nfb1n3a: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpn93gjxec
   operation = autohint
   args = --fail-ok 
-# Generating ../fonts/ttf/CalSansUI-TextMedium.ttf
-build ../fonts/ttf/CalSansUI-TextMedium.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp6pj8hu52
+# Generating ../fonts/ttf/CalSansText-Medium.ttf
+build ../fonts/ttf/CalSansText-Medium.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp8nfb1n3a
   operation = fix
   args = 
-# Generating ../fonts/otf/CalSansUI-TextMedium.otf
-build ../fonts/otf/CalSansUI-TextMedium.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp0uscvdl0
+# Generating ../fonts/otf/CalSansText-Medium.otf
+build ../fonts/otf/CalSansText-Medium.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp3hsm0zq2
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp8r5q6t6k
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp8r5q6t6k: $
-    buildTTF ../master_ufo/instance_ufos/CalSansUI-TextSemiBold.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpplor9cg2
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpplor9cg2: $
+    buildTTF ../master_ufo/instance_ufos/CalSansText-SemiBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpza4912hz
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpza4912hz: $
-    buildOTF ../master_ufo/instance_ufos/CalSansUI-TextSemiBold.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprbn6uhu8
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprbn6uhu8: $
+    buildOTF ../master_ufo/instance_ufos/CalSansText-SemiBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjos90wtn
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjos90wtn: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp8r5q6t6k
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1m_m6q2n
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1m_m6q2n: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpplor9cg2
   operation = autohint
   args = --fail-ok 
-# Generating ../fonts/ttf/CalSansUI-TextSemiBold.ttf
-build ../fonts/ttf/CalSansUI-TextSemiBold.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjos90wtn
+# Generating ../fonts/ttf/CalSansText-SemiBold.ttf
+build ../fonts/ttf/CalSansText-SemiBold.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp1m_m6q2n
   operation = fix
   args = 
-# Generating ../fonts/otf/CalSansUI-TextSemiBold.otf
-build ../fonts/otf/CalSansUI-TextSemiBold.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpza4912hz
+# Generating ../fonts/otf/CalSansText-SemiBold.otf
+build ../fonts/otf/CalSansText-SemiBold.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmprbn6uhu8
   operation = fix
   args = 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp31ctsn04
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp31ctsn04: $
-    buildTTF ../master_ufo/instance_ufos/CalSansUI-TextBold.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjj5k4w2r
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjj5k4w2r: $
+    buildTTF ../master_ufo/instance_ufos/CalSansText-Bold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpekr98bn1
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpekr98bn1: $
-    buildOTF ../master_ufo/instance_ufos/CalSansUI-TextBold.ufo.json
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpe9u5czja
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpe9u5czja: $
+    buildOTF ../master_ufo/instance_ufos/CalSansText-Bold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp5qacoaw9
-build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp5qacoaw9: $
-    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp31ctsn04
+# Generating /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpg6xgbabx
+build /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpg6xgbabx: $
+    autohint /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpjj5k4w2r
   operation = autohint
   args = --fail-ok 
-# Generating ../fonts/ttf/CalSansUI-TextBold.ttf
-build ../fonts/ttf/CalSansUI-TextBold.ttf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmp5qacoaw9
+# Generating ../fonts/ttf/CalSansText-Bold.ttf
+build ../fonts/ttf/CalSansText-Bold.ttf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpg6xgbabx
   operation = fix
   args = 
-# Generating ../fonts/otf/CalSansUI-TextBold.otf
-build ../fonts/otf/CalSansUI-TextBold.otf: fix $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpekr98bn1
+# Generating ../fonts/otf/CalSansText-Bold.otf
+build ../fonts/otf/CalSansText-Bold.otf: fix $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpe9u5czja
   operation = fix
   args = 
 default $
-    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpwqrrtpxc.buildStatstamp $
+    /var/folders/vl/x653p1ys7j53km6mqjhdj16m0000gp/T/tmpybfl6jq2.buildStatstamp $
     ../fonts/webfonts/CalSansUI[MODE,wght].woff2 $
     ../fonts/webfonts/CalSansUI-Light.woff2 $
     ../fonts/webfonts/CalSansUI-Regular.woff2 $
     ../fonts/webfonts/CalSansUI-Medium.woff2 $
     ../fonts/webfonts/CalSansUI-SemiBold.woff2 $
     ../fonts/webfonts/CalSansUI-Bold.woff2 $
-    ../fonts/webfonts/CalSansUI-TextLight.woff2 $
-    ../fonts/webfonts/CalSansUI-TextRegular.woff2 $
-    ../fonts/webfonts/CalSansUI-TextMedium.woff2 $
-    ../fonts/webfonts/CalSansUI-TextSemiBold.woff2 $
-    ../fonts/webfonts/CalSansUI-TextBold.woff2 $
+    ../fonts/webfonts/CalSansText-Light.woff2 $
+    ../fonts/webfonts/CalSansText-Regular.woff2 $
+    ../fonts/webfonts/CalSansText-Medium.woff2 $
+    ../fonts/webfonts/CalSansText-SemiBold.woff2 $
+    ../fonts/webfonts/CalSansText-Bold.woff2 $
     ../fonts/otf/CalSansUI-Light.otf ../fonts/otf/CalSansUI-Regular.otf $
     ../fonts/otf/CalSansUI-Medium.otf ../fonts/otf/CalSansUI-SemiBold.otf $
-    ../fonts/otf/CalSansUI-Bold.otf ../fonts/otf/CalSansUI-TextLight.otf $
-    ../fonts/otf/CalSansUI-TextRegular.otf $
-    ../fonts/otf/CalSansUI-TextMedium.otf $
-    ../fonts/otf/CalSansUI-TextSemiBold.otf $
-    ../fonts/otf/CalSansUI-TextBold.otf
+    ../fonts/otf/CalSansUI-Bold.otf ../fonts/otf/CalSansText-Light.otf $
+    ../fonts/otf/CalSansText-Regular.otf $
+    ../fonts/otf/CalSansText-Medium.otf $
+    ../fonts/otf/CalSansText-SemiBold.otf ../fonts/otf/CalSansText-Bold.otf

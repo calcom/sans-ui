@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="asterisk" format="2">
+  <advance width="432"/>
+  <unicode hex="002A"/>
+  <outline>
+    <component base="ast" xOffset="147" yOffset="20"/>
+    <component base="ast" xScale="0.30901865428123504" xyScale="0.9510559769573054" yxScale="-0.9510559769573054" yScale="0.30901865428123504" xOffset="705" yOffset="326"/>
+    <component base="ast" xScale="0.30901865428123504" xyScale="-0.9510559769573054" yxScale="0.9510559769573054" yScale="0.30901865428123504" xOffset="-317" yOffset="457"/>
+    <component base="ast" xScale="-0.8090157633186191" xyScale="-0.587786946692415" yxScale="0.587786946692415" yScale="-0.8090157633186191" xOffset="-44" yOffset="1030"/>
+    <component base="ast" xScale="-0.8090157633186191" xyScale="0.587786946692415" yxScale="-0.587786946692415" yScale="-0.8090157633186191" xOffset="587" yOffset="949"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>ast</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>ast</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>2</integer>
+          <key>name</key>
+          <string>ast</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>3</integer>
+          <key>name</key>
+          <string>ast</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>4</integer>
+          <key>name</key>
+          <string>ast</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

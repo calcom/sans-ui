@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbar" format="2">
+  <advance width="723.25"/>
+  <unicode hex="0126"/>
+  <anchor x="365.0" y="0.0" name="bottom"/>
+  <anchor x="545.25" y="0.0" name="ogonek"/>
+  <anchor x="365.0" y="700.0" name="top"/>
+  <outline>
+    <contour>
+      <point x="13.0" y="521.5" type="line"/>
+      <point x="710.25" y="521.5" type="line"/>
+      <point x="710.25" y="604.0" type="line"/>
+      <point x="13.0" y="604.0" type="line"/>
+    </contour>
+    <component base="H"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

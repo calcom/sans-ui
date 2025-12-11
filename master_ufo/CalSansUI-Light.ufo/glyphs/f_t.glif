@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_t" format="2">
+  <advance width="745"/>
+  <anchor x="155" y="0" name="bottom_1"/>
+  <anchor x="242" y="700" name="top_1"/>
+  <anchor x="537" y="331" name="bar_2"/>
+  <anchor x="604" y="0" name="bottom_2"/>
+  <anchor x="531" y="276" name="center_2"/>
+  <anchor x="531" y="615" name="top_2"/>
+  <anchor x="659" y="700" name="topright_2"/>
+  <anchor x="392" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="17" y="418" type="line"/>
+      <point x="562" y="418" type="line"/>
+      <point x="562" y="490" type="line"/>
+      <point x="17" y="490" type="line"/>
+    </contour>
+    <component base="f"/>
+    <component base="t" xOffset="356"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCP</string>
+    </dict>
+  </lib>
+</glyph>

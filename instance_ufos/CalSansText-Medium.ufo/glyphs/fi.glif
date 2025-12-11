@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fi" format="2">
+  <advance width="613.65"/>
+  <unicode hex="FB01"/>
+  <anchor x="166.875" y="0.0" name="bottom_1"/>
+  <anchor x="259.57500000000005" y="700.0" name="top_1"/>
+  <anchor x="489.825" y="0.0" name="bottom_2"/>
+  <anchor x="459.9" y="0.0" name="ogonek_2"/>
+  <anchor x="489.825" y="497.125" name="top_2"/>
+  <anchor x="379.92499999999995" y="0.0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="18.9" y="402.32500000000005" type="line"/>
+      <point x="532.65" y="402.32500000000005" type="line"/>
+      <point x="542.65" y="497.125" type="line"/>
+      <point x="18.9" y="497.125" type="line"/>
+    </contour>
+    <component base="f"/>
+    <component base="i" xOffset="365.475"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCP</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>2</integer>
+            <integer>2</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>2</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -932,6 +932,10 @@
     <string>f_i.ss11.glif</string>
     <key>f_l.ss11</key>
     <string>f_l.ss11.glif</string>
+    <key>f_t</key>
+    <string>f_t.glif</string>
+    <key>f_t.ss11</key>
+    <string>f_t.ss11.glif</string>
     <key>fi</key>
     <string>fi.glif</string>
     <key>figurespace</key>
@@ -954,6 +958,8 @@
     <string>fivesuperior.glif</string>
     <key>fl</key>
     <string>fl.glif</string>
+    <key>fl.ss11</key>
+    <string>fl.ss11.glif</string>
     <key>florin</key>
     <string>florin.glif</string>
     <key>florin.tf</key>

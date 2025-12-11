@@ -12,7 +12,7 @@ nine
 ];
 
 # automatic
-@Uppercase = [ A Aacute Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehookabove Abrevetilde Acircumflex Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhookabove Acircumflextilde Adieresis Adotbelow Agrave Ahookabove Ainvertedbreve Amacron Aogonek Aring Atilde AE AEmacron B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Dcaron Dcroat Ddotbelow Eth E Eacute Ecaron Ecircumflex Ecircumflexacute Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Edieresis Edotaccent Edotbelow Egrave Ehookabove Einvertedbreve Emacron Eogonek Etilde Schwa F Fhook G Gbreve Gcircumflex Gcommaaccent Gdotaccent Gmacron H Hbar Hbrevebelow Hcircumflex Hdotbelow I IJ Iacute Icircumflex Idieresis Idotaccent Idotbelow Igrave Ihookabove Iinvertedbreve Imacron Iogonek Itilde J Jacute Jcircumflex K Kcommaaccent Kmacronbelow L Lacute Lcaron Lcommaaccent Ldot Ldotbelow Ldotbelowmacron Lmacronbelow Lslash M Mdotaccent Mdotbelow N Nacute Ncaron Ncommaaccent Ndotaccent Ndotbelow Nmacronbelow Ntilde Eng O Oacute Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Odieresis Odotbelow Ograve Ohookabove Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhookabove Ohorntilde Ohungarumlaut Oinvertedbreve Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent Rdotbelowmacron Rinvertedbreve Rmacronbelow S Sacute Scaron Scedilla Scircumflex Scommaaccent Sdotbelow Germandbls T Tbar Tcaron Tcedilla Tcommaaccent Tdotbelow Tmacronbelow U Uacute Ubreve Ucircumflex Udieresis Udotbelow Ugrave Uhookabove Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhookabove Uhorntilde Uhungarumlaut Uinvertedbreve Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ydotaccent Ydotbelow Ygrave Yhookabove Ytilde Z Zacute Zcaron Zdotaccent Zdotbelow Zmacronbelow Saltillo Lcommaaccent.loclMAH Ncommaaccent.loclMAH G.ss02 Gcommaaccent.ss02 Gdotaccent.ss02 Gmacron.ss02 Gcommaaccent.ss04 Kcommaaccent.ss04 Lcommaaccent.ss04 Ncommaaccent.ss04 Rcommaaccent.ss04 Scommaaccent.ss04 Tcommaaccent.ss04 C.ss10 Cacute.ss10 Ccaron.ss10 Ccedilla.ss10 Ccircumflex.ss10 Cdotaccent.ss10 Eng.ss10 Gcommaaccent.ss02.ss04 Xi Xi.tf
+@Uppercase = [ A Aacute Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehookabove Abrevetilde Acircumflex Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhookabove Acircumflextilde Adieresis Adotbelow Agrave Ahookabove Ainvertedbreve Amacron Aogonek Aring Atilde AE AEmacron B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Dcaron Dcroat Ddotbelow Eth E Eacute Ecaron Ecircumflex Ecircumflexacute Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Edieresis Edotaccent Edotbelow Egrave Ehookabove Einvertedbreve Emacron Eogonek Etilde Schwa F Fhook G Gbreve Gcircumflex Gcommaaccent Gdotaccent Gmacron H Hbar Hbrevebelow Hcircumflex Hdotbelow I IJ Iacute Icircumflex Idieresis Idotaccent Idotbelow Igrave Ihookabove Iinvertedbreve Imacron Iogonek Itilde J Jacute Jcircumflex K Kcommaaccent Kmacronbelow L Lacute Lcaron Lcommaaccent Ldot Ldotbelow Ldotbelowmacron Lmacronbelow Lslash M Mdotaccent Mdotbelow N Nacute Ncaron Ncommaaccent Ndotaccent Ndotbelow Nmacronbelow Ntilde Eng O Oacute Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Odieresis Odotbelow Ograve Ohookabove Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhookabove Ohorntilde Ohungarumlaut Oinvertedbreve Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent Rdotbelowmacron Rinvertedbreve Rmacronbelow S Sacute Scaron Scedilla Scircumflex Scommaaccent Sdotbelow Germandbls T Tbar Tcaron Tcedilla Tcommaaccent Tdotbelow Tmacronbelow U Uacute Ubreve Ucircumflex Udieresis Udotbelow Ugrave Uhookabove Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhookabove Uhorntilde Uhungarumlaut Uinvertedbreve Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ydotaccent Ydotbelow Ygrave Yhookabove Ytilde Z Zacute Zcaron Zdotaccent Zdotbelow Zmacronbelow Saltillo Lcommaaccent.loclMAH Ncommaaccent.loclMAH G.ss02 Gcommaaccent.ss02 Gdotaccent.ss02 Gmacron.ss02 Gcommaaccent.ss04 Kcommaaccent.ss04 Lcommaaccent.ss04 Ncommaaccent.ss04 Rcommaaccent.ss04 Scommaaccent.ss04 Tcommaaccent.ss04 C.ss10 Cacute.ss10 Ccaron.ss10 Ccedilla.ss10 Ccircumflex.ss10 Cdotaccent.ss10 Eng.ss10 Gcommaaccent.ss02.ss04 Xi Omega Xi.tf
 ];
 
 # automatic
@@ -78,18 +78,18 @@ feature ss02;
 feature ss04;
 feature ss10;
 feature ss11;
-feature locl;
-feature sinf;
-feature sups;
 feature subs;
 feature numr;
 feature dnom;
 feature ordn;
 feature pnum;
 feature tnum;
+feature sinf;
+feature sups;
 feature frac;
-feature zero;
 feature case;
+feature zero;
+feature locl;
 
 } aalt;
 
@@ -508,124 +508,6 @@ lookup ccmp_latn_1;
 
 } ccmp;
 
-feature tnum {
-# automatic
-sub Xi by Xi.tf;
-sub zero by zero.tf;
-sub one by one.tf;
-sub two by two.tf;
-sub three by three.tf;
-sub four by four.tf;
-sub five by five.tf;
-sub six by six.tf;
-sub seven by seven.tf;
-sub eight by eight.tf;
-sub nine by nine.tf;
-sub numbersign by numbersign.tf;
-sub florin by florin.tf;
-sub baht by baht.tf;
-sub bitcoin by bitcoin.tf;
-sub cedi by cedi.tf;
-sub cent by cent.tf;
-sub colonsign by colonsign.tf;
-sub currency by currency.tf;
-sub dollar by dollar.tf;
-sub dong by dong.tf;
-sub euro by euro.tf;
-sub guarani by guarani.tf;
-sub hryvnia by hryvnia.tf;
-sub kip by kip.tf;
-sub lari by lari.tf;
-sub liraTurkish by liraTurkish.tf;
-sub naira by naira.tf;
-sub peso by peso.tf;
-sub ruble by ruble.tf;
-sub rupee by rupee.tf;
-sub rupeeIndian by rupeeIndian.tf;
-sub sheqel by sheqel.tf;
-sub sterling by sterling.tf;
-sub tenge by tenge.tf;
-sub tugrik by tugrik.tf;
-sub won by won.tf;
-sub yen by yen.tf;
-
-} tnum;
-
-feature pnum {
-# automatic
-sub Xi.tf by Xi;
-sub zero.tf by zero;
-sub one.tf by one;
-sub two.tf by two;
-sub three.tf by three;
-sub four.tf by four;
-sub five.tf by five;
-sub six.tf by six;
-sub seven.tf by seven;
-sub eight.tf by eight;
-sub nine.tf by nine;
-sub numbersign.tf by numbersign;
-sub florin.tf by florin;
-sub baht.tf by baht;
-sub bitcoin.tf by bitcoin;
-sub cedi.tf by cedi;
-sub cent.tf by cent;
-sub colonsign.tf by colonsign;
-sub currency.tf by currency;
-sub dollar.tf by dollar;
-sub dong.tf by dong;
-sub euro.tf by euro;
-sub guarani.tf by guarani;
-sub hryvnia.tf by hryvnia;
-sub kip.tf by kip;
-sub lari.tf by lari;
-sub liraTurkish.tf by liraTurkish;
-sub naira.tf by naira;
-sub peso.tf by peso;
-sub ruble.tf by ruble;
-sub rupee.tf by rupee;
-sub rupeeIndian.tf by rupeeIndian;
-sub sheqel.tf by sheqel;
-sub sterling.tf by sterling;
-sub tenge.tf by tenge;
-sub tugrik.tf by tugrik;
-sub won.tf by won;
-sub yen.tf by yen;
-
-} pnum;
-
-feature sinf {
-sub zero by zeroinferior;
-sub zero.ss10 by zeroinferior.ss10;
-sub one by oneinferior;
-sub one.ss10 by oneinferior.ss10;
-sub two by twoinferior;
-sub three by threeinferior;
-sub four by fourinferior;
-sub five by fiveinferior;
-sub six by sixinferior;
-sub seven by seveninferior;
-sub eight by eightinferior;
-sub nine by nineinferior;
-
-} sinf;
-
-feature sups {
-sub zero by zerosuperior;
-sub zero.ss10 by zerosuperior.ss10;
-sub one by onesuperior;
-sub one.ss10 by onesuperior.ss10;
-sub two by twosuperior;
-sub three by threesuperior;
-sub four by foursuperior;
-sub five by fivesuperior;
-sub six by sixsuperior;
-sub seven by sevensuperior;
-sub eight by eightsuperior;
-sub nine by ninesuperior;
-
-} sups;
-
 feature subs {
 # automatic
 sub zero by zeroinferior;
@@ -682,6 +564,126 @@ sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 sub N o period by numero;
 
 } ordn;
+
+feature pnum {
+# automatic
+sub Xi.tf by Xi;
+sub zero.tf by zero;
+sub one.tf by one;
+sub two.tf by two;
+sub three.tf by three;
+sub four.tf by four;
+sub five.tf by five;
+sub six.tf by six;
+sub seven.tf by seven;
+sub eight.tf by eight;
+sub nine.tf by nine;
+sub numbersign.tf by numbersign;
+sub florin.tf by florin;
+sub baht.tf by baht;
+sub bitcoin.tf by bitcoin;
+sub cedi.tf by cedi;
+sub cent.tf by cent;
+sub colonsign.tf by colonsign;
+sub currency.tf by currency;
+sub dollar.tf by dollar;
+sub dong.tf by dong;
+sub euro.tf by euro;
+sub guarani.tf by guarani;
+sub hryvnia.tf by hryvnia;
+sub kip.tf by kip;
+sub lari.tf by lari;
+sub liraTurkish.tf by liraTurkish;
+sub naira.tf by naira;
+sub peso.tf by peso;
+sub riyalSaudi.tf by riyalSaudi;
+sub ruble.tf by ruble;
+sub rupee.tf by rupee;
+sub rupeeIndian.tf by rupeeIndian;
+sub sheqel.tf by sheqel;
+sub sterling.tf by sterling;
+sub tenge.tf by tenge;
+sub tugrik.tf by tugrik;
+sub won.tf by won;
+sub yen.tf by yen;
+
+} pnum;
+
+feature tnum {
+# automatic
+sub Xi by Xi.tf;
+sub zero by zero.tf;
+sub one by one.tf;
+sub two by two.tf;
+sub three by three.tf;
+sub four by four.tf;
+sub five by five.tf;
+sub six by six.tf;
+sub seven by seven.tf;
+sub eight by eight.tf;
+sub nine by nine.tf;
+sub numbersign by numbersign.tf;
+sub florin by florin.tf;
+sub baht by baht.tf;
+sub bitcoin by bitcoin.tf;
+sub cedi by cedi.tf;
+sub cent by cent.tf;
+sub colonsign by colonsign.tf;
+sub currency by currency.tf;
+sub dollar by dollar.tf;
+sub dong by dong.tf;
+sub euro by euro.tf;
+sub guarani by guarani.tf;
+sub hryvnia by hryvnia.tf;
+sub kip by kip.tf;
+sub lari by lari.tf;
+sub liraTurkish by liraTurkish.tf;
+sub naira by naira.tf;
+sub peso by peso.tf;
+sub riyalSaudi by riyalSaudi.tf;
+sub ruble by ruble.tf;
+sub rupee by rupee.tf;
+sub rupeeIndian by rupeeIndian.tf;
+sub sheqel by sheqel.tf;
+sub sterling by sterling.tf;
+sub tenge by tenge.tf;
+sub tugrik by tugrik.tf;
+sub won by won.tf;
+sub yen by yen.tf;
+
+} tnum;
+
+feature sinf {
+sub zero by zeroinferior;
+sub zero.ss10 by zeroinferior.ss10;
+sub one by oneinferior;
+sub one.ss10 by oneinferior.ss10;
+sub two by twoinferior;
+sub three by threeinferior;
+sub four by fourinferior;
+sub five by fiveinferior;
+sub six by sixinferior;
+sub seven by seveninferior;
+sub eight by eightinferior;
+sub nine by nineinferior;
+
+} sinf;
+
+feature sups {
+sub zero by zerosuperior;
+sub zero.ss10 by zerosuperior.ss10;
+sub one by onesuperior;
+sub one.ss10 by onesuperior.ss10;
+sub two by twosuperior;
+sub three by threesuperior;
+sub four by foursuperior;
+sub five by fivesuperior;
+sub six by sixsuperior;
+sub seven by sevensuperior;
+sub eight by eightsuperior;
+sub nine by ninesuperior;
+
+} sups;
 
 feature frac {
 lookup FractionBar {

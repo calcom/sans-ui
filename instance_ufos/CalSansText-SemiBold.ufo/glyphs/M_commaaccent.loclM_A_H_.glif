@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Mcommaaccent.loclMAH" format="2">
+  <advance width="939.875"/>
+  <anchor x="510.15" y="-206.675" name="bottom"/>
+  <anchor x="739.775" y="0.0" name="ogonek"/>
+  <anchor x="471.09999999999997" y="700.0" name="top"/>
+  <outline>
+    <component base="M"/>
+    <component base="cedillacomb" xOffset="453.2" yOffset="-1.9499999999999997"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>cedillacomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

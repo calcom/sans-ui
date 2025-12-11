@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_f_l" format="2">
+  <advance width="918.5"/>
+  <anchor x="161.25" y="0.0" name="bottom_1"/>
+  <anchor x="251.25" y="700.0" name="top_1"/>
+  <anchor x="480.25" y="0.0" name="bottom_2"/>
+  <anchor x="570.25" y="700.0" name="top_2"/>
+  <anchor x="800.25" y="0.0" name="bottom_3"/>
+  <anchor x="800.25" y="393.0" name="center_3"/>
+  <anchor x="847.0" y="0.0" name="ogonek_3"/>
+  <anchor x="800.5" y="700.0" name="top_3"/>
+  <anchor x="897.25" y="700.0" name="topright_3"/>
+  <anchor x="374.75" y="0.0" name="caret_1"/>
+  <anchor x="693.75" y="0.0" name="caret_2"/>
+  <outline>
+    <contour>
+      <point x="140.0" y="409.75" type="line"/>
+      <point x="837.0" y="409.75" type="line"/>
+      <point x="847.0" y="493.75" type="line"/>
+      <point x="140.0" y="493.75" type="line"/>
+    </contour>
+    <component base="f"/>
+    <component base="f" xOffset="319.0"/>
+    <component base="l" xOffset="681.75"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>f</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>2</integer>
+          <key>name</key>
+          <string>l</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCCP</string>
+    </dict>
+  </lib>
+</glyph>

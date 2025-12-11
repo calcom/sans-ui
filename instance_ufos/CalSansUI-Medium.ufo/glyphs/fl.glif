@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fl" format="2">
+  <advance width="612.95"/>
+  <unicode hex="FB02"/>
+  <anchor x="166.875" y="0.0" name="bottom_1"/>
+  <anchor x="259.57500000000005" y="700.0" name="top_1"/>
+  <anchor x="489.075" y="0.0" name="bottom_2"/>
+  <anchor x="489.075" y="393.0" name="center_2"/>
+  <anchor x="541.9000000000001" y="0.0" name="ogonek_2"/>
+  <anchor x="489.54999999999995" y="700.0" name="top_2"/>
+  <anchor x="592.375" y="700.0" name="topright_2"/>
+  <anchor x="392.0" y="0.0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="18.9" y="402.32500000000005" type="line"/>
+      <point x="531.9000000000001" y="402.32500000000005" type="line"/>
+      <point x="541.9000000000001" y="497.125" type="line"/>
+      <point x="18.9" y="497.125" type="line"/>
+    </contour>
+    <component base="f"/>
+    <component base="l" xOffset="364.725"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>l</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCP</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>2</integer>
+            <integer>2</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>2</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

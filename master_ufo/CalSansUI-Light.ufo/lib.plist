@@ -568,12 +568,15 @@
       <string>germandbls.ss10</string>
       <string>f_f_i</string>
       <string>f_f_l</string>
+      <string>f_t</string>
       <string>fi</string>
       <string>fl</string>
       <string>f_f_i.ss11</string>
       <string>f_f_l.ss11</string>
       <string>f_i.ss11</string>
       <string>f_l.ss11</string>
+      <string>f_t.ss11</string>
+      <string>fl.ss11</string>
       <string>ordfeminine</string>
       <string>ordmasculine</string>
       <string>ordfeminine.ss01</string>
@@ -919,10 +922,6 @@
       <string>rightWhiteSmallTriangle</string>
       <string>downWhiteSmallTriangle</string>
       <string>leftWhiteSmallTriangle</string>
-      <string>commaaccentcomb.loclMAH</string>
-      <string>commaaccentcomb</string>
-      <string>macroncomb.case</string>
-      <string>commaaccentcomb.ss04</string>
       <string>dieresiscomb</string>
       <string>dotaccentcomb</string>
       <string>gravecomb</string>
@@ -946,6 +945,8 @@
       <string>horncomb</string>
       <string>dotbelowcomb</string>
       <string>dieresisbelowcomb</string>
+      <string>commaaccentcomb.loclMAH</string>
+      <string>commaaccentcomb</string>
       <string>cedillacomb</string>
       <string>ogonekcomb</string>
       <string>brevebelowcomb</string>
@@ -980,6 +981,7 @@
       <string>brevecomb_tildecomb.case</string>
       <string>brevecomb_hookabovecomb.case</string>
       <string>tildecomb.case</string>
+      <string>macroncomb.case</string>
       <string>macroncomb_gravecomb.case</string>
       <string>macroncomb_acutecomb.case</string>
       <string>hookabovecomb.case</string>
@@ -987,6 +989,7 @@
       <string>horncomb.case</string>
       <string>slashlongcomb.case</string>
       <string>commaturnedabovecomb.ss04</string>
+      <string>commaaccentcomb.ss04</string>
       <string>commaaccentcomb.loclMAH.ss04</string>
       <string>dieresis</string>
       <string>dotaccent</string>
@@ -1771,9 +1774,15 @@
       <string>ligature</string>
       <key>f_l.ss11</key>
       <string>ligature</string>
+      <key>f_t</key>
+      <string>ligature</string>
+      <key>f_t.ss11</key>
+      <string>ligature</string>
       <key>fi</key>
       <string>ligature</string>
       <key>fl</key>
+      <string>ligature</string>
+      <key>fl.ss11</key>
       <string>ligature</string>
       <key>g</key>
       <string>base</string>
@@ -3123,77 +3132,12 @@
     </dict>
     <key>public.skipExportGlyphs</key>
     <array>
-      <string>acutecomb</string>
-      <string>acutecomb.case</string>
-      <string>acutecomb_macroncomb</string>
-      <string>acutecomb_macroncomb.case</string>
       <string>ast</string>
-      <string>brevebelowcomb</string>
-      <string>brevecomb</string>
-      <string>brevecomb.case</string>
-      <string>brevecomb_acutecomb</string>
-      <string>brevecomb_acutecomb.case</string>
-      <string>brevecomb_gravecomb</string>
-      <string>brevecomb_gravecomb.case</string>
-      <string>brevecomb_hookabovecomb</string>
-      <string>brevecomb_hookabovecomb.case</string>
-      <string>brevecomb_tildecomb</string>
-      <string>brevecomb_tildecomb.case</string>
-      <string>breveinvertedcomb</string>
-      <string>breveinvertedcomb.case</string>
-      <string>caroncomb</string>
-      <string>caroncomb.alt</string>
-      <string>caroncomb.case</string>
-      <string>cedillacomb</string>
-      <string>circumflexcomb</string>
-      <string>circumflexcomb.001</string>
-      <string>circumflexcomb.case</string>
-      <string>circumflexcomb_acutecomb</string>
-      <string>circumflexcomb_acutecomb.case</string>
-      <string>circumflexcomb_gravecomb</string>
-      <string>circumflexcomb_gravecomb.case</string>
-      <string>circumflexcomb_hookabovecomb</string>
-      <string>circumflexcomb_hookabovecomb.case</string>
-      <string>circumflexcomb_tildecomb</string>
-      <string>circumflexcomb_tildecomb.case</string>
-      <string>commaaccentcomb.loclMAH.ss04</string>
-      <string>commaturnedabovecomb</string>
-      <string>commaturnedabovecomb.ss04</string>
-      <string>dblgravecomb</string>
-      <string>dieresisbelowcomb</string>
-      <string>dieresiscomb</string>
-      <string>dieresiscomb.case</string>
-      <string>dotaccentcomb</string>
-      <string>dotaccentcomb.case</string>
-      <string>dotbelowcomb</string>
       <string>germandbls.ss10</string>
-      <string>gravecomb</string>
-      <string>gravecomb.case</string>
-      <string>gravecomb_macroncomb</string>
-      <string>gravecomb_macroncomb.case</string>
-      <string>hookabovecomb</string>
-      <string>hookabovecomb.case</string>
       <string>hookabovecombviet</string>
       <string>hookabovecombviet.case</string>
       <string>horn.alt</string>
       <string>horn.alt_case</string>
-      <string>horncomb</string>
-      <string>horncomb.case</string>
-      <string>hungarumlautcomb</string>
-      <string>hungarumlautcomb.case</string>
-      <string>macronbelowcomb</string>
-      <string>macroncomb</string>
-      <string>macroncomb_acutecomb</string>
-      <string>macroncomb_acutecomb.case</string>
-      <string>macroncomb_gravecomb</string>
-      <string>macroncomb_gravecomb.case</string>
-      <string>ogonekcomb</string>
-      <string>ringcomb</string>
-      <string>slashlongcomb</string>
-      <string>slashlongcomb.case</string>
-      <string>strokeshortcomb</string>
-      <string>tildecomb</string>
-      <string>tildecomb.case</string>
       <string>tittle</string>
       <string>verticalBottomCurrencycomb</string>
       <string>verticalTopCurrencycomb</string>

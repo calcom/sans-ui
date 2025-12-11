@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="nmacron" format="2">
+  <advance width="605.0"/>
+  <anchor x="303.0" y="0.0" name="bottom"/>
+  <anchor x="405.0" y="0.0" name="ogonek"/>
+  <anchor x="325.0" y="681.0" name="top"/>
+  <outline>
+    <component base="n"/>
+    <component base="macroncomb" xOffset="325.0"/>
+  </outline>
+</glyph>

@@ -79,7 +79,7 @@
       <sub name="ordfeminine" with="ordfeminine.ss01"/>
     </rule>
   </rules>
-   <sources>
+  <sources>
     <source filename="CalSansUI-Light.ufo" name="Cal Sans UI Light" familyname="Cal Sans UI" stylename="Light">
       <lib copy="1"/>
       <groups copy="1"/>
@@ -131,6 +131,10 @@
           <key>com.schriftgestaltung.properties</key>
           <array>
             <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans UI</string>
+            </array>
+            <array>
               <string>styleNames</string>
               <string>Light</string>
             </array>
@@ -151,6 +155,10 @@
         <dict>
           <key>com.schriftgestaltung.properties</key>
           <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans UI</string>
+            </array>
             <array>
               <string>styleNames</string>
               <string>Regular</string>
@@ -173,6 +181,10 @@
           <key>com.schriftgestaltung.properties</key>
           <array>
             <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans UI</string>
+            </array>
+            <array>
               <string>styleNames</string>
               <string>Medium</string>
             </array>
@@ -193,6 +205,10 @@
         <dict>
           <key>com.schriftgestaltung.properties</key>
           <array>
+            <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans UI</string>
+            </array>
             <array>
               <string>styleNames</string>
               <string>SemiBold</string>
@@ -215,6 +231,10 @@
           <key>com.schriftgestaltung.properties</key>
           <array>
             <array>
+              <string>preferredFamilyNames</string>
+              <string>Cal Sans UI</string>
+            </array>
+            <array>
               <string>styleNames</string>
               <string>Bold</string>
             </array>
@@ -226,7 +246,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Cal Sans UI Text Light" familyname="Cal Sans UI" stylename="Text Light" filename="../instance_ufo/CalSansUI-TextLight.ufo" stylemapfamilyname="Cal Sans UI Text Light" stylemapstylename="regular">
+    <instance name="Cal Sans Texy Light" familyname="Cal Sans Text" stylename="Light" filename="../instance_ufo/CalSansText-Light.ufo" stylemapfamilyname="Cal Sans Text Light" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="300"/>
         <dimension name="UI or Text Mode" xvalue="1"/>
@@ -255,7 +275,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Cal Sans UI Text Regular" familyname="Cal Sans UI" stylename="Text Regular" filename="../instance_ufo/CalSansUI-TextRegular.ufo" stylemapfamilyname="Cal Sans UI Text" stylemapstylename="regular">
+    <instance name="Cal Sans Text Regular" familyname="Cal Sans Text" stylename="Regular" filename="../instance_ufo/CalSansText-Regular.ufo" stylemapfamilyname="Cal Sans Text" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="400"/>
         <dimension name="UI or Text Mode" xvalue="1"/>
@@ -284,7 +304,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Cal Sans UI Text Medium" familyname="Cal Sans UI" stylename="Text Medium" filename="../instance_ufo/CalSansUI-TextMedium.ufo" stylemapfamilyname="Cal Sans UI Text Medium" stylemapstylename="regular">
+    <instance name="Cal Sans Text Medium" familyname="Cal Sans Text" stylename="Medium" filename="../instance_ufo/CalSansText-Medium.ufo" stylemapfamilyname="Cal Sans Text Medium" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="490"/>
         <dimension name="UI or Text Mode" xvalue="1"/>
@@ -313,7 +333,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Cal Sans UI Text SemiBold" familyname="Cal Sans UI" stylename="Text SemiBold" filename="../instance_ufo/CalSansUI-TextSemiBold.ufo" stylemapfamilyname="Cal Sans UI Text SemiBold" stylemapstylename="regular">
+    <instance name="Cal Sans Text SemiBold" familyname="Cal Sans Text" stylename="SemiBold" filename="../instance_ufo/CalSansText-SemiBold.ufo" stylemapfamilyname="Cal Sans Text SemiBold" stylemapstylename="regular">
       <location>
         <dimension name="Weight" xvalue="570"/>
         <dimension name="UI or Text Mode" xvalue="1"/>
@@ -342,7 +362,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Cal Sans UI Text Bold" familyname="Cal Sans UI" stylename="Text Bold" filename="../instance_ufo/CalSansUI-TextBold.ufo" stylemapfamilyname="Cal Sans UI Text Regular" stylemapstylename="bold">
+    <instance name="Cal Sans Text Bold" familyname="Cal Sans Text" stylename="Bold" filename="../instance_ufo/CalSansText-Bold.ufo" stylemapfamilyname="Cal Sans Text" stylemapstylename="bold">
       <location>
         <dimension name="Weight" xvalue="700"/>
         <dimension name="UI or Text Mode" xvalue="1"/>
@@ -525,77 +545,12 @@
       </dict>
       <key>public.skipExportGlyphs</key>
       <array>
-        <string>acutecomb</string>
-        <string>acutecomb.case</string>
-        <string>acutecomb_macroncomb</string>
-        <string>acutecomb_macroncomb.case</string>
         <string>ast</string>
-        <string>brevebelowcomb</string>
-        <string>brevecomb</string>
-        <string>brevecomb.case</string>
-        <string>brevecomb_acutecomb</string>
-        <string>brevecomb_acutecomb.case</string>
-        <string>brevecomb_gravecomb</string>
-        <string>brevecomb_gravecomb.case</string>
-        <string>brevecomb_hookabovecomb</string>
-        <string>brevecomb_hookabovecomb.case</string>
-        <string>brevecomb_tildecomb</string>
-        <string>brevecomb_tildecomb.case</string>
-        <string>breveinvertedcomb</string>
-        <string>breveinvertedcomb.case</string>
-        <string>caroncomb</string>
-        <string>caroncomb.alt</string>
-        <string>caroncomb.case</string>
-        <string>cedillacomb</string>
-        <string>circumflexcomb</string>
-        <string>circumflexcomb.001</string>
-        <string>circumflexcomb.case</string>
-        <string>circumflexcomb_acutecomb</string>
-        <string>circumflexcomb_acutecomb.case</string>
-        <string>circumflexcomb_gravecomb</string>
-        <string>circumflexcomb_gravecomb.case</string>
-        <string>circumflexcomb_hookabovecomb</string>
-        <string>circumflexcomb_hookabovecomb.case</string>
-        <string>circumflexcomb_tildecomb</string>
-        <string>circumflexcomb_tildecomb.case</string>
-        <string>commaaccentcomb.loclMAH.ss04</string>
-        <string>commaturnedabovecomb</string>
-        <string>commaturnedabovecomb.ss04</string>
-        <string>dblgravecomb</string>
-        <string>dieresisbelowcomb</string>
-        <string>dieresiscomb</string>
-        <string>dieresiscomb.case</string>
-        <string>dotaccentcomb</string>
-        <string>dotaccentcomb.case</string>
-        <string>dotbelowcomb</string>
         <string>germandbls.ss10</string>
-        <string>gravecomb</string>
-        <string>gravecomb.case</string>
-        <string>gravecomb_macroncomb</string>
-        <string>gravecomb_macroncomb.case</string>
-        <string>hookabovecomb</string>
-        <string>hookabovecomb.case</string>
         <string>hookabovecombviet</string>
         <string>hookabovecombviet.case</string>
         <string>horn.alt</string>
         <string>horn.alt_case</string>
-        <string>horncomb</string>
-        <string>horncomb.case</string>
-        <string>hungarumlautcomb</string>
-        <string>hungarumlautcomb.case</string>
-        <string>macronbelowcomb</string>
-        <string>macroncomb</string>
-        <string>macroncomb_acutecomb</string>
-        <string>macroncomb_acutecomb.case</string>
-        <string>macroncomb_gravecomb</string>
-        <string>macroncomb_gravecomb.case</string>
-        <string>ogonekcomb</string>
-        <string>ringcomb</string>
-        <string>slashlongcomb</string>
-        <string>slashlongcomb.case</string>
-        <string>strokeshortcomb</string>
-        <string>tildecomb</string>
-        <string>tildecomb.case</string>
         <string>tittle</string>
         <string>verticalBottomCurrencycomb</string>
         <string>verticalTopCurrencycomb</string>
