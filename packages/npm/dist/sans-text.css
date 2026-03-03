@@ -1,35 +1,7 @@
 @font-face {
   font-family: "Cal Sans Text";
-  src: url("./fonts/CalSansText-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cal Sans Text";
-  src: url("./fonts/CalSansText-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cal Sans Text";
-  src: url("./fonts/CalSansText-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cal Sans Text";
-  src: url("./fonts/CalSansText-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cal Sans Text";
-  src: url("./fonts/CalSansText-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("./fonts/CalSansUI[wght,GEOM].woff2") format("woff2");
+  font-weight: 300 700;
   font-style: normal;
   font-display: swap;
 }

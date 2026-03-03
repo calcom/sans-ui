@@ -10,7 +10,7 @@ const destFonts = join(__dirname, "..", "dist", "fonts");
 const oflSrc = join(repoRoot, "OFL.txt");
 const oflDest = join(__dirname, "..", "OFL.txt");
 
-const variableFont = "CalSansUI[MODE,wght].woff2";
+const variableFont = "CalSansUI[wght,GEOM].woff2";
 const staticUIFonts = [
   "CalSansUI-Light.woff2",
   "CalSansUI-Regular.woff2",
@@ -25,10 +25,17 @@ const textFonts = [
   "CalSansText-SemiBold.woff2",
   "CalSansText-Bold.woff2",
 ];
+const geoFonts = [
+  "CalSansUI-GeoLight.woff2",
+  "CalSansUI-GeoRegular.woff2",
+  "CalSansUI-GeoMedium.woff2",
+  "CalSansUI-GeoSemiBold.woff2",
+  "CalSansUI-GeoBold.woff2",
+];
 if (existsSync(webfonts)) {
   mkdirSync(destFonts, { recursive: true });
   cpSync(join(webfonts, variableFont), join(destFonts, variableFont));
-  for (const f of [...staticUIFonts, ...textFonts]) {
+  for (const f of [...staticUIFonts, ...textFonts, ...geoFonts]) {
     cpSync(join(webfonts, f), join(destFonts, f));
   }
   console.log("cal-sans-ui: copied fonts to dist/fonts");
