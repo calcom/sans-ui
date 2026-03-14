@@ -10,6 +10,141 @@ Copyright (c) 2025, Mark Davis mark@designermarkdavis.com, with typefaces “Cal
 
 Geometric sans-serif typeface to populate the interfaces of Cal.com
 
+## Install (npm)
+
+For Next.js, Vite, CRA, or any app that can import CSS:
+
+```bash
+npm i @calcom/cal-sans-ui
+```
+
+**Next.js:** peer dependency Next.js 13.2+
+
+### How to import
+
+**Next.js (App Router):**
+
+```tsx
+import { CalSansUI } from "@calcom/cal-sans-ui/ui";
+import { CalSansText } from "@calcom/cal-sans-ui/text";
+import { CalSansGeo } from "@calcom/cal-sans-ui/geo";
+// or: import { CalSansUI, CalSansText, CalSansGeo } from "@calcom/cal-sans-ui";
+```
+
+**Any other app (Vite, CRA, etc.):**
+
+```tsx
+import "@calcom/cal-sans-ui/ui.css";
+import "@calcom/cal-sans-ui/text.css";
+import "@calcom/cal-sans-ui/geo.css";
+```
+
+Then use `font-family: "Cal Sans UI"`, `"Cal Sans Text"`, or `"Cal Sans Geo"` in your CSS.
+
+### Usage (Next.js App Router)
+
+Next.js requires font loaders to be called at module scope:
+
+```tsx
+import { CalSansUI } from "@calcom/cal-sans-ui/ui";
+import { CalSansText } from "@calcom/cal-sans-ui/text";
+import { CalSansGeo } from "@calcom/cal-sans-ui/geo";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${CalSansUI.variable} ${CalSansText.variable} ${CalSansGeo.variable}`}>
+      <body>{children}</body>
+    </html>
+  );
+}
+```
+
+### With Tailwind CSS
+
+Map Cal Sans to Tailwind's theme variables so you can use `font-sans` (body), `font-heading` (headings), and `font-display` (geo):
+
+**Tailwind v4** – `tailwind.css`:
+
+```css
+@theme {
+  --font-sans: var(--font-cal-sans-ui), ui-sans-serif, sans-serif;
+  --font-heading: var(--font-cal-sans-text), ui-sans-serif, sans-serif;
+  --font-display: var(--font-cal-sans-geo), ui-sans-serif, sans-serif;
+}
+```
+
+**Tailwind v3** – `tailwind.config.js`:
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-cal-sans-ui)", "sans-serif"],
+        heading: ["var(--font-cal-sans-text)", "sans-serif"],
+        display: ["var(--font-cal-sans-geo)", "sans-serif"],
+      },
+    },
+  },
+};
+```
+
+Then use the utilities in your components:
+
+```tsx
+<p className="font-sans">Body text uses Cal Sans UI</p>
+<h1 className="font-heading">Headings use Cal Sans Text</h1>
+<h1 className="font-display">Display text uses Cal Sans Geo</h1>
+```
+
+For the GEOM axis (e.g. subheadings with more character):
+
+```tsx
+<h2 className="font-heading" style={{ fontVariationSettings: '"GEOM" 50' }}>
+  Subheading
+</h2>
+```
+
+Or in plain CSS:
+
+```css
+h1 {
+  font-family: var(--font-cal-sans-text), sans-serif;
+  font-variation-settings: "GEOM" 50;
+}
+
+p {
+  font-family: var(--font-cal-sans-ui), sans-serif;
+  font-variation-settings: "GEOM" 0;
+}
+```
+
+Or apply the font class directly:
+
+```tsx
+<h1 className={CalSansGeo.className}>Heading</h1>
+<p className={CalSansUI.className}>Body text</p>
+<h1 className={CalSansText.className} style={{ fontVariationSettings: '"GEOM" 50' }}>Heading</h1>
+```
+
+### Non-Next.js (Vite, CRA, etc.)
+
+Import the CSS and use the font family names in your styles. For browsers that don't support variable fonts, use `@calcom/cal-sans-ui/ui-non-variable.css` instead.
+
+### Exports
+
+| Import | Description |
+|--------|--------------|
+| `@calcom/cal-sans-ui` | Next: `CalSansUI`, `CalSansUINonVariable`, `CalSansText`, `CalSansGeo` (all in one). **Preferred.** |
+| `@calcom/cal-sans-ui/ui` | Next: `CalSansUI` (variable). |
+| `@calcom/cal-sans-ui/ui-non-variable` | Next: `CalSansUINonVariable` (static UI). |
+| `@calcom/cal-sans-ui/text` | Next: `CalSansText` (variable subheadings). |
+| `@calcom/cal-sans-ui/geo` | Next: `CalSansGeo` (variable). |
+| `@calcom/cal-sans-ui/ui.css` | CSS: variable font. |
+| `@calcom/cal-sans-ui/ui-non-variable.css` | CSS: static UI weights. |
+| `@calcom/cal-sans-ui/text.css` | CSS: Cal Sans Text. |
+| `@calcom/cal-sans-ui/geo.css` | CSS: Cal Sans Geo. |
+
 ---
 
 Introducing two new families, **Cal Sans UI** and **Cal Sans Text** designed by Mark Davis for [Cal.com](https://refer.cal.com/davis). Every detail is reconsidered for readers, product designers, and developers at the same time. **Cal Sans UI** is also a variable font, built with stylistic variations to both approach through a `MODE` (UI or Text Mode) axis, and a traditional weight axis with a MVP range of Light ↔ Bold. Since advising Peer Richelsen in 2021 on the typography needed at the start of his Cal.com journey, the open-source font landscape for UI had not changed. This is why it felt like an excellent opportunity to add more to the conversation and a new tool to choose from. Cal Sans UI and Cal Sans Text work perfectly at all point-sizes, but it has been optimized at the pixel-level for between 14–15px UI interfaces with high-DPI screen target. It can also be deployed skilfully and successfully at larger or smaller sizes, but if going much bigger with shorter texts or single words, consider Cal Sans instead. 
