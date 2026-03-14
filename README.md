@@ -59,7 +59,53 @@ export default function RootLayout({ children }) {
 }
 ```
 
-Use the CSS variables and variation settings in Tailwind or CSS:
+### With Tailwind CSS
+
+Map Cal Sans to Tailwind's theme variables so you can use `font-sans` (body), `font-heading` (headings), and `font-display` (geo):
+
+**Tailwind v4** – `tailwind.css`:
+
+```css
+@theme {
+  --font-sans: var(--font-cal-sans-ui), ui-sans-serif, sans-serif;
+  --font-heading: var(--font-cal-sans-text), ui-sans-serif, sans-serif;
+  --font-display: var(--font-cal-sans-geo), ui-sans-serif, sans-serif;
+}
+```
+
+**Tailwind v3** – `tailwind.config.js`:
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-cal-sans-ui)", "sans-serif"],
+        heading: ["var(--font-cal-sans-text)", "sans-serif"],
+        display: ["var(--font-cal-sans-geo)", "sans-serif"],
+      },
+    },
+  },
+};
+```
+
+Then use the utilities in your components:
+
+```tsx
+<p className="font-sans">Body text uses Cal Sans UI</p>
+<h1 className="font-heading">Headings use Cal Sans Text</h1>
+<h1 className="font-display">Display text uses Cal Sans Geo</h1>
+```
+
+For the GEOM axis (e.g. subheadings with more character):
+
+```tsx
+<h2 className="font-heading" style={{ fontVariationSettings: '"GEOM" 50' }}>
+  Subheading
+</h2>
+```
+
+Or in plain CSS:
 
 ```css
 h1 {
@@ -70,11 +116,6 @@ h1 {
 p {
   font-family: var(--font-cal-sans-ui), sans-serif;
   font-variation-settings: "GEOM" 0;
-}
-
-.geo h1, .geo p {
-  font-family: var(--font-cal-sans-geo), sans-serif;
-  font-variation-settings: "GEOM" 100;
 }
 ```
 
