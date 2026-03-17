@@ -18,12 +18,13 @@ const staticUIFonts = [
   "CalSansUI-SemiBold.woff2",
   "CalSansUI-Bold.woff2",
 ];
+// Source in webfonts is CalSansUI-Text*, we copy to CalSansText-* for the package
 const textFonts = [
-  "CalSansText-Light.woff2",
-  "CalSansText-Regular.woff2",
-  "CalSansText-Medium.woff2",
-  "CalSansText-SemiBold.woff2",
-  "CalSansText-Bold.woff2",
+  { src: "CalSansUI-TextLight.woff2", dest: "CalSansText-Light.woff2" },
+  { src: "CalSansUI-TextRegular.woff2", dest: "CalSansText-Regular.woff2" },
+  { src: "CalSansUI-TextMedium.woff2", dest: "CalSansText-Medium.woff2" },
+  { src: "CalSansUI-TextSemiBold.woff2", dest: "CalSansText-SemiBold.woff2" },
+  { src: "CalSansUI-TextBold.woff2", dest: "CalSansText-Bold.woff2" },
 ];
 const geoFonts = [
   "CalSansUI-GeoLight.woff2",
@@ -35,7 +36,13 @@ const geoFonts = [
 if (existsSync(webfonts)) {
   mkdirSync(destFonts, { recursive: true });
   cpSync(join(webfonts, variableFont), join(destFonts, variableFont));
-  for (const f of [...staticUIFonts, ...textFonts, ...geoFonts]) {
+  for (const f of staticUIFonts) {
+    cpSync(join(webfonts, f), join(destFonts, f));
+  }
+  for (const { src, dest } of textFonts) {
+    cpSync(join(webfonts, src), join(destFonts, dest));
+  }
+  for (const f of geoFonts) {
     cpSync(join(webfonts, f), join(destFonts, f));
   }
   console.log("cal-sans-ui: copied fonts to dist/fonts");
