@@ -64,7 +64,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/calcom/sans-ui",
+    "url": "git+https://github.com/calcom/sans-ui.git",
     "directory": "packages/npm"
   },
   "bugs": "https://github.com/calcom/sans-ui/issues",
