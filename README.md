@@ -122,9 +122,8 @@ p {
 Or apply the font class directly:
 
 ```tsx
-<h1 className={CalSansGeo.className}>Heading</h1>
-<p className={CalSansUI.className}>Body text</p>
 <h1 className={CalSansText.className} style={{ fontVariationSettings: '"GEOM" 50' }}>Heading</h1>
+<p className={CalSansUI.className}>Body text</p>
 ```
 
 ### Non-Next.js (Vite, CRA, etc.)
