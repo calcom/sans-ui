@@ -1,41 +1,35 @@
 # @calcom/cal-sans-ui
 
-Cal Sans UI, Cal Sans Text, and Cal Sans Geo typefaces for [Cal.com](https://cal.com), as an npm package for Next.js and any app that can import CSS.
+Cal Sans UI, Cal Sans Text, and Cal Sans Geo typefaces for [Cal.com](https://cal.com).
 
-## Install
+## Installation
 
 ```bash
-npm i @calcom/cal-sans-ui
+npm install @calcom/cal-sans-ui
 ```
 
 **Next.js:** peer dependency Next.js 13.2+
 
-## How to import
+## Using with Next.js
 
-**Next.js (App Router):**
+### Next.js config (required for Next.js < 15)
 
-```tsx
-import { CalSansUI } from "@calcom/cal-sans-ui/ui";
-import { CalSansText } from "@calcom/cal-sans-ui/text";
-import { CalSansGeo } from "@calcom/cal-sans-ui/geo";
-// or: import { CalSansUI, CalSansText, CalSansGeo } from "@calcom/cal-sans-ui";
+Add `transpilePackages` to `next.config.js` or `next.config.mjs`:
+
+```js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  transpilePackages: ["@calcom/cal-sans-ui"],
+};
+
+export default nextConfig;
 ```
 
-**Any other app (Vite, CRA, etc.):**
+### App Router
 
-```tsx
-import "@calcom/cal-sans-ui/ui.css";
-import "@calcom/cal-sans-ui/text.css";
-import "@calcom/cal-sans-ui/geo.css";
-```
+In `app/layout.js` or `app/layout.tsx`:
 
-Then use `font-family: "Cal Sans UI"`, `"Cal Sans Text"`, or `"Cal Sans Geo"` in your CSS.
-
-## Usage (Next.js App Router)
-
-Next.js requires font loaders to be called at module scope, so you use the exported font objects directly:
-
-```tsx
+```jsx
 import { CalSansUI } from "@calcom/cal-sans-ui/ui";
 import { CalSansText } from "@calcom/cal-sans-ui/text";
 import { CalSansGeo } from "@calcom/cal-sans-ui/geo";
@@ -49,59 +43,69 @@ export default function RootLayout({ children }) {
 }
 ```
 
-Use the CSS variables and variation settings in Tailwind or CSS:
+### Pages Router
+
+In `pages/_app.js`:
+
+```jsx
+import { CalSansUI } from "@calcom/cal-sans-ui/ui";
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <main className={CalSansUI.className}>
+      <Component {...pageProps} />
+    </main>
+  );
+}
+```
+
+## With Tailwind CSS
+
+Map Cal Sans to Tailwind's theme variables so you can use `font-sans` (body), `font-heading` (headings), and `font-display` (geo):
+
+**Tailwind v4** – `tailwind.css`:
 
 ```css
-h1 {
-  font-family: var(--font-cal-sans-text), sans-serif;
-  font-variation-settings: "GEOM" 50;
-}
-
-p {
-  font-family: var(--font-cal-sans-ui), sans-serif;
-  font-variation-settings: "GEOM" 0;
-}
-
-.geo h1, .geo p {
-  font-family: var(--font-cal-sans-geo), sans-serif;
-  font-variation-settings: "GEOM" 100;
+@theme {
+  --font-sans: var(--font-cal-sans-ui), ui-sans-serif, sans-serif;
+  --font-heading: var(--font-cal-sans-text), ui-sans-serif, sans-serif;
+  --font-display: var(--font-cal-sans-geo), ui-sans-serif, sans-serif;
 }
 ```
 
-Or apply the font class directly.
+**Tailwind v3** – `tailwind.config.js`:
 
-Example 1 (Cal product-style):
-
-```tsx
-<h1 className={CalSansUI.className}>Heading</h1>
-<p className={CalSansText.className}>Body text</p>
-<h1 className={CalSansText.className} style={{ fontVariationSettings: '"GEOM" 50' }}>Heading</h1>
-<p className={CalSansUI.className} style={{ fontVariationSettings: '"GEOM" 0' }}>Body text</p>
+```js
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-cal-sans-ui)", "sans-serif"],
+        heading: ["var(--font-cal-sans-text)", "sans-serif"],
+        display: ["var(--font-cal-sans-geo)", "sans-serif"],
+      },
+    },
+  },
+};
 ```
 
-Example 2 (all 3):
+Usage in components:
 
 ```tsx
-<h1 className={CalSansGeo.className}>Heading</h1>
-<h2 className={CalSansText.className}>Subheadings</h2>
-<p className={CalSansUI.className}>Body text</p>
-<h1 className={CalSansGeo.className} style={{ fontVariationSettings: '"GEOM" 100', fontSize: '3em', letterSpacing: '-0.05em' }}>Big Spicy Head</h1>
-<h2 className={CalSansText.className} style={{ fontVariationSettings: '"GEOM" 50' }}>Subheadings</h2>
-<p className={CalSansUI.className} style={{ fontVariationSettings: '"GEOM" 0' }}>Body text</p>
+<p className="font-sans">Body text uses Cal Sans UI</p>
+<h1 className="font-heading">Headings use Cal Sans Text</h1>
+<h1 className="font-display">Display text uses Cal Sans Geo</h1>
 ```
 
-Example 3 (Brutalist while Bauhaus):
+For the GEOM axis (e.g. subheadings):
 
 ```tsx
-<h1 className={CalSansGeo.className}>Heading</h1>
-<p className={CalSansGeo.className}>Body text</p>
-<h1 className={CalSansGeo.className} style={{ fontVariationSettings: '"GEOM" 100' }}>Überschrift</h1>
-<p className={CalSansUI.className} style={{ fontVariationSettings: '"GEOM" 100' }}>Fließtext</p>
+<h2 className="font-heading" style={{ fontVariationSettings: '"GEOM" 50' }}>
+  Subheading
+</h2>
 ```
 
 ## Non-Next.js (Vite, CRA, etc.)
-
-Import the CSS and use the font family names:
 
 ```ts
 import "@calcom/cal-sans-ui/ui.css";
@@ -119,32 +123,23 @@ p {
   font-family: "Cal Sans UI", sans-serif;
   font-variation-settings: "GEOM" 0;
 }
-
-.geo h1, .geo p {
-  font-family: "Cal Sans Geo", sans-serif;
-  font-variation-settings: "GEOM" 100;
-}
 ```
 
-For browsers that don’t support variable fonts, use the static UI CSS instead:
-
-```ts
-import "@calcom/cal-sans-ui/ui-non-variable.css";
-```
+For browsers that don't support variable fonts: `import "@calcom/cal-sans-ui/ui-non-variable.css"`
 
 ## Exports
 
-| Import | Description      |
-|--------|------------------|
+| Import | Description |
+|--------|-------------|
 | `@calcom/cal-sans-ui` | Next: `CalSansUI`, `CalSansUINonVariable`, `CalSansText`, `CalSansGeo` (all in one). **Preferred.** |
 | `@calcom/cal-sans-ui/ui` | Next: `CalSansUI` (variable). |
 | `@calcom/cal-sans-ui/ui-non-variable` | Next: `CalSansUINonVariable` (static UI). |
 | `@calcom/cal-sans-ui/text` | Next: `CalSansText` (variable subheadings). |
 | `@calcom/cal-sans-ui/geo` | Next: `CalSansGeo` (variable). |
-| `@calcom/cal-sans-ui/ui.css` | CSS: variable font, use `font-family: "Cal Sans UI"`. |
+| `@calcom/cal-sans-ui/ui.css` | CSS: variable font. |
 | `@calcom/cal-sans-ui/ui-non-variable.css` | CSS: static UI weights. |
-| `@calcom/cal-sans-ui/text.css` | CSS: use `font-family: "Cal Sans Text"`. |
-| `@calcom/cal-sans-ui/geo.css` | CSS: use `font-family: "Cal Sans Geo"`. |
+| `@calcom/cal-sans-ui/text.css` | CSS: Cal Sans Text. |
+| `@calcom/cal-sans-ui/geo.css` | CSS: Cal Sans Geo. |
 
 ## License
 
