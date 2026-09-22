@@ -1,7 +1,15 @@
 @font-face {
-  font-family: "Cal Sans UI";
-  src: url("./fonts/CalSansUI[wght,GEOM].woff2") format("woff2");
-  font-weight: 300 700;
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI[wght].woff2") format("woff2");
+  font-weight: 400 700;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-Italic[wght].woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: italic;
   font-display: swap;
 }

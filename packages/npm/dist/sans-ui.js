@@ -1,7 +1,10 @@
 import localFont from "next/font/local";
 
 export const CalSansUI = localFont({
-  src: "./fonts/CalSansUI[wght,GEOM].woff2",
+  src: [
+    { path: "./fonts/CalSansTextUI[wght].woff2", weight: "400 700", style: "normal" },
+    { path: "./fonts/CalSansTextUI-Italic[wght].woff2", weight: "400 700", style: "italic" },
+  ],
   variable: "--font-cal-sans-ui",
-  weight: "300 700",
+  display: "swap",
 });
