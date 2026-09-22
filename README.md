@@ -22,9 +22,34 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
 
 ## Variable axes
 
-| Axis   | Tag    | Range     | Default | Description        |
-| :----- | :----- | :-------- | :------ | :----------------- |
-| Weight | `wght` | 400–700   | 400     | Regular–Bold       |
+| Axis                | Tag    | Range       | Default | Description |
+| :------------------ | :----- | :---------- | :------ | :---------- |
+| Weight              | `wght` | 400–700     | 400     | Regular–Bold |
+| Geometric Formality | `GEOM` | 0–100       | 25      | A11y (0) → UI (25) → Base (50) → Geo (100) |
+| Ascender Height     | `YTAS` | 1440–1600   | 1520    | Raised from the 1440 default for more open sentence shapes at text size |
+| Sharp               | `SHRP` | 0–100       | 0       | Corner sharpness |
+| Italic              | `ital` | 0–1         | 0       | Upright to the drawn 9.5° italic |
+
+Every Cal Sans v2 axis is live here except one:
+
+| Frozen | Value | Why |
+| :----- | :---- | :-- |
+| `opsz` | 10    | The interface drawing throughout — no 8 pt, no 45 pt. Everything else stays adjustable. |
+
+> **Italic is an axis, not a second face.** `font-style: italic` cannot reach a
+> variable axis, so `<em>` and `<i>` will not italicise from the variable file
+> alone — ask for it directly, and restate any other axes you rely on, because
+> `font-variation-settings` resets what it omits:
+> ```css
+> em { font-variation-settings: "ital" 1, "GEOM" 25, "YTAS" 1520; }
+> ```
+> The static faces in `ui-non-variable.css` ship drawn italics per weight, so
+> `font-style: italic` works normally there.
+
+> **`GEOM` 0 changes more than shape.** At the A11y end, `rclt` swaps in the
+> seriffed **I** and curved **l** on its own, with no feature applied — shaping
+> "Il1" at `GEOM` 0 returns `I.rcltA11y` and `l.rcltA11y`. At the default 25 you
+> get the plain forms. `GEOM` 100 also switches the numeral **1**.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Weight-dark.svg">
@@ -40,8 +65,6 @@ nothing needs configuring:
 | `GEOM` | 25     | The UI cut of the geometry axis. |
 | `YTAS` | 1520   | Ascenders raised from the 1440 default, for more open sentence shapes at text size. |
 | `SHRP` | 0      | Unsharpened corners. |
-
-Italics are drawn at 9.5°, not slanted, and style-link from `font-style: italic`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Italic-dark.svg">
@@ -149,25 +172,30 @@ Then use the utilities in your components:
 <h1 className="font-sans font-semibold">Headings use the same family at 600</h1>
 ```
 
-Weight is the only live axis, so reach for it directly:
+Weight works through the normal property:
 
 ```tsx
 <h2 className="font-sans" style={{ fontWeight: 600 }}>Subheading</h2>
 ```
 
-Or in plain CSS:
+The other axes go through `font-variation-settings`. It overrides `font-weight`
+wherever both apply, and resets any axis it leaves out, so set them together:
 
 ```css
 h1 {
   font-family: var(--font-cal-sans-ui), sans-serif;
-  font-weight: 600;
+  font-variation-settings: "wght" 600, "GEOM" 50, "YTAS" 1520;
 }
+
+/* the accessibility end: seriffed I and curved l, no feature needed */
+.a11y { font-variation-settings: "wght" 400, "GEOM" 0; }
+
+/* italic, since font-style cannot reach the axis */
+em { font-variation-settings: "wght" 400, "GEOM" 25, "ital" 1; }
 ```
 
-> `GEOM`, `opsz`, `YTAS` and `SHRP` are frozen in this cut, so
-> `font-variation-settings: "GEOM" 50` will not error — it will silently do nothing.
-> If you want those axes live, use the full
-> [Cal Sans variable font](https://github.com/calcom/sans) instead.
+Only `opsz` is unavailable — it is baked at 10. For the 8 pt and 45 pt drawings,
+use the full [Cal Sans variable font](https://github.com/calcom/sans).
 
 ### Non-Next.js (Vite, CRA, etc.)
 
@@ -254,9 +282,9 @@ keep their line breaks.
 |---|---|---|---|
 | Weight range | 300–700 | 400–700 | **Light is gone.** `font-weight: 300` now clamps to 400. |
 | Regular/Medium colour | — | ~10% lighter | Stems at 400 and 500 are lighter; 600 and 700 are identical. |
-| `GEOM` axis | 0–100 | frozen at 25 | `font-variation-settings: "GEOM" …` silently does nothing. |
+| `GEOM` axis | 0–100 | 0–100, default 25 | Still live; the default moves from 0 to 25 (UI). |
 | Default line box | 1.12 em | 1.30 em | Set `line-height` explicitly if you relied on the default. |
-| Italics | none | drawn, 9.5° | `font-style: italic` now reaches a real italic instead of a synthesized slant. |
+| Italics | none | drawn, 9.5° on `ital` | New — but as an axis, so `font-style: italic` does not reach it in the variable file. |
 | Stylistic sets | 5 sets, 8 variants | **20 sets, 42 variants** | Nothing is subset out — see the numbering warning below. |
 | Glyphs | 1069 | 1546 | |
 | Characters | 682 | 695 | 15 added; `U+00AD` soft hyphen and `U+0335` combining short stroke overlay dropped. |

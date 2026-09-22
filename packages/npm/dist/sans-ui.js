@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
 
+// Every axis except opsz, which is baked at 10. ital is a live axis, so use
+// font-variation-settings: "ital" 1 rather than font-style: italic.
 export const CalSansUI = localFont({
-  src: [
-    { path: "./fonts/CalSansTextUI[wght].woff2", weight: "400 700", style: "normal" },
-    { path: "./fonts/CalSansTextUI-Italic[wght].woff2", weight: "400 700", style: "italic" },
-  ],
+  src: "./fonts/CalSansTextUI[GEOM,SHRP,YTAS,ital,wght].woff2",
   variable: "--font-cal-sans-ui",
+  weight: "400 700",
   display: "swap",
 });

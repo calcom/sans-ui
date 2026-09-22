@@ -1,15 +1,17 @@
+/* One variable font, every Cal Sans v2 axis except optical size.
+   opsz is baked at 10 (the interface drawing); GEOM, wght, YTAS, SHRP and ital
+   are all live. Italic is an AXIS here, not a separate face — see the note. */
 @font-face {
   font-family: "Cal Sans Text UI";
-  src: url("./fonts/CalSansTextUI[wght].woff2") format("woff2");
+  src: url("./fonts/CalSansTextUI[GEOM,SHRP,YTAS,ital,wght].woff2") format("woff2");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Cal Sans Text UI";
-  src: url("./fonts/CalSansTextUI-Italic[wght].woff2") format("woff2");
-  font-weight: 400 700;
-  font-style: italic;
-  font-display: swap;
-}
+/* font-style: italic cannot reach a variable axis, so <em> and <i> will not
+   italicise from this file alone. Ask for it explicitly, and restate the other
+   axes you rely on — font-variation-settings resets anything it omits:
+     em { font-variation-settings: "ital" 1, "GEOM" 25, "YTAS" 1520; }
+   If you want font-style: italic to just work, use the static faces in
+   ui-non-variable.css, which ship drawn italics per weight. */
