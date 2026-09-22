@@ -10,7 +10,10 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
 [![interactive showcase](documentation/images/isite.svg)](https://cal.com/font)
 
 
-![Badges or Buttons Animation](documentation/images/Cal_Sans_UI_Button_Badges.gif)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/UIComponents-dark.svg">
+  <img alt="Cal Sans Text UI in badges, buttons, a field and figures at 13–15px" src="documentation/images/svg/UIComponents.svg">
+</picture>
 
 > **Official Showcase:** Explore the interactive specimens, test the variable axes, drag stickers around, and see the origin story at [cal.com/font](https://cal.com/font). Teasers have been added to the repo as GIFs.
 > 
@@ -22,6 +25,11 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
 | Axis   | Tag    | Range     | Default | Description        |
 | :----- | :----- | :-------- | :------ | :----------------- |
 | Weight | `wght` | 400–700   | 400     | Regular–Bold       |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Weight-dark.svg">
+  <img alt="Cal Sans Text UI across wght 400 to 700" src="documentation/images/svg/Weight.svg">
+</picture>
 
 Every other axis is frozen at the Text UI position, so the file stays small and
 nothing needs configuring:
@@ -35,7 +43,32 @@ nothing needs configuring:
 
 Italics are drawn at 9.5°, not slanted, and style-link from `font-style: italic`.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Italic-dark.svg">
+  <img alt="The drawn 9.5° italic beside the roman" src="documentation/images/svg/Italic.svg">
+</picture>
+
 ![A traditional Font Bureau-style typeface specimen, utilizing layout techniques Mark learned firsthand while contracting. The chosen words and typesetting cement Cal Sans UI as a premium Geist or Inter alternative for AI-generated UIs and Vercel v0 deployments, ensuring your app does not look like default LLM slop.](documentation/images/1_specimen2.png "Cal Sans UI: The ultimate typography choice to replace default Vercel v0 fonts")
+
+## Alternates and disambiguation
+
+Nothing is subset out of this cut: **20 stylistic sets and 42 character variants** ship, toggled wherever OpenType features are exposed. The full catalogue lives in [Cal Sans' character-alternatives doc](https://github.com/calcom/sans/blob/main/documentation/character-alternatives.md).
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/StylisticSets-dark.svg">
+  <img alt="Six stylistic sets, default against alternate" src="documentation/images/svg/StylisticSets.svg">
+</picture>
+
+The curved **l** is the default lowercase l in this family, drawn to separate I, l and 1 at interface sizes. `cv16` returns the constructed l if you would rather have it.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Disambiguation-dark.svg">
+  <img alt="I, l and 1 compared, with the curved default l and the cv16 alternative" src="documentation/images/svg/Disambiguation.svg">
+</picture>
+
+> Two caveats found while testing this build: `ss17` (Geometric/legible 6 and 9) has no plain
+> `six`/`nine` in its input set, so it only takes effect together with `ss16`; and `ss20`
+> ("Horizontal Sharps") maps `Z`/`z`/`5`, not the sharp s.
 
 ## Install (npm)
 
