@@ -15,6 +15,11 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
   <img alt="Cal Sans Text UI in badges, buttons, a field and figures at 13–15px" src="documentation/images/svg/UIComponents.svg">
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Stickers-dark.svg">
+  <img alt="Cal Sans Text UI set as scattered stickers" src="documentation/images/svg/Stickers.svg">
+</picture>
+
 > **Official Showcase:** Explore the interactive specimens, test the variable axes, drag stickers around, and see the origin story at [cal.com/font](https://cal.com/font). Teasers have been added to the repo as GIFs.
 > 
 
@@ -29,6 +34,11 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
 | Ascender Height     | `YTAS` | 1440–1600   | 1520    | Raised from the 1440 default for more open sentence shapes at text size |
 | Sharp               | `SHRP` | 0–100       | 0       | Corner sharpness |
 | Italic              | `ital` | 0–1         | 0       | Upright to the drawn 9.5° italic |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/CalGraphics-top-dark.svg">
+  <img alt="GEOM travelling from A11y through UI and Base to Geo, drawn at text size" src="documentation/images/svg/CalGraphics-top.svg">
+</picture>
 
 Every Cal Sans v2 axis is live here except one:
 
@@ -82,6 +92,13 @@ Nothing is subset out of this cut: **20 stylistic sets and 42 character variants
   <img alt="Six stylistic sets, default against alternate" src="documentation/images/svg/StylisticSets.svg">
 </picture>
 
+### Three ways to make it yours
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/CalThreeWays-dark.svg">
+  <img alt="Three ways to customise Cal Sans Text UI" src="documentation/images/svg/CalThreeWays.svg">
+</picture>
+
 The curved **l** is the default lowercase l in this family, drawn to separate I, l and 1 at interface sizes. `cv16` returns the constructed l if you would rather have it.
 
 <picture>
@@ -103,103 +120,38 @@ npm i @calcom/cal-sans-ui
 
 **Next.js:** peer dependency Next.js 13.2+
 
-### How to import
+### Use it
 
-**Next.js (App Router):**
-
-```tsx
-import { CalSansUI } from "@calcom/cal-sans-ui/ui";
-// or: import { CalSansUI, CalSansUINonVariable } from "@calcom/cal-sans-ui";
-```
-
-**Any other app (Vite, CRA, etc.):**
-
-```tsx
-import "@calcom/cal-sans-ui/ui.css";
-```
-
-Then use `font-family: "Cal Sans Text UI"` in your CSS.
-
-### Usage (Next.js App Router)
-
-Next.js requires font loaders to be called at module scope:
+**Next.js (App Router).** The package ships a `next/font/local` wrapper:
 
 ```tsx
 import { CalSansUI } from "@calcom/cal-sans-ui/ui";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${CalSansUI.variable}`}>
+    <html lang="en" className={CalSansUI.variable}>
       <body>{children}</body>
     </html>
   );
 }
 ```
 
-### With Tailwind CSS
+**Anywhere else** — Vite, CRA, plain HTML — import the stylesheet and use the
+family name:
 
-Map Cal Sans to Tailwind's theme variables so you can use `font-sans` (body), `font-heading` (headings), and `font-display` (geo):
-
-**Tailwind v4** – `tailwind.css`:
-
+```tsx
+import "@calcom/cal-sans-ui/ui.css";
+```
 ```css
-@theme {
-  --font-sans: var(--font-cal-sans-ui), ui-sans-serif, sans-serif;
-  --font-heading: var(--font-cal-sans-ui), ui-sans-serif, sans-serif;
-}
+body { font-family: "Cal Sans Text UI", sans-serif; }
 ```
 
-**Tailwind v3** – `tailwind.config.js`:
+**Tailwind.** Point a family at the CSS variable the wrapper sets:
 
 ```js
-module.exports = {
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-cal-sans-ui)", "sans-serif"],
-        heading: ["var(--font-cal-sans-ui)", "sans-serif"],
-      },
-    },
-  },
-};
+// tailwind.config.js
+theme: { extend: { fontFamily: { sans: ["var(--font-cal-sans-ui)", "sans-serif"] } } }
 ```
-
-Then use the utilities in your components:
-
-```tsx
-<p className="font-sans">Body text uses Cal Sans Text UI</p>
-<p className="font-sans italic">Italics are drawn, not slanted</p>
-<h1 className="font-sans font-semibold">Headings use the same family at 600</h1>
-```
-
-Weight works through the normal property:
-
-```tsx
-<h2 className="font-sans" style={{ fontWeight: 600 }}>Subheading</h2>
-```
-
-The other axes go through `font-variation-settings`. It overrides `font-weight`
-wherever both apply, and resets any axis it leaves out, so set them together:
-
-```css
-h1 {
-  font-family: var(--font-cal-sans-ui), sans-serif;
-  font-variation-settings: "wght" 600, "GEOM" 50, "YTAS" 1520;
-}
-
-/* the accessibility end: seriffed I and curved l, no feature needed */
-.a11y { font-variation-settings: "wght" 400, "GEOM" 0; }
-
-/* italic, since font-style cannot reach the axis */
-em { font-variation-settings: "wght" 400, "GEOM" 25, "ital" 1; }
-```
-
-Only `opsz` is unavailable — it is baked at 10. For the 8 pt and 45 pt drawings,
-use the full [Cal Sans variable font](https://github.com/calcom/sans).
-
-### Non-Next.js (Vite, CRA, etc.)
-
-Import the CSS and use the font family names in your styles. For browsers that don't support variable fonts, use `@calcom/cal-sans-ui/ui-non-variable.css` instead.
 
 ### Exports
 
@@ -314,85 +266,25 @@ The three families are archived at tag `1.500` and remain installable as
 
 # 🧰 Build Instructions
 
-The fonts here are no longer built from `sources/CalSansUI.glyphs`. They are cuts of
-[Cal Sans v2](https://github.com/calcom/sans), produced by that repo's compiler:
+These fonts are no longer built from `sources/CalSansUI.glyphs`. They are a cut of
+[Cal Sans v2](https://github.com/calcom/sans), made from that repo's variable font
+by pinning one axis and leaving the rest alone:
 
-```bash
-git clone https://github.com/calcom/sans && cd sans
-python3 -m scripts
-```
+| | |
+| :-- | :-- |
+| Pinned | `opsz` 10 — the interface drawing, no 8 pt and no 45 pt |
+| Live | `wght`, `GEOM`, `YTAS` (default raised to 1520), `SHRP`, `ital` |
+| Not applied | the curved-l default swap that the Google Fonts Text UI cut uses |
+| Not applied | the `ssXX`/`cvXX` subset that the Google Fonts cuts use |
 
-The Text UI cut is defined in `scripts/config.py` as `GF_TEXTUI_PINNED`, and lands in
-`fonts/calsans-gf-api-textui/` (variable) and `fonts/calsans-gf-workspace/` (statics).
-Copy those into `fonts/` and `packages/npm/dist/fonts/` here.
+The last two are what separate this from `calsans-gf-api-textui` in that repo,
+which is otherwise pinned at the same place: this build keeps all 20 stylistic
+sets and 42 character variants, and ships the plain `l` as default.
 
-The 1.x pipeline below is kept for the archived `1.500` sources.
+> **Not yet reproducible from a commit.** This cut is not defined in Cal Sans'
+> `scripts/config.py`, so `python3 -m scripts` will not regenerate it — it was
+> produced by instancing `fonts/calsans-var-full/CalSansVF.ttf` with those pins.
+> Adding it there, alongside `GF_TEXTUI_PINNED`, is the outstanding job before
+> anyone can rebuild what npm ships.
 
-## Step 1: Virtual environment & requirements
-
-### Navigate to the root directory
-```
-cd [folder location]
-```
-
-### Set up a virtual environment in the root directory
-
-```
-virtualenv -p python3 venv
-```
-
-### Activate the virtual environment
-
-```
-source venv/bin/activate
-```
-
-### Install requirements
-
-```
-pip install -U -r requirements.txt
-```
-
-You might also need to install ttfautohint
-
-```
-brew install ttfautohint
-```
-
-
-
-## Step 2: Build the fonts
-
-
-### Navigate to /sources
-Assuming you are already in the root directory
-
-```
-cd sources
-```
-
-<!-- **Note:** The alternative Text glyphs are produced using stylistic sets in the source file. If you want to include new glyphs for Text Mode, please ensure to generate them at position `[0,5<MODE<1]` in the Text to UI Mode axis. -->
-
-
-### Build designspace file in /master_ufo
-
-```
-sh build_ds.sh
-```
-
-**Notes:** 
-
-- Run this command every time you make changes to the source file.
-- Once you update the designspace, paste the contents of the `RulesFeatureVariations.txt` file into your .designspace file.
-
-### Build OTvar and TTF fonts
-
-```
-gftools builder config.yaml
-```
-
-<!-- ### Build static TTF fonts
-
-```
-sh build-statics.sh
-``` -->
+The archived 1.x pipeline lives at tag [`1.500`](https://github.com/calcom/sans-ui/releases/tag/1.500).
