@@ -1,35 +1,63 @@
 @font-face {
-  font-family: "Cal Sans UI";
-  src: url("./fonts/CalSansUI-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cal Sans UI";
-  src: url("./fonts/CalSansUI-Regular.woff2") format("woff2");
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Cal Sans UI";
-  src: url("./fonts/CalSansUI-Medium.woff2") format("woff2");
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Cal Sans UI";
-  src: url("./fonts/CalSansUI-SemiBold.woff2") format("woff2");
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Cal Sans UI";
-  src: url("./fonts/CalSansUI-Bold.woff2") format("woff2");
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cal Sans Text UI";
+  src: url("./fonts/CalSansTextUI-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
   font-display: swap;
 }

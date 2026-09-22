@@ -1,7 +1,7 @@
 {
   "name": "@calcom/cal-sans-ui",
-  "version": "1.3.0",
-  "description": "Cal Sans UI, Cal Sans Text, and Cal Sans Geo typefaces for Cal.com interfaces",
+  "version": "2.0.0",
+  "description": "Cal Sans Text UI typeface for Cal.com interfaces",
   "type": "module",
   "main": "./dist/font.js",
   "module": "./dist/font.js",
@@ -22,20 +22,9 @@
       "import": "./dist/sans-ui-non-variable.js",
       "default": "./dist/sans-ui-non-variable.js"
     },
-    "./text": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/sans-text.js",
-      "default": "./dist/sans-text.js"
-    },
-    "./geo": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/sans-geo.js",
-      "default": "./dist/sans-geo.js"
-    },
     "./ui.css": "./dist/sans-ui.css",
     "./ui-non-variable.css": "./dist/sans-ui-non-variable.css",
-    "./text.css": "./dist/sans-text.css",
-    "./geo.css": "./dist/sans-geo.css"
+    "./fonts/*": "./dist/fonts/*"
   },
   "files": [
     "dist",
@@ -55,8 +44,7 @@
   },
   "keywords": [
     "cal-sans-ui",
-    "cal-sans-text",
-    "cal-sans-geo",
+    "cal-sans-text-ui",
     "calcom",
     "font",
     "webfont",

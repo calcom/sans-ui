@@ -1,7 +1,0 @@
-import localFont from "next/font/local";
-
-export const CalSansText = localFont({
-  src: "./fonts/CalSansUI[wght,GEOM].woff2",
-  variable: "--font-cal-sans-text",
-  weight: "300 700",
-});
