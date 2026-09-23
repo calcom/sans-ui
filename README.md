@@ -260,7 +260,7 @@ The three families are archived at tag `1.500` and remain installable as
 `@calcom/cal-sans-ui@1.3.0`.
 
 # Update log
-* v2.0.0 — Replaced the three 1.x families with **Cal Sans Text UI**, the Text UI cut of Cal Sans v2.003: one live axis (`wght` 400–700) with `opsz` 10, `GEOM` 25, `YTAS` 1520 and `SHRP` 0 frozen, roman + drawn italics. Breaking: `./text` and `./geo` are removed.
+* v2.0.0 — Replaced the three 1.x families with **Cal Sans Text UI**, a cut of Cal Sans v2.003 carrying every axis except `opsz`, which is frozen at 10: `wght` 400–700, `GEOM` 0–100, `YTAS` 1440–1600 (default raised to 1520), `SHRP` 0–100 and `ital` 0–1, unsubset, with drawn italics. Breaking: `./text` and `./geo` are removed.
 * v1.500 — Updated fonts with GEOM variable axis to Open Source the optical qualities better on Google Fonts
 * v1.000 — Launch Fonts
 
