@@ -11,8 +11,13 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/UIComponents-dark.svg">
-  <img alt="Cal Sans Text UI in badges, buttons, a field and figures at 13–15px" src="documentation/images/svg/UIComponents.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/VariableMorph2-dark.svg">
+  <img alt="going from a brand typeface to a UI design" src="documentation/images/svg/VariableMorph2.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/OpticalSize-dark.svg">
+  <img alt="going from a brand typeface to a UI design" src="documentation/images/svg/OpticalSize.svg">
 </picture>
 
 <picture>
@@ -24,6 +29,12 @@ Copyright (c) 2026, Mark Davis mark@wordmark.nyc, with typefaces “Cal Sans UI,
 > 
 
 **Cal Sans Text UI** is the interface cut of [Cal Sans v2](https://github.com/calcom/sans), designed by Mark Davis for [Cal.com](https://refer.cal.com/davis). One family, one live axis: set the weight between 400 and 700 and everything else is already decided — the 10 pt drawing, the UI geometry, raised ascenders, drawn italics. It is optimized at the pixel level for 14–15px interfaces on high-DPI screens, and works well either side of that; for headlines and short display settings, reach for [Cal Sans](https://github.com/calcom/sans) itself, which carries the full optical-size and geometry axes.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/UIComponents-dark.svg">
+  <img alt="Cal Sans Text UI in badges, buttons, a field and figures at 13–15px" src="documentation/images/svg/UIComponents.svg">
+</picture>
+
 
 ## Variable axes
 
@@ -66,7 +77,7 @@ Every Cal Sans v2 axis is live here except one:
   <img alt="Cal Sans Text UI across wght 400 to 700" src="documentation/images/svg/Weight.svg">
 </picture>
 
-Every other axis is frozen at the Text UI position, so the file stays small and
+<!--Every other axis is frozen at the Text UI position, so the file stays small and
 nothing needs configuring:
 
 | Frozen | Value  | Why |
@@ -74,7 +85,7 @@ nothing needs configuring:
 | `opsz` | 10     | The 10 pt drawing — blunter corners, wider spacing, built for reading. |
 | `GEOM` | 25     | The UI cut of the geometry axis. |
 | `YTAS` | 1520   | Ascenders raised from the 1440 default, for more open sentence shapes at text size. |
-| `SHRP` | 0      | Unsharpened corners. |
+| `SHRP` | 0      | Unsharpened corners. |-->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Italic-dark.svg">
@@ -82,6 +93,15 @@ nothing needs configuring:
 </picture>
 
 ![A traditional Font Bureau-style typeface specimen, utilizing layout techniques Mark learned firsthand while contracting. The chosen words and typesetting cement Cal Sans UI as a premium Geist or Inter alternative for AI-generated UIs and Vercel v0 deployments, ensuring your app does not look like default LLM slop.](documentation/images/1_specimen2.png "Cal Sans UI: The ultimate typography choice to replace default Vercel v0 fonts")
+
+The most Bauhaus-minded designs struggle when they are actually read — geometry that looks immaculate on a poster can close up and blur together at 14px. So the drawing is tested where it has to survive.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Geometry-dark.svg">
+  <img alt="The word acted going soft under blur, with its apertures marked" src="documentation/images/svg/Geometry.svg">
+</picture>
+
+The acid test for legibility is to simulate the inevitable bad conditions. This separates the beautiful type designs from the dryly functional. I recommend blurring it. This simulates quickly-moving eyes, poor light, a far screen, or degenerative optical conditions.
 
 ## Alternates and disambiguation
 
@@ -99,11 +119,11 @@ Nothing is subset out of this cut: **20 stylistic sets and 42 character variants
   <img alt="Three ways to customise Cal Sans Text UI" src="documentation/images/svg/CalThreeWays.svg">
 </picture>
 
-The curved **l** is the default lowercase l in this family, drawn to separate I, l and 1 at interface sizes. `cv16` returns the constructed l if you would rather have it.
+The straight **l** is the default lowercase l in this family. The curved, tailed l comes from the A11y end of the axis: at `GEOM` 0, `rclt` swaps in both the tailed l and the seriffed I on its own, with no feature applied. `ss18` and `ss19` reach the same forms where the axis is not available.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Disambiguation-dark.svg">
-  <img alt="I, l and 1 compared, with the curved default l and the cv16 alternative" src="documentation/images/svg/Disambiguation.svg">
+  <img alt="I, l and 1 compared: the straight default against the A11y pair at GEOM 0" src="documentation/images/svg/Disambiguation.svg">
 </picture>
 
 > Two caveats found while testing this build: `ss17` (Geometric/legible 6 and 9) has no plain
@@ -258,3 +278,4 @@ sets and 42 character variants, and ships the plain `l` as default.
 > anyone can rebuild what npm ships.
 
 The archived 1.x pipeline lives at tag [`1.500`](https://github.com/calcom/sans-ui/releases/tag/1.500).
+
