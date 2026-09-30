@@ -134,16 +134,37 @@ All 20 sets and 42 variants, toggled wherever features are exposed; the full cat
 
 Choose new defaults and freeze tabular figures and other OpenType features into something new, online, no command line or font software needed. Your favorite settings become the font’s only settings. Hosting for custom builds is available too.
 
-### Built for buttons.
+### Interoperable. A drop-in for the UI fonts you already use.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/Interoperable-dark.svg">
-  <img alt="Cal Sans Text UI cap height and x-height against other UI typefaces at 14px" src="documentation/images/svg/Interoperable.svg">
+  <img alt="Cal Sans Text UI cap height and x-height against Segoe UI, TikTok Sans, Helvetica, SF Pro, Inter, Geist, Roboto and Google Sans Flex at 14px" src="documentation/images/svg/Interoperable.svg">
 </picture>
 
-Two measurements decide whether a font behaves in a component: how tall the lowercase runs against the caps, and how far the line box sits off cap-center.
-Cal Sans Text UI holds its x-height at 71.5% of cap height, the classic UI proportion, not the taller lowercase of Inter and SF Pro. Descenders get 23% of the em, so mixed-case labels still read as mixed case at 14px.
-And the line box is cap-centered to within 0.02 em: the space above the capitals matches the space below the baseline, so a label sits in the optical middle of a button, badge or input. No nudging, no one-pixel padding hack.
+Swapping a UI font shouldn’t mean re-tuning every button, badge and input. Cal Sans Text UI is drawn to the same vertical proportions as the system and open-source faces interfaces already ship with, so at the same `font-size` it sits in the same space.
+
+Above, each face is set at an equal size and stacked on one baseline. Cal Sans is the solid shape; the others are outlines. Every one of them has capitals within 3% of Cal Sans’s, and Cal Sans holds its x-height at 71.5% of cap height, inside the band those faces span.
+
+| Typeface | Cap height | x-height |
+|---|---|---|
+| **Cal Sans Text UI** | **100.0%** | **71.5%** |
+| Segoe UI | 97.2% | 69.4% |
+| TikTok Sans | 97.9% | 73.0% |
+| Helvetica | 99.7% | 72.6% |
+| SF Pro Text | 97.9% | 73.1% |
+| Inter | 101.0% | 75.8% |
+| Roboto | 98.7% | 73.4% |
+| Google Sans Flex | 99.4% | 72.4% |
+
+*Each face at the same `font-size`, measured from its own H and x, as a percentage of Cal Sans’s cap height.*
+
+Cal Sans Text UI is an open-source alternative to Inter, Roboto and SF Pro for product UI: free under the SIL Open Font License, variable from Regular to Bold, and it sits beside the system stack without resizing a component.
+
+### Built for buttons.
+
+Two numbers decide whether a font behaves inside a component: how deep the descenders reach, and how far the line box sits off cap-center.
+
+Descenders reach 31.9% of cap height below the baseline, so mixed-case labels still read as mixed case at 12px. And the line box is cap-centered to within 0.02 em: the space above the capitals matches the space below the baseline, so a label sits in the optical middle of a button, badge or input. No nudging, no one-pixel padding hack.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="documentation/images/svg/CalLinesTextUI-dark.svg">
