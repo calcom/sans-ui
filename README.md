@@ -262,7 +262,7 @@ keep their line breaks.
 
 **What changes:**
 
-| | 1.500 | 2.009 | Note |
+| | 1.500 | 2.010 | Note |
 |---|---|---|---|
 | Weight range | 300–700 | 400–700 | **Light is gone.** `font-weight: 300` now clamps to 400. |
 | Regular/Medium color | — | ~10% lighter | Stems at 400 and 500 are lighter; 600 and 700 are identical. |
@@ -278,7 +278,7 @@ keep their line breaks.
 > scheme, so three tags now reshape a different letter than they did in 1.x. Old feature
 > strings will not error — they will quietly do the wrong thing.
 >
-> | tag | 1.500 | 2.009 |
+> | tag | 1.500 | 2.010 |
 > |---|---|---|
 > | `ss01` | Single-story a | Geometric a |
 > | `ss02` | UI G | **Humanist a** |
